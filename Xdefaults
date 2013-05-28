@@ -1,4 +1,7 @@
 XTerm*background:  black
 XTerm*foreground:  white
 
-XTerm*scrollttyoutput:  false
+XTerm*saveLines:  5000
+
+XTerm*scrollTtyOutput:  false
+XTerm*scrollKey:  true
