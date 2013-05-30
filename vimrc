@@ -11,3 +11,5 @@ set expandtab
 set ignorecase
 set smartcase
 "set hlsearch
+
+set visualbell
