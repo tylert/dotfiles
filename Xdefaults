@@ -6,4 +6,4 @@ XTerm*saveLines:  5000
 XTerm*scrollTtyOutput:  false
 XTerm*scrollKey:        true
 
-XTerm*visualBell:  true
+#XTerm*visualBell:  true
