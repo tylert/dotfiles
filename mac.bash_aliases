@@ -6,4 +6,4 @@ alias gitk='GitX'
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 #LightSpeed Pro
-export PATH=bin:/Volumes/Data/scripts:/Volumes/Data/bin:$PATH
+export PATH=$HOME/bin:/Volumes/Data/scripts:/Volumes/Data/bin:$PATH
