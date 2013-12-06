@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 dotfile_dir="${HOME}/.lsconf"
-files="${1}"
+files="${@}"
 
 for file in "${files}"; do
     ln -sf "${dotfile_dir}/${file}" "${HOME}/.${file}"
