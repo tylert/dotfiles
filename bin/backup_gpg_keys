@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+keyid="${1}"
+
+gpg --export --armor --no-emit-version --no-comment ${keyid} >\
+    ${keyid}.gpg.pub.txt
+
+umask 0077
+gpg --export-secret-key --armor --no-emit-version --no-comment ${keyid} >\
+    ${keyid}.gpg.sec.txt
