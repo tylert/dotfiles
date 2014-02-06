@@ -2,9 +2,14 @@
 
 keyid="${1}"
 
-gpg --export --armor --no-emit-version --no-comment ${keyid} >\
-    ${keyid}.gpg.pub.txt
+gpg --export --armor --no-emit-version --no-comment \
+  ${keyid} > ${keyid}.gpg.pub.txt
 
 umask 0077
-gpg --export-secret-key --armor --no-emit-version --no-comment ${keyid} >\
-    ${keyid}.gpg.sec.txt
+gpg --export-secret-key --armor --no-emit-version --no-comment \
+  ${keyid} > ${keyid}.gpg.sec.txt
+
+# Usually there is no secret key if this is someone else's key.
+if [ $(stat -c %s ${keyid}.gpg.sec.txt) -eq 0 ]; then
+  rm ${keyid}.gpg.sec.txt
+fi
