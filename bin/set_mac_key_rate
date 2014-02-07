@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Make the keyboard rate for OS X Mavericks more awesome.
 # Run this and then logout/login again.
