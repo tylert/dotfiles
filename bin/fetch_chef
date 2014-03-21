@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-wget -O 'chef_stable.debian_amd64.deb' \
-'https://opscode.com/chef/download?v=&prerelease=false&p=debian&pv=7&m=x86_64'
+#wget -O 'chef-stable-debian64.deb' \
+#'https://opscode.com/chef/download?v=&prerelease=false&p=debian&pv=7&m=x86_64'
 
-#wget -O 'chef-client-installer.sh' \
-#'https://opscode.com/chef/download?v=&prerelease=false&p=mac_os_x&pv=10.7&m=x86_64'
+curl -o 'chef-stable-macosx64.sh' -L \
+'https://opscode.com/chef/download?v=&prerelease=false&p=mac_os_x&pv=10.7&m=x86_64'
