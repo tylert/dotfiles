@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+src_root='/Volumes/Data'
+dst_root='xantium.local:/Volumes/Y'
+
+things='
+doc
+install
+'
+
+for thing in ${things} ; do
+    rsync --archive --verbose --compress --delete-before \
+        ${src_root}/${thing}/ ${USER}@${dst_root}/${thing}/
+    #--bwlimit=10000 \
+done
