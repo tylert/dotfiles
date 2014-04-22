@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
 
 github_user='tylert'
+github_orgs='
+oarc
+emrg-ca
+radcan
+lightspeedretail
+merchantos
+'
 
 curl --silent --user ${github_user} \
   https://api.github.com/users/tylert/repos | grep ssh_url
 
-curl --silent --user ${github_user} \
-  https://api.github.com/orgs/{oarc,emrg-ca}/repos | grep ssh_url
-
-#curl --silent --user ${github_user} \
-#  https://api.github.com/orgs/{lightspeedretail,merchantos}/repos |\
-#    grep ssh_url
+for org in ${github_orgs} ; do
+    curl --silent --user ${github_user} \
+      https://api.github.com/orgs/${org}/repos | grep ssh_url
+done
