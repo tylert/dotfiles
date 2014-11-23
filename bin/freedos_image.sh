@@ -17,6 +17,7 @@ parted -s ${file} set 1 boot on
 mkfs.fat -F 32 -n FREEDOS ${file}
 syslinux -i ${file}
 
+mmd -i ${file} FDOS
 mcopy -i ${file} SYSLINUX.CFG ::
 mcopy -i ${file} AUTOEXEC.BAT ::
 mcopy -i ${file} CONFIG.SYS ::
@@ -28,5 +29,5 @@ mcopy -i ${file} CONFIG.SYS ::
 # for i in *.ZIP ; do unzip -o -d tmp $i ; done
 # popd
 
-# mcopy -i ${file} ~/Desktop/fd11src/FREEDOS/PACKAGES/BASE/tmp/{bin,BIN}/* ::
-# mcopy -i ${file} ~/Desktop/fd11src/FREEDOS/PACKAGES/BOOT/tmp/{bin,BIN}/chain.c32 ::
+mcopy -i ${file} ~/Desktop/fd11src/FREEDOS/PACKAGES/BASE/tmp/{bin,BIN}/* ::FDOS
+mcopy -i ${file} ~/Desktop/fd11src/FREEDOS/PACKAGES/BOOT/tmp/{bin,BIN}/chain.c32 ::FDOS
