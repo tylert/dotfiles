@@ -21,6 +21,12 @@ mcopy -i ${file} SYSLINUX.CFG ::
 mcopy -i ${file} AUTOEXEC.BAT ::
 mcopy -i ${file} CONFIG.SYS ::
 
-# pushd FREEDOS/PACKAGES/BASE
+# pushd ~/Desktop/fd11src/FREEDOS/PACKAGES/BASE
 # for i in *.ZIP ; do unzip -o -d tmp $i ; done
-# mcopy -i ${file} FREEDOS/PACKAGES/BASE/tmp/{bin,BIN}/* ::
+# popd
+# pushd ~/Desktop/fd11src/FREEDOS/PACKAGES/BOOT
+# for i in *.ZIP ; do unzip -o -d tmp $i ; done
+# popd
+
+# mcopy -i ${file} ~/Desktop/fd11src/FREEDOS/PACKAGES/BASE/tmp/{bin,BIN}/* ::
+# mcopy -i ${file} ~/Desktop/fd11src/FREEDOS/PACKAGES/BOOT/tmp/{bin,BIN}/chain.c32 ::
