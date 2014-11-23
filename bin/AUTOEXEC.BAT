@@ -14,19 +14,19 @@ IF EXIST FDBOOTCD.ISO LH SHSUCDHD /Q /F:FDBOOTCD.ISO
 LH FDAPM APMDOS
 if "%config%"=="2" LH SHARE
 REM LH DISPLAY CON=(EGA,,1)
-REM NLSFUNC C:\FDOS\COUNTRY.SYS
-REM MODE CON CP PREP=((858) A:\cpi\EGA.CPX)
+REM NLSFUNC A:\FDOS\COUNTRY.SYS
+REM MODE CON CP PREP=((858) A:\FDOS\EGA.CPX)
 REM MODE CON CP SEL=858
 REM CHCP 858
-REM LH KEYB US,,C:\FDOS\KEY\US.KL  
-DEVLOAD /H /Q %dosdir%\uide.sys /D:FDCD0001 /S5
+REM LH KEYB US,,A:\FDOS\KEY\US.KL  
+DEVLOAD /H /Q %dosdir%\UIDE.SYS /D:FDCD0001 /S5
 ShsuCDX /QQ /~ /D:?SHSU-CDH /D:?FDCD0001 /D:?FDCD0002 /D:?FDCD0003
 mem /c /n
 shsucdx /D
 goto end
 :end
-SET autofile=C:\autoexec.bat
-SET CFGFILE=C:\config.sys
+SET autofile=A:\AUTOEXEC.BAT
+SET CFGFILE=A:\CONFIG.SYS
 alias reboot=fdapm warmboot
 alias halt=fdapm poweroff
 echo type HELP to get support on commands and navigation

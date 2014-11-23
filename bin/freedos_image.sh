@@ -30,4 +30,5 @@ mcopy -i ${file} CONFIG.SYS ::
 # popd
 
 mcopy -i ${file} ~/Desktop/fd11src/FREEDOS/PACKAGES/BASE/tmp/{bin,BIN}/* ::FDOS
-mcopy -i ${file} ~/Desktop/fd11src/FREEDOS/PACKAGES/BOOT/tmp/{bin,BIN}/chain.c32 ::FDOS
+mcopy -i ${file} ~/Desktop/fd11src/FREEDOS/PACKAGES/BASE/tmp/cpi/ega.cpx ::FDOS
+mcopy -i ${file} ~/Desktop/fd11src/FREEDOS/PACKAGES/BOOT/tmp/bin/chain.c32 ::FDOS
