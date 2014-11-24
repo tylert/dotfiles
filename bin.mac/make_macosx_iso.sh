@@ -3,7 +3,7 @@
 release='Mavericks'
 
 app_path='/Users/tylertidman/Desktop'
-app_name="Installer OS X ${release}"
+app_name="Install OS X ${release}.app"
 iso_name="Install_OS_X_${release}.iso"
 
 # Mount the installer image
