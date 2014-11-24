@@ -1,4 +1,4 @@
-@echo off 
+@echo off
 set lang=EN
 set PATH=%dosdir%
 set NLSPATH=%dosdir%
@@ -8,7 +8,7 @@ set tmp=%dosdir%
 SET BLASTER=A220 I5 D1 H5 P330
 set DIRCMD=/P /OGN
 if "%config%"=="4" goto end
-lh doslfn 
+lh doslfn
 SHSUCDX /QQ /D3
 IF EXIST FDBOOTCD.ISO LH SHSUCDHD /Q /F:FDBOOTCD.ISO
 LH FDAPM APMDOS
@@ -18,7 +18,7 @@ REM NLSFUNC A:\FDOS\COUNTRY.SYS
 REM MODE CON CP PREP=((858) A:\FDOS\EGA.CPX)
 REM MODE CON CP SEL=858
 REM CHCP 858
-REM LH KEYB US,,A:\FDOS\KEY\US.KL  
+REM LH KEYB US,,A:\FDOS\KEY\US.KL
 DEVLOAD /H /Q %dosdir%\UIDE.SYS /D:FDCD0001 /S5
 ShsuCDX /QQ /~ /D:?SHSU-CDH /D:?FDCD0001 /D:?FDCD0002 /D:?FDCD0003
 mem /c /n
