@@ -1,18 +1,22 @@
 #!/usr/bin/env bash
 
-release='Yosemite'
+release='Mavericks'
+
+app_path='/Users/tylertidman/Desktop'
+app_name="Installer OS X ${release}"
+iso_name="Install_OS_X_${release}.iso"
 
 # Mount the installer image
-hdiutil attach /Applications/Install\ OS\ X\ ${release}.app/Contents/SharedSupport/InstallESD.dmg -noverify -nobrowse -mountpoint /Volumes/install_app
+hdiutil attach "${app_path}/${app_name}/Contents/SharedSupport/InstallESD.dmg" -noverify -nobrowse -mountpoint /Volumes/install_app
 
 # Convert the boot image to a sparse bundle
-hdiutil convert /Volumes/install_app/BaseSystem.dmg -format UDSP -o /tmp/${release}
+hdiutil convert /Volumes/install_app/BaseSystem.dmg -format UDSP -o "/tmp/${release}"
 
 # Increase the sparse bundle capacity to accommodate the packages
-hdiutil resize -size 8g /tmp/${release}.sparseimage
+hdiutil resize -size 8g "/tmp/${release}.sparseimage"
 
 # Mount the sparse bundle for package addition
-hdiutil attach /tmp/${release}.sparseimage -noverify -nobrowse -mountpoint /Volumes/install_build
+hdiutil attach "/tmp/${release}.sparseimage" -noverify -nobrowse -mountpoint /Volumes/install_build
 
 # Remove Package link and replace with actual files
 rm /Volumes/install_build/System/Installation/Packages
@@ -29,13 +33,13 @@ hdiutil detach /Volumes/install_app
 hdiutil detach /Volumes/install_build
 
 # Resize the partition in the sparse bundle to remove any free space
-hdiutil resize -size `hdiutil resize -limits /tmp/${release}.sparseimage | tail -n 1 | awk '{ print $1 }'`b /tmp/${release}.sparseimage
+hdiutil resize -size `hdiutil resize -limits "/tmp/${release}.sparseimage" | tail -n 1 | awk '{ print $1 }'`b "/tmp/${release}.sparseimage"
 
 # Convert the sparse bundle to ISO/CD master
-hdiutil convert /tmp/${release}.sparseimage -format UDTO -o /tmp/${release}
+hdiutil convert "/tmp/${release}.sparseimage" -format UDTO -o "/tmp/${release}"
 
 # Remove the sparse bundle
-rm /tmp/${release}.sparseimage
+rm "/tmp/${release}.sparseimage"
 
 # Rename the ISO and move it to the desktop
-mv /tmp/${release}.cdr ~/Desktop/${release}.iso
+mv "/tmp/${release}.cdr" "${app_path}/${iso_name}"
