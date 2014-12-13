@@ -1,4 +1,4 @@
 HashKnownHosts no
 ForwardAgent yes
-ForwardX11 yes
-ForwardX11Trusted yes
+#ForwardX11 yes
+#ForwardX11Trusted yes
