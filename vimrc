@@ -7,7 +7,7 @@ set visualbell    "flash the screen instead of beeping at me
 
 set scrolloff=10  "provide n lines of context above and below current line
 set nowrap        "don't make long lines ugly
-set wrapmargin=2  "fit text to the current buffer with n padding characters
+set wrapmargin=0  "fit text to the current buffer with n padding characters
 "set sidescroll=10
 
 set ignorecase    "provide a more useful search capability
