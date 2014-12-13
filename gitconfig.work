@@ -1,6 +1,6 @@
 [user]
 	name = Tyler Tidman
-	email = tyler.tidman@lightspeedretail.com
+	email = tyler.tidman@lightspeedpos.com
 [alias]
 	lol = log --graph --decorate --oneline
 	lola = log --graph --decorate --oneline --all
