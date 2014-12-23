@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-src_root='/Volumes/Data'
-dst_root='xantium.local:/Volumes/Y'
-
-rsync --archive --verbose --compress --delete-before \
-    ${src_root}/ ${USER}@${dst_root}/
-#--bwlimit=10000 \
