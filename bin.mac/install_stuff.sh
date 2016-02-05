@@ -6,7 +6,6 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install git
 brew install macvim
-brew install gpg
 brew install rename
 brew install wget
 
