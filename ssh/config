@@ -1,7 +1,7 @@
 HashKnownHosts no
 ForwardAgent yes
-#ForwardX11 yes
-#ForwardX11Trusted yes
-
+ForwardX11 yes
+ForwardX11Trusted yes
+UseRoaming no
 #Host *+*
 #  ProxyCommand ssh $(echo %h | sed 's/+[^+]*$//;s/\([^+%%]*\)%%\([^+]*\)$/\2 -l \1/;s/:/ -p /') nc -w 6000 $(echo %h | sed 's/^.*+//;/:/!s/$/ %p/;s/:/ /')
