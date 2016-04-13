@@ -1,9 +1,0 @@
-XTerm*background:  black
-XTerm*foreground:  white
-
-XTerm*saveLines:  5000
-
-XTerm*scrollTtyOutput:  false
-XTerm*scrollKey:        true
-
-#XTerm*visualBell:  true
