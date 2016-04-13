@@ -14,6 +14,9 @@ if [ -z "${client_name}" ]; then
     exit
 fi
 
+PIDS="$(pgrep -u ${USER} synergyc)"
+kill "${PIDS}"
+
 # Establish ssh tunnel to server
 ssh -f -N -L localhost:${port}:${server}:${port} ${server}
 
