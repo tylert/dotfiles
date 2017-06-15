@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-# https://docs.python.org/3.5/library/http.server.html
-# https://docs.python.org/2.7/library/simplehttpserver.html
+# https://docs.python.org/3/library/http.server.html
+# https://docs.python.org/2/library/simplehttpserver.html
 
 from __future__ import print_function
 import sys
