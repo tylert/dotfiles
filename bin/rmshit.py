@@ -13,9 +13,10 @@ shittyfiles = [
     '~/.adobe',            # Macromedia Flash crap
     '~/.ansible',
     '~/.bash_history',
+#   '~/.gconf',            # Gnome-ish crap not using .{config,cache,local}
     '~/.gimp-2.8',
-#   '~/.gnome2',           # nemo despite cinnamon
-#   '~/.gnome2_private',   # nemo despite cinnamon
+#   '~/.gnome2',           # Gnome-ish crap not using .{config,cache,local}
+#   '~/.gnome2_private',   # Gnome-ish crap not using .{config,cache,local}
     '~/.icons',
     '~/.java',
     '~/.lesshst',
