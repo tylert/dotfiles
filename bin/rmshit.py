@@ -14,6 +14,8 @@ shittyfiles = [
     '~/.ansible',
     '~/.bash_history',
     '~/.gimp-2.8',
+#   '~/.gnome2',           # nemo despite cinnamon
+#   '~/.gnome2_private',   # nemo despite cinnamon
     '~/.icons',
     '~/.java',
     '~/.lesshst',
