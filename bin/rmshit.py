@@ -11,24 +11,25 @@ import shutil
 
 shittyfiles = [
     '~/.adobe',                # Macromedia Flash crap
-    '~/.ansible',
-    '~/.bash_history',
+    '~/.ansible',              # Ansible crap
+    '~/.bash_history',         # Bash crap
     '~/.gconf',                # Gnome-ish crap not using .{config,cache,local}
-    '~/.gimp-2.8',
+    '~/.gimp-2.8',             # GIMP crap
     '~/.gnome2',               # Gnome-ish crap not using .{config,cache,local}
     '~/.gnome2_private',       # Gnome-ish crap not using .{config,cache,local}
     '~/.icons',
-    '~/.java',
-    '~/.lesshst',
+    '~/.java',                 # Java crap
+    '~/.lesshst',              # Less crap
     '~/.macromedia',           # Macromedia Flash crap
     '~/.packer.d',             # Hashicorp Checkpoint crap
     '~/.pki',                  # Firefox crap
     '~/.terraform.d',          # Hashicorp Checkpoint crap
     '~/.themes',
-    '~/.vim',
-    '~/.viminfo',
-    '~/.xsession-errors',
-    '~/.xsession-errors.old',
+    '~/.vim',                  # Vim crap
+    '~/.viminfo',              # Vim crap
+    '~/.xsession-errors',      # X crap
+    '~/.xsession-errors.old',  # X crap
+    '~/.wget-hsts',            # Wget crap
 ]
 
 
