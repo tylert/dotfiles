@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# Create a temporary HTTP server for hosting files
+
 # https://docs.python.org/3/library/http.server.html
 # https://docs.python.org/2/library/simplehttpserver.html
 

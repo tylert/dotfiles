@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# Cull useless dotfiles in user's home directory
+
 # https://github.com/lahwaacz/Scripts/blob/master/rmshit.py
 
 from __future__ import print_function
