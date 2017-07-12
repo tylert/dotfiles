@@ -15,6 +15,7 @@ shittyfiles = [
     '~/.adobe',                # Macromedia Flash crap
     '~/.ansible',              # Ansible crap
     '~/.bash_history',         # Bash crap
+    '~/.cache',                # Gnome-ish crap
     '~/.gconf',                # Gnome-ish crap not using .{config,cache,local}
     '~/.gimp-2.8',             # GIMP crap
     '~/.gnome2',               # Gnome-ish crap not using .{config,cache,local}
