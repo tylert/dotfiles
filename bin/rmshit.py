@@ -33,6 +33,7 @@ shittyfiles = [
     '~/.xsession-errors',      # X crap
     '~/.xsession-errors.old',  # X crap
     '~/.wget-hsts',            # Wget crap
+    '~/.zoom',                 # Zoom crap
 ]
 
 
