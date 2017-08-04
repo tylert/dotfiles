@@ -20,14 +20,14 @@ shittyfiles = [
     '~/.gimp-2.8',             # GIMP crap
     '~/.gnome2',               # Gnome-ish crap not using .{config,cache,local}
     '~/.gnome2_private',       # Gnome-ish crap not using .{config,cache,local}
-    '~/.icons',                # Gnome-ish crap
+    '~/.icons',                # Gnome-ish crap not using .{config,cache,local}
     '~/.java',                 # Java crap
     '~/.lesshst',              # Less crap
     '~/.macromedia',           # Macromedia Flash crap
     '~/.packer.d',             # Hashicorp Checkpoint crap
     '~/.pki',                  # Firefox crap
     '~/.terraform.d',          # Hashicorp Checkpoint crap
-    '~/.themes',               # Gnome-ish crap
+    '~/.themes',               # Gnome-ish crap not using .{config,cache,local}
     '~/.vim',                  # Vim crap
     '~/.viminfo',              # Vim crap
     '~/.xsession-errors',      # X crap
