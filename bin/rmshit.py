@@ -23,6 +23,7 @@ shittyfiles = [
     '~/.gnome2_private',       # Gnome-ish crap not using .{config,cache,local}
     '~/.icons',                # Gnome-ish crap not using .{config,cache,local}
     '~/.java',                 # Java crap
+    '~/.knownPackages',        # (probably) Android crap
     '~/.lesshst',              # Less crap
     '~/.macromedia',           # Macromedia Flash crap
     '~/.packer.d',             # Hashicorp Checkpoint crap
