@@ -13,6 +13,7 @@ import shutil
 
 shittyfiles = [
     '~/.adobe',                # Macromedia Flash crap
+    '~/.android',              # Android crap
     '~/.ansible',              # Ansible crap
     '~/.bash_history',         # Bash crap
     '~/.cache',                # Gnome-ish crap
