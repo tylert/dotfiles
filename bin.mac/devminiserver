@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-# Mac OS X dump
-open afp://devminiserver.local
