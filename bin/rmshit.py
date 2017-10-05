@@ -15,6 +15,7 @@ shittyfiles = [
     '~/.adobe',                # Macromedia Flash crap
     '~/.android',              # Android crap
     '~/.ansible',              # Ansible crap
+    '~/.audacity-data',        # Audacity crap
     '~/.bash_history',         # Bash crap
     '~/.cache',                # Gnome-ish crap
     '~/.gconf',                # Gnome-ish crap not using .{config,cache,local}
