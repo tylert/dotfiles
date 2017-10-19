@@ -12,33 +12,36 @@ import shutil
 
 
 shittyfiles = [
-    '~/.adobe',                # Macromedia Flash crap
-    '~/.android',              # Android crap
-    '~/.ansible',              # Ansible crap
-    '~/.audacity-data',        # Audacity crap
+    '~/.adobe/',               # Macromedia Flash crap
+    '~/.android/',             # Android crap
+    '~/.ansible/',             # Ansible crap
+    '~/.atom/',                # Atom crap
+    '~/.audacity-data/',       # Audacity crap
     '~/.bash_history',         # Bash crap
-    '~/.cache',                # Gnome-ish crap
-    '~/.gconf',                # Gnome-ish crap not using .{config,cache,local}
-    '~/.gimp-2.8',             # GIMP crap
-    '~/.gnome2',               # Gnome-ish crap not using .{config,cache,local}
-    '~/.gnome2_private',       # Gnome-ish crap not using .{config,cache,local}
-    '~/.icons',                # Gnome-ish crap not using .{config,cache,local}
-    '~/.java',                 # Java crap
+    '~/.bash_sessions/',       # iTerm2 crap
+    '~/.cache/',               # Gnome-ish crap
+    '~/.gconf/',               # Gnome-ish crap not using .{config,cache,local}
+    '~/.gimp-2.8/',            # GIMP crap
+    '~/.gnome2/',              # Gnome-ish crap not using .{config,cache,local}
+    '~/.gnome2_private/',      # Gnome-ish crap not using .{config,cache,local}
+    '~/.icons/',               # Gnome-ish crap not using .{config,cache,local}
+    '~/.java/',                # Java crap
     '~/.knownPackages',        # (probably) Android crap
     '~/.lesshst',              # Less crap
-    '~/.macromedia',           # Macromedia Flash crap
-    '~/.packer.d',             # Hashicorp Checkpoint crap
-    '~/.pki',                  # Firefox crap
-    '~/.terraform.d',          # Hashicorp Checkpoint crap
-    '~/.themes',               # Gnome-ish crap not using .{config,cache,local}
+    '~/.macromedia/',          # Macromedia Flash crap
+    '~/.oracle_jre_usage/',    # Java crap
+    '~/.packer.d/',            # Hashicorp Checkpoint crap
+    '~/.pki/',                 # Firefox crap
+    '~/.terraform.d/',         # Hashicorp Checkpoint crap
+    '~/.themes/',              # Gnome-ish crap not using .{config,cache,local}
     '~/.tkremindrc',           # Remind crap
     '~/.viminfo',              # Vim crap
-    '~/.vim',                  # Vim crap
-    '~/.xsession-errors',      # X crap
-    '~/.xsession-errors.old',  # X crap
+    '~/.vim/',                 # Vim crap
     '~/.wget-hsts',            # Wget crap
-    '~/.xournal',              # Xournal crap
-    '~/.zoom',                 # Zoom crap
+    '~/.xournal/',             # Xournal crap
+    '~/.xsession-errors.old',  # X crap
+    '~/.xsession-errors',      # X crap
+    '~/.zoom/',                # Zoom crap
 ]
 
 
