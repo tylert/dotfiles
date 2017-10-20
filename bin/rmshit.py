@@ -49,6 +49,7 @@ def yesno(question, default='n'):
     ''' Asks the user for YES or NO, always case insensitive.
         Returns True for YES and False for NO.
     '''
+
     prompt = '{} (y/[n]) '.format(question)
 
     ans = raw_input(prompt).strip().lower()
@@ -62,6 +63,9 @@ def yesno(question, default='n'):
 
 
 def rmshit():
+    ''' Actually cull the shitty files we find.
+    '''
+
     print('Found shitty files:')
     found = []
     for f in shittyfiles:
