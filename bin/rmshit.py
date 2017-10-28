@@ -34,6 +34,7 @@ shittyfiles = [
     '~/.pki/',                 # Firefox crap
     '~/.terraform.d/',         # Hashicorp Checkpoint crap
     '~/.themes/',              # Gnome-ish crap not using .{config,cache,local}
+    '~/.thumbnails/',          # Cinnamon crap
     '~/.tkremindrc',           # Remind crap
     '~/.viminfo',              # Vim crap
     '~/.vim/',                 # Vim crap
