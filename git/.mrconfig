@@ -1,0 +1,23 @@
+[DEFAULT]
+fetchall = git fetch --all --tags --prune "$@"
+latest = git pull
+branch = git branch
+
+[git]
+chain = true
+
+# ~/git/.mrconfig
+# [dirA]
+# chain = true
+#
+# [dirB]
+# chain = true
+# ...
+
+# ~/git/dirA/.mrconfig
+# [repo1]
+# checkout = git clone 'ssh://git@some/project/whatever.git' 'foo'
+#
+# [repo2]
+# checkout = git clone 'ssh://git@random/other/thing.git' 'bar'
+# ...
