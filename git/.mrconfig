@@ -1,7 +1,8 @@
 [DEFAULT]
-fetchall = git fetch --all --tags --prune "$@"
-latest = git pull
-branch = git branch
+git_fetchall = git fetch --all --tags --prune "$@"
+git_latest = git pull
+git_branch = git branch
+git_ignored = git status --ignored
 
 [git]
 chain = true
