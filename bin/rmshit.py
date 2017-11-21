@@ -53,7 +53,11 @@ def yesno(question, default='n'):
 
     prompt = '{} (y/[n]) '.format(question)
 
-    ans = raw_input(prompt).strip().lower()
+    # Make sure this'll run with python 2.x or 3.x
+    if sys.version_info[:1] == (2,):
+        ans = raw_input(prompt).strip().lower()
+    else:
+        ans = input(prompt).strip().lower()
 
     if not ans:
         ans = default

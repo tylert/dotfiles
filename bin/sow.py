@@ -8,12 +8,13 @@
 from __future__ import print_function
 import sys
 
-if sys.version_info[:1] == 3:
-    import http.server
-    import socketserver
-else:
+# Make sure this'll run with python 2.x or 3.x
+if sys.version_info[:1] == (2,):
     import SimpleHTTPServer
     import SocketServer
+else:
+    import http.server
+    import socketserver
 
 
 PORT = 8000
