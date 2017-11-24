@@ -4,4 +4,5 @@
 
 ansible \
     "${@}" \
-    --ssh-common-args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+    --ssh-common-args='-o StrictHostKeyChecking=no
+        -o UserKnownHostsFile=/dev/null'

@@ -16,7 +16,8 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
     fi
 
     echo "Creating mailmap for this repo"
-    git shortlog --email --summary | awk -F '\t' '{print $2, $2}' | sort | uniq > "${top_level}/.mailmap"
+    git shortlog --email --summary | awk -F '\t' '{print $2, $2}' | sort |\
+        uniq > "${top_level}/.mailmap"
 
     # XXX FIXME TODO Make this line idempotent
     echo ".mailmap export-ignore" >> "${top_level}/.gitattributes"
