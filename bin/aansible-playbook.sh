@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# Amnesiac ansible
+# Amnesiac ansible-playbook
 
-ansible \
+ansible-playbook \
     "${@}" \
     --ssh-common-args='-o StrictHostKeyChecking=no
         -o UserKnownHostsFile=/dev/null'
