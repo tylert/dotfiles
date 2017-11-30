@@ -9,13 +9,13 @@ if [ -z "${name}" ]; then
     exit 1
 fi
 
-# Can kinda trust $VIRTUAL_ENV, however, this way works even if calling bin
-# direclty
-# if python -c 'import sys; sys.real_prefix' 2>/dev/null; then
-#     oldvenv=$(python -c 'import sys; print(sys.real_prefix)')
-#     echo "Deactivating venv ${oldvenv}"
-#     deactivate
-# fi
+# Can also use $VIRTUAL_ENV if not calling into venv/bin/* directly
+if python -c 'import sys; sys.exit(0) if hasattr(sys, "real_prefix") else sys.exit(1)'; then
+    echo 'in a venv'
+    # deactivate
+else
+    echo 'not in a venv'
+fi
 
 # Create the venv if it is missing
 if [ ! -d ~/.venv/${name} ]; then
@@ -24,5 +24,5 @@ if [ ! -d ~/.venv/${name} ]; then
 fi
 
 # Switch to the new venv
-echo "Activating venv ${name}"
-source ~/.venv/${name}/bin/activate
+# echo "Activating venv ${name}"
+# source ~/.venv/${name}/bin/activate
