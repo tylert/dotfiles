@@ -1,28 +1,39 @@
 #!/usr/bin/env bash
 
-# XXX FIXME TODO
+# This script will switch into Python Virtual Environments, creating them if
+# missing.
+
+# Invocation examples:
+#     . ${0} ${name}
+#     source ${0} ${name}
+
+location="${HOME}/.venv"
 
 # Get the name of the desired venv
 name="${1}"
 if [ -z "${name}" ]; then
-    echo 'Must have a name'
-    exit 1
+    echo 'Must have specify a venv name'
+    return 1
+else
+    echo "Switching to venv '${name}'"
 fi
 
-# Can also use $VIRTUAL_ENV if not calling into venv/bin/* directly
+# Deactivate the current venv
 if python -c 'import sys; sys.exit(0) if hasattr(sys, "real_prefix") else sys.exit(1)'; then
-    echo 'in a venv'
-    # deactivate
+    echo "Deactivating venv '$(basename ${VIRTUAL_ENV})'" \
+        && deactivate
 else
-    echo 'not in a venv'
+    echo 'Not inside a venv'
 fi
 
 # Create the venv if it is missing
-if [ ! -d ~/.venv/${name} ]; then
-    virtualenv --python=$(which python3) ~/.venv/${name}
-    # python3 -m venv ~/.venv/${name}
+if [ ! -d "${location}/${name}" ]; then
+    # python3 -m venv ${location}/${name}
+    virtualenv --python=$(which python3) ${location}/${name}
+else
+    echo "Already created venv '${name}'"
 fi
 
-# Switch to the new venv
-# echo "Activating venv ${name}"
-# source ~/.venv/${name}/bin/activate
+# Activate the new venv
+echo "Activating venv '${name}'"
+source ${location}/${name}/bin/activate
