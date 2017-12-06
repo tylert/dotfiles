@@ -12,7 +12,7 @@ location="${HOME}/.venv"
 # Get the name of the desired venv
 name="${1}"
 if [ -z "${name}" ]; then
-    echo 'Must have specify a venv name'
+    echo 'Must specify a venv name'
     return 1
 else
     echo "Switching to venv '${name}'"
