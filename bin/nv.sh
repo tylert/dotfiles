@@ -4,8 +4,9 @@
 # missing.
 
 # Invocation examples:
-#     . ${0} ${name}
 #     source ${0} ${name}
+#     . ${0} ${name}
+#     . ${0} ${name} 2     # Set it to use python2.x rather than python3.x
 
 location="${HOME}/.venv"
 
@@ -28,8 +29,15 @@ fi
 
 # Create the venv if it is missing
 if [ ! -d "${location}/${name}" ]; then
-    # python3 -m venv ${location}/${name}
-    virtualenv --python=$(which python3) ${location}/${name}
+    # Get the major version of python to use
+    version="${2}"
+    if [ '2' == "${version}" ]; then
+        echo 'Creating venv for python2'
+        virtualenv --python=$(which python2) ${location}/${name}
+    else
+        echo 'Creating venv for python3'
+        python3 -m venv ${location}/${name}
+    fi
 else
     echo "Already created venv '${name}'"
 fi
@@ -37,3 +45,4 @@ fi
 # Activate the new venv
 echo "Activating venv '${name}'"
 source ${location}/${name}/bin/activate
+${VIRTUAL_ENV}/bin/python --version
