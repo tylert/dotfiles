@@ -3,7 +3,7 @@
 # Search for a given string in git comments
 
 if [ -z "${1}" ]; then
-    echo "Must provide string to search for"
+    echo 'Must provide string to search for'
     exit 1
 fi
 

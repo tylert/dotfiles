@@ -11,8 +11,8 @@
 callsigns_dir="${HOME}/git/callsigns"
 date="$(date +%Y-%m-%d)"
 
-source_file="http://apc-cap.ic.gc.ca/datafiles/amateur.zip"
-output_file="amateur.txt"
+source_file='http://apc-cap.ic.gc.ca/datafiles/amateur.zip'
+output_file='amateur.txt'
 
 if [ ! -d "${callsigns_dir}" ]; then
     mkdir -p "${callsigns_dir}"

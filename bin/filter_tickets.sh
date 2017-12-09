@@ -10,6 +10,6 @@
 #     ${0} textfile
 
 sed -n 's/\([a-zA-Z]\{1,\}\)-\([0-9]\{1,\}\)/XXX&YYY/gp' ${@} |\
-tr "XXX" "\n" | tr "YYY" "\n" |\
+tr 'XXX' '\n' | tr 'YYY' '\n' |\
 sed -n '/\([a-zA-Z]\{1,\}\)-\([0-9]\{1,\}\)/ p' |\
-tr "[a-z]" "[A-Z]" | sort | uniq
+tr '[a-z]' '[A-Z]' | sort | uniq
