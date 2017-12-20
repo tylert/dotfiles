@@ -33,6 +33,7 @@ shittyfiles = [
     '~/.oracle_jre_usage/',    # Java crap
     '~/.packer.d/',            # Hashicorp Checkpoint crap
     '~/.pki/',                 # Firefox crap
+    '~/__pycache__/',          # Python crap
     '~/.python_history',       # Python crap
     '~/.terraform.d/',         # Hashicorp Checkpoint crap
     '~/.themes/',              # Gnome-ish crap not using .{config,cache,local}
