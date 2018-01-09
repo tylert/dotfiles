@@ -16,6 +16,7 @@ shittyfiles = [
     '~/.android/',             # Android crap
     '~/.ansible/',             # Ansible crap
     '~/.ansible_async/',       # Ansible crap
+    '~/.ansible_galaxy',       # Ansible crap
     '~/.atom/',                # Atom crap
     '~/.audacity-data/',       # Audacity crap
     '~/.bash_history',         # Bash crap
