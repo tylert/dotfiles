@@ -33,10 +33,10 @@ if [ ! -d "${location}/${name}" ]; then
     version="${2}"
     if [ '2' == "${version}" ]; then
         echo 'Creating venv for python2'
-        virtualenv --python=$(which python2) ${location}/${name}
+        virtualenv --python=$(which python2) "${location}/${name}"
     else
         echo 'Creating venv for python3'
-        python3 -m venv ${location}/${name}
+        python3 -m venv "${location}/${name}"
     fi
 else
     echo "Already created venv '${name}'"
@@ -44,5 +44,5 @@ fi
 
 # Activate the new venv
 echo "Activating venv '${name}'"
-source ${location}/${name}/bin/activate
-${VIRTUAL_ENV}/bin/python --version
+source "${location}/${name}/bin/activate"
+"${VIRTUAL_ENV}/bin/python" --version

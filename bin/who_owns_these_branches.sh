@@ -2,6 +2,8 @@
 
 # Print out a list of branches along with the last committer on each
 
+git branch
+
 echo '-----===[ NOT MERGED ]===-----'
 
 for branch in $(git branch --remotes --no-merged | grep --invert-match HEAD); do
