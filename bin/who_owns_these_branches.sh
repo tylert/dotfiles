@@ -8,10 +8,10 @@ echo '-----===[ NOT MERGED ]===-----'
 
 for branch in $(git branch --remotes --no-merged | grep --invert-match HEAD); do
     echo -e $(git show --format='%h %aN' ${branch} | head -n 1) \\t${branch}
-done | sort
+done | sort -k2
 
 echo '-----===[ MERGED ]===-----'
 
 for branch in $(git branch --remotes --merged | grep --invert-match HEAD); do
     echo -e $(git show --format='%h %aN' ${branch} | head -n 1) \\t${branch}
-done | sort
+done | sort -k2
