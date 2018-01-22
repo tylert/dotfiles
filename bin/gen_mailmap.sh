@@ -9,18 +9,20 @@
 if $(git rev-parse --quiet --git-dir &> /dev/null); then
     top_level="$(git rev-parse --show-toplevel 2> /dev/null)"
 
+    # XXX FIXME TODO Allow force option?
     # Don't do anything to mess up an existing mailmap file
-    if [ -e "${top_level}/.mailmap" ]; then
-        echo 'There is already a mailmap for this repo'
-        exit 1
-    fi
+    # if [ -e "${top_level}/.mailmap" ]; then
+    #     echo 'There is already a mailmap for this repo'
+    #     exit 1
+    # fi
 
-    echo 'Creating mailmap for this repo'
-    git shortlog --email --summary | awk -F '\t' '{print $2, $2}' | sort |\
-        uniq > "${top_level}/.mailmap"
+    # echo 'Creating mailmap for this repo'
+    git shortlog --email --summary | awk -F '\t' '{print tolower($2), $2}' |\
+        sort | uniq
+    #     sort | uniq > "${top_level}/.mailmap"
 
     # XXX FIXME TODO Make this line idempotent
-    echo '.mailmap export-ignore' >> "${top_level}/.gitattributes"
+    # echo '.mailmap export-ignore' >> "${top_level}/.gitattributes"
 else
     echo 'This is not a git repo'
 fi
