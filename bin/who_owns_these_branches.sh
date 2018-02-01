@@ -10,13 +10,13 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
     echo '-----===[ NOT MERGED ]===-----'
 
     for branch in $(git branch --remotes --no-merged | grep --invert-match HEAD); do
-        echo -e $(git show --format='%h %aN' ${branch} | head -n 1) \\t${branch}
+        echo -e $(git show --format='%h %cN' ${branch} | head -n 1) \\t${branch}
     done | sort -k2
 
     echo '-----===[ MERGED ]===-----'
 
     for branch in $(git branch --remotes --merged | grep --invert-match HEAD); do
-        echo -e $(git show --format='%h %aN' ${branch} | head -n 1) \\t${branch}
+        echo -e $(git show --format='%h %cN' ${branch} | head -n 1) \\t${branch}
     done | sort -k2
 else
     echo 'This is not a git repo'
