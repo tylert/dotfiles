@@ -24,8 +24,9 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
     # XXX FIXME XXX Make this stuff idempotent!
     # echo 'Creating mailmap for this repo'
     git shortlog --email --summary |\
-        awk -F '\t' '{print tolower($2), "\t", $2}' |\
-        awk -F '\t' '{sub(/@.*>/, '\"\@${domain}\>\"', $1); print $1 $2}' |\
+        awk -F '\t' '{print tolower($2) "\t" $2}' |\
+        awk -F '\t' '{sub(/@.*>/, '\"\@${domain}\>\"', $1); print $1 "\t" $2}' |\
+        awk -F '\t' '{print toupper(substr($1, 1, 1)) substr($1, 2) "\t" $2}' |\
         sort | uniq
     #     sort | uniq > "${top_level}/.mailmap"
 
