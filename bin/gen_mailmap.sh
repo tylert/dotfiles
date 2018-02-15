@@ -27,6 +27,7 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
         awk -F '\t' '{print tolower($2) "\t" $2}' |\
         awk -F '\t' '{sub(/@.*>/, '\"\@${domain}\>\"', $1); print $1 "\t" $2}' |\
         awk -F '\t' '{print toupper(substr($1, 1, 1)) substr($1, 2) "\t" $2}' |\
+        tr '\t' ' ' |\
         sort | uniq
     #     sort | uniq > "${top_level}/.mailmap"
 
