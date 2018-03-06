@@ -1,7 +1,8 @@
 [DEFAULT]
+git_branch = git branch "$@"
 git_fetch = git fetch --all --tags --prune "$@"
 git_merge = git merge "$@"
-git_branch = git branch "$@"
+git_remote = git remote --verbose "$@"
 
 [git]
 chain = true
