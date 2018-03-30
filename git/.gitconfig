@@ -2,5 +2,5 @@
 	name = Tyler Tidman
 	email = tyler.tidman@draak.ca
 [alias]
-	lol = log --graph --decorate --oneline
-	lola = log --graph --decorate --oneline --all
+	lol = log --oneline --decorate --graph
+	lola = log --oneline --decorate --graph --all
