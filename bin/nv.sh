@@ -33,7 +33,7 @@ if [ ! -d "${location}/${name}" ]; then
     version="${2}"
     if [ '2' == "${version}" ]; then
         echo 'Creating venv for python2'
-        virtualenv --python=$(which python2) "${location}/${name}"
+        virtualenv --python=$(which python) "${location}/${name}"
     else
         echo 'Creating venv for python3'
         python3 -m venv "${location}/${name}"
