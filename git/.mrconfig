@@ -17,8 +17,12 @@ chain = true
 
 # ~/git/dirA/.mrconfig
 # [repo1]
-# checkout = git clone 'ssh://git@some/project/whatever.git' 'foo'
+# checkout =
+#     git clone ssh://git@some/project/whatever.git whatever
+#     git remote add bonk ssh://git@other/project/whatever.git
 #
 # [repo2]
-# checkout = git clone 'ssh://git@random/other/thing.git' 'bar'
+# checkout =
+#     git clone ssh://git@random/other/thing.git thing
+#     git remote add bonk ssh://git@other/project/thing.git
 # ...
