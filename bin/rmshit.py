@@ -32,6 +32,7 @@ shittyfiles = [
     '~/.lesshst',              # Less crap
     '~/.macromedia/',          # Macromedia Flash crap
     '~/.oracle_jre_usage/',    # Java crap
+    '~/.ovftool.ssldb',        # VMware crap
     '~/.packer.d/',            # Hashicorp Checkpoint et al. crap
     '~/.pki/',                 # Firefox crap
     '~/__pycache__/',          # Python crap
@@ -72,7 +73,7 @@ def yesno(question, default='n'):
     return False
 
 
-def rmshit():
+def main():
     ''' Actually cull the shitty files we find.
     '''
 
@@ -100,4 +101,4 @@ def rmshit():
 
 
 if __name__ == '__main__':
-    rmshit()
+    main()
