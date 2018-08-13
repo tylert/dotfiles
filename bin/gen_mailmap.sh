@@ -20,13 +20,13 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
     #     exit 1
     # fi
 
-    # XXX TODO XXX Fix capitalization on left hand side names.
     # XXX FIXME XXX Make this stuff idempotent!
     # echo 'Creating mailmap for this repo'
     git shortlog --email --summary |\
         awk -F '\t' '{print tolower($2) "\t" $2}' |\
         awk -F '\t' '{sub(/@.*>/, '\"\@${domain}\>\"', $1); print $1 "\t" $2}' |\
         awk -F '\t' '{print toupper(substr($1, 1, 1)) substr($1, 2) "\t" $2}' |\
+        awk -F '\t' '{split($1, a, " "); print a[1] " " toupper(substr(a[2], 1, 1)) substr(a[2], 2) " " a[3] "\t" $2}' |\
         tr '\t' ' ' |\
         sort | uniq
     #     sort | uniq > "${top_level}/.mailmap"
