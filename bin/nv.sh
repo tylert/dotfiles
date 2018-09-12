@@ -46,3 +46,6 @@ fi
 echo "Activating venv '${name}'"
 source "${location}/${name}/bin/activate"
 "${VIRTUAL_ENV}/bin/python" --version
+
+# Workaround for Python issue 30628 (mostly just a problem for macOS users)
+"${VIRTUAL_ENV}/bin/python" -m pip install --upgrade pip setuptools wheel
