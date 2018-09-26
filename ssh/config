@@ -2,12 +2,9 @@ HashKnownHosts no
 ForwardAgent yes
 # ForwardX11 yes
 # ForwardX11Trusted yes
+ServerAliveInterval 60
+ServerAliveCountMax 3
+TCPKeepAlive yes
 
 # Host *+*
 #   ProxyCommand ssh $(echo %h | sed 's/+[^+]*$//;s/\([^+%%]*\)%%\([^+]*\)$/\2 -l \1/;s/:/ -p /') nc -w 6000 $(echo %h | sed 's/^.*+//;/:/!s/$/ %p/;s/:/ /')
-
-# Host foo
-#   HostName 10.0.0.1
-#   ServerAliveInterval 300
-#   ServerAliveCountMax 2
-#   TCPKeepAlive yes
