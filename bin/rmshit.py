@@ -26,9 +26,10 @@ shittyfiles = [
     '~/.gimp-2.8/',            # GIMP crap
     '~/.gnome2/',              # Gnome-ish crap not using .{config,cache,local}
     '~/.gnome2_private/',      # Gnome-ish crap not using .{config,cache,local}
+    '~/.govmomi/',             # VMware crap
     '~/.icons/',               # Gnome-ish crap not using .{config,cache,local}
     '~/.java/',                # Java crap
-    '~/.knownPackages',        # (probably) Android crap
+    '~/.knownPackages',        # Android crap
     '~/.lesshst',              # Less crap
     '~/.macromedia/',          # Macromedia Flash crap
     '~/.oracle_jre_usage/',    # Java crap
