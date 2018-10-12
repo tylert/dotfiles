@@ -8,21 +8,20 @@ git_remote = git remote "$@"
 chain = true
 
 # ~/git/.mrconfig
-# [dirA]
-# chain = true
-#
-# [dirB]
+# ---
+# [a-project-dir]
 # chain = true
 # ...
 
-# ~/git/dirA/.mrconfig
-# [repo1]
+# ~/git/a-project-dir/.mrconfig
+# ---
+# [an-awesome-repo]
 # checkout =
-#     git clone ssh://git@some/project/whatever.git whatever
-#     git remote add bonk ssh://git@other/project/whatever.git
+#     git clone --origin foo ssh://git@someplace/project/an-awesome-repo.git an-awesome-repo
+#     git remote add bar ssh://git@otherplace/project/an-awesome-repo.git
 #
-# [repo2]
+# [another-awesome-repo]
 # checkout =
-#     git clone ssh://git@random/other/thing.git thing
-#     git remote add bonk ssh://git@other/project/thing.git
+#     git clone --origin foo ssh://git@someplace/project/another-awesome-repo.git another-awesome-repo
+#     git remote add bar ssh://git@otherplace/project/another-awesome-repo.git
 # ...
