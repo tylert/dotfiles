@@ -32,6 +32,7 @@ shittyfiles = [
     '~/.gnome2/',              # Gnome-ish crap not using .{config,cache,local}
     '~/.gnome2_private/',      # Gnome-ish crap not using .{config,cache,local}
     '~/.govmomi/',             # VMware crap
+    '~/.gr_fftw_wisdom',       # LimeSDR crap
     '~/.icons/',               # Gnome-ish crap not using .{config,cache,local}
     '~/.java/',                # Java crap
     '~/.knownPackages',        # Android crap
