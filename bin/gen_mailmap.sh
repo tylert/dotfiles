@@ -20,8 +20,7 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
     #     exit 1
     # fi
 
-    # XXX FIXME XXX Make this stuff idempotent!
-    # echo 'Creating mailmap for this repo'
+    # XXX FIXME TODO Make this stuff fully idempotent!
     git shortlog --email --summary |\
         awk -F '\t' '{print tolower($2) "\t" $2}' |\
         awk -F '\t' '{sub(/@.*>/, '\"\@${domain}\>\"', $1); print $1 "\t" $2}' |\
@@ -31,8 +30,17 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
         sort | uniq
     #     sort | uniq > "${top_level}/.mailmap"
 
-    # XXX FIXME XXX Make this stuff idempotent!
-    # echo '.mailmap export-ignore' >> "${top_level}/.gitattributes"
+    if [ ! -f "${top_level}/.gitattributes" ]; then
+        echo '.mailmap export-ignore' > "${top_level}/.gitattributes"
+    fi
+
+    if [ ! -f "${top_level}/.gitignore" ]; then
+        echo '.DS_Store' > "${top_level}/.gitignore"
+        echo '.*.sw?' >> "${top_level}/.gitignore"
+        echo '*.py[co]' >> "${top_level}/.gitignore"
+        echo '__pycache__/' >> "${top_level}/.gitignore"
+        echo '*.retry' >> "${top_level}/.gitignore"
+    fi
 else
     echo 'This is not a git repo'
 fi
