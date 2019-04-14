@@ -51,6 +51,7 @@ shittyfiles = [
     '~/.vagrant.d/',           # Hashicorp Checkpoint et al. crap
     '~/.viminfo',              # Vim crap
     '~/.vim/',                 # Vim crap
+    '~/.vscode-oss/',          # VSCodium crap
     '~/.wget-hsts',            # Wget crap
     '~/.xournal/',             # Xournal crap
     '~/.xsession-errors.old',  # X crap
