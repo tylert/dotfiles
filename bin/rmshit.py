@@ -27,6 +27,7 @@ shittyfiles = [
     '~/.bash_history',         # Bash crap
     '~/.bash_sessions/',       # iTerm2 crap
     '~/.cache/',               # Gnome-ish crap
+    '~/.chirp/',               # CHIRP crap
     '~/.gconf/',               # Gnome-ish crap not using .{config,cache,local}
     '~/.gimp-2.8/',            # GIMP crap
     '~/.gnome2/',              # Gnome-ish crap not using .{config,cache,local}
