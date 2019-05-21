@@ -81,17 +81,19 @@ def main():
     ''' Actually cull the shitty files we find.
     '''
 
-    print('Found shitty files:')
     found = []
     for f in shittyfiles:
         absf = os.path.expanduser(f)
         if os.path.exists(absf):
             found.append(absf)
-            print('    {}'.format(f))
 
     if len(found) == 0:
         print('No shitty files found :)')
         return
+    else:
+        print('Found shitty files:')
+        for f in found:
+            print('    {}'.format(f))
 
     if yesno('Remove all?', default='n'):
         for f in found:
