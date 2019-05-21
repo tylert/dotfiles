@@ -18,7 +18,7 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
     IFS=$'\n';
 
     # list all objects including their size, sort by size, take top 10
-    objects="$(git verify-pack --verbose ${top_level}/.git/objects/pack/pack-*.idx | grep --invert-match chain | sort -k3rn | head)"
+    objects="$(git verify-pack --verbose ${top_level}/.git/objects/pack/pack-*.idx | grep --invert-match chain | sort -k3rn | head -n 10)"
 
     output="size,packed_size,SHA,file"
     for object in ${objects}; do
