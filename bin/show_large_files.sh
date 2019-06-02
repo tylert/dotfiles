@@ -10,6 +10,12 @@
 
 # echo 'All sizes are in kB's. The pack column is the size of the object, compressed, inside the pack file.'
 
+if [ ! -z "${1}" ]; then
+    count="${1}"
+else
+    count=10
+fi
+
 # Don't do anything if we're not inside an existing git repo
 if $(git rev-parse --quiet --git-dir &> /dev/null); then
     top_level="$(git rev-parse --show-toplevel 2> /dev/null)"
@@ -18,7 +24,7 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
     IFS=$'\n';
 
     # list all objects including their size, sort by size, take top 10
-    objects="$(git verify-pack --verbose ${top_level}/.git/objects/pack/pack-*.idx | grep --invert-match chain | sort -k3rn | head -n 10)"
+    objects="$(git verify-pack --verbose ${top_level}/.git/objects/pack/pack-*.idx | grep --invert-match chain | sort -k3rn | head -n ${count})"
 
     output="size,packed_size,SHA,file"
     for object in ${objects}; do
