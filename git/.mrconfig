@@ -4,6 +4,7 @@ git_fetch = git fetch --all --tags --prune "$@"
 git_merge = git merge "$@"
 git_reflog = git reflog --max-count=1 "$@"
 git_remote = git remote "$@"
+git_submodule = git submodule "$@"
 
 [git]
 chain = true
