@@ -35,11 +35,12 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
     fi
 
     if [ ! -f "${top_level}/.gitignore" ]; then
-        echo '.DS_Store' > "${top_level}/.gitignore"
-        echo '.*.sw?' >> "${top_level}/.gitignore"
-        echo '*.py[co]' >> "${top_level}/.gitignore"
-        echo '__pycache__/' >> "${top_level}/.gitignore"
-        echo '*.retry' >> "${top_level}/.gitignore"
+        echo '.DS_Store' > "${top_level}/.gitignore"  # macOS
+        echo '.*.sw?' >> "${top_level}/.gitignore"  # Vi(m)
+        echo '*.py[co]' >> "${top_level}/.gitignore"  # Python
+        echo '__pycache__/' >> "${top_level}/.gitignore"  # Python
+        echo '*.retry' >> "${top_level}/.gitignore"  # Ansible
+        echo '.idea/' >> "${top_level}/.gitignore"  # PyCharm
     fi
 else
     echo 'This is not a git repo'
