@@ -41,15 +41,16 @@ shittyfiles = [
     '~/.macromedia/',          # Macromedia Flash crap
     '~/.oracle_jre_usage/',    # Java crap
     '~/.ovftool.ssldb',        # VMware crap
-    '~/.packer.d/',            # Hashicorp Checkpoint et al. crap
+    '~/.packer.d/',            # Hashicorp crap
     '~/.pki/',                 # Firefox crap
     '~/__pycache__/',          # Python crap
     '~/.python_history',       # Python crap
-    '~/.terraform.d/',         # Hashicorp Checkpoint et al. crap
+    '~/.terraform.d/',         # Hashicorp crap
     '~/.themes/',              # Gnome-ish crap not using .{config,cache,local}
     '~/.thumbnails/',          # Cinnamon crap
     '~/.tkremindrc',           # Remind crap
-    '~/.vagrant.d/',           # Hashicorp Checkpoint et al. crap
+    '~/.vagrant.d/',           # Hashicorp crap
+    '~/.vault-token',          # Hashicorp crap
     '~/.viminfo',              # Vim crap
     '~/.vim/',                 # Vim crap
     '~/.vscode-oss/',          # VSCodium crap
