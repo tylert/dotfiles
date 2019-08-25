@@ -28,6 +28,7 @@ shittyfiles = [
     '~/.bash_sessions/',       # iTerm2 crap
     '~/.cache/',               # Gnome-ish crap
     '~/.chirp/',               # CHIRP crap
+    '~/.DS_Store',             # macOS crap
     '~/.gconf/',               # Gnome-ish crap not using .{config,cache,local}
     '~/.gimp-2.8/',            # GIMP crap
     '~/.gnome2/',              # Gnome-ish crap not using .{config,cache,local}
@@ -45,6 +46,7 @@ shittyfiles = [
     '~/.pki/',                 # Firefox crap
     '~/__pycache__/',          # Python crap
     '~/.python_history',       # Python crap
+    '~/.python-version',       # Python crap
     '~/.terraform.d/',         # Hashicorp crap
     '~/.themes/',              # Gnome-ish crap not using .{config,cache,local}
     '~/.thumbnails/',          # Cinnamon crap
@@ -54,6 +56,7 @@ shittyfiles = [
     '~/.viminfo',              # Vim crap
     '~/.vim/',                 # Vim crap
     '~/.vscode-oss/',          # VSCodium crap
+    '~/.vscode/',              # VSCode crap
     '~/.wget-hsts',            # Wget crap
     '~/.xournal/',             # Xournal crap
     '~/.xsession-errors.old',  # X crap
