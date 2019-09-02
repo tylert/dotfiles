@@ -31,10 +31,13 @@ shittyfiles = [
     '~/.DS_Store',             # macOS crap
     '~/.gconf/',               # Gnome-ish crap not using .{config,cache,local}
     '~/.gimp-2.8/',            # GIMP crap
+    '~/.gitflow_export',       # Sourcetree crap
+    '~/.gitignore_global',     # Sourcetree crap
     '~/.gnome2/',              # Gnome-ish crap not using .{config,cache,local}
     '~/.gnome2_private/',      # Gnome-ish crap not using .{config,cache,local}
     '~/.govmomi/',             # VMware crap
     '~/.gr_fftw_wisdom',       # LimeSDR crap
+    '~/.hgignore_global',      # Sourcetree crap
     '~/.icons/',               # Gnome-ish crap not using .{config,cache,local}
     '~/.java/',                # Java crap
     '~/.knownPackages',        # Android crap
