@@ -50,6 +50,7 @@ shittyfiles = [
     '~/__pycache__/',          # Python crap
     '~/.python_history',       # Python crap
     '~/.python-version',       # Python crap
+    '~/.sqlite_history',       # SQLite crap
     '~/.terraform.d/',         # Hashicorp crap
     '~/.themes/',              # Gnome-ish crap not using .{config,cache,local}
     '~/.thumbnails/',          # Cinnamon crap
