@@ -41,6 +41,7 @@ shittyfiles = [
     '~/.icons/',               # Gnome-ish crap not using .{config,cache,local}
     '~/.java/',                # Java crap
     '~/.knownPackages',        # Android crap
+    '~/.lesshsQ',              # Less crap
     '~/.lesshst',              # Less crap
     '~/.macromedia/',          # Macromedia Flash crap
     '~/.oracle_jre_usage/',    # Java crap
