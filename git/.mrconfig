@@ -15,6 +15,10 @@ chain = true
 # chain = true
 # ...
 
+# ~/.mrtrust
+# ---
+# ~/git/a-project-dir/.mrconfig
+
 # ~/git/a-project-dir/.mrconfig
 # ---
 # [an-awesome-repo]
