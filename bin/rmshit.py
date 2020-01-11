@@ -22,6 +22,9 @@ shittyfiles = [
     '~/.ansible/',             # Ansible crap
     '~/.ansible_async/',       # Ansible crap
     '~/.ansible_galaxy',       # Ansible crap
+    '~/.arduino15/',           # Arduino crap
+    '~/Arduino/',              # Arduino crap
+    '~/.arduino/',             # Arduino crap
     '~/.atom/',                # Atom crap
     '~/.audacity-data/',       # Audacity crap
     '~/.bash_history',         # Bash crap
@@ -51,6 +54,7 @@ shittyfiles = [
     '~/__pycache__/',          # Python crap
     '~/.python_history',       # Python crap
     '~/.python-version',       # Python crap
+    '~/sketchbook/',           # Arduino crap
     '~/.sqlite_history',       # SQLite crap
     '~/.terraform.d/',         # Hashicorp crap
     '~/.themes/',              # Gnome-ish crap not using .{config,cache,local}
