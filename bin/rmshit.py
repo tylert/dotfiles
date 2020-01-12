@@ -51,6 +51,7 @@ shittyfiles = [
     '~/.ovftool.ssldb',        # VMware crap
     '~/.packer.d/',            # Hashicorp crap
     '~/.pki/',                 # Firefox crap
+    '~/.platformio/',          # Platformio crap
     '~/__pycache__/',          # Python crap
     '~/.python_history',       # Python crap
     '~/.python-version',       # Python crap
