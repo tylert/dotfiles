@@ -10,7 +10,7 @@ TCPKeepAlive yes
 
 # Try to reuse connections
 ControlMaster auto
-ControlPath ~/.ssh/%r@%h-%p
+ControlPath ~/.ssh/%C
 ControlPersist 600
 
 # Host *+*
