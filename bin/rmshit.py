@@ -52,6 +52,7 @@ shittyfiles = [
     '~/.packer.d/',            # Hashicorp crap
     '~/.pki/',                 # Firefox crap
     '~/.platformio/',          # Platformio crap
+    '~/.putty/',               # Puttygen crap
     '~/__pycache__/',          # Python crap
     '~/.python_history',       # Python crap
     '~/.python-version',       # Python crap
@@ -59,7 +60,7 @@ shittyfiles = [
     '~/.sqlite_history',       # SQLite crap
     '~/.terraform.d/',         # Hashicorp crap
     '~/.themes/',              # Gnome-ish crap not using .{config,cache,local}
-    '~/.thumbnails/',          # Cinnamon crap
+    '~/.thumbnails/',          # Gnome-ish crap not using .{config,cache,local}
     '~/.tkremindrc',           # Remind crap
     '~/.vagrant.d/',           # Hashicorp crap
     '~/.vault-token',          # Hashicorp crap
