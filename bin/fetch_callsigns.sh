@@ -8,7 +8,7 @@
 
 # See details at http://www.ic.gc.ca/eic/site/025.nsf/eng/h_00004.html
 
-callsigns_dir="${HOME}/git/callsigns"
+callsigns_dir="${HOME}/git/tylert/canadian-callsigns"
 date="$(date +%Y-%m-%d)"
 
 source_file='http://apc-cap.ic.gc.ca/datafiles/amateur.zip'
@@ -24,4 +24,6 @@ pushd "${callsigns_dir}" > /dev/null 2>&1
     rm -fv "$(basename ${source_file})"
     git add "${output_file}"
     git commit -m "Snapshot for ${date}"
+    git push hub
+    git push lab
 popd > /dev/null 2>&1
