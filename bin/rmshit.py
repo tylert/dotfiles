@@ -30,6 +30,7 @@ shittyfiles = [
     '~/.bash_history',         # Bash crap
     '~/.bash_sessions/',       # iTerm2 crap
     '~/.cache/',               # Gnome-ish crap
+    '~/Calibre Library/',      # Calibre crap
     '~/.chirp/',               # CHIRP crap
     '~/.DS_Store',             # macOS crap
     '~/.gconf/',               # Gnome-ish crap not using .{config,cache,local}
