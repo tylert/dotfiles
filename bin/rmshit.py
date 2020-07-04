@@ -39,6 +39,7 @@ shittyfiles = [
     '~/.gitignore_global',     # Sourcetree crap
     '~/.gnome2/',              # Gnome-ish crap not using .{config,cache,local}
     '~/.gnome2_private/',      # Gnome-ish crap not using .{config,cache,local}
+    '~/.gnuradio/',            # GNURadio crap
     '~/.govmomi/',             # VMware crap
     '~/.gr_fftw_wisdom',       # GNURadio crap
     '~/.gr_fftw_wisdom.lock',  # GNURadio crap
