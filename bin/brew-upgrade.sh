@@ -3,6 +3,6 @@
 # Brew-upgrade
 
 brew update
-brew upgrade
-brew cask upgrade
+brew upgrade --formula
+brew upgrade --cask
 brew cleanup
