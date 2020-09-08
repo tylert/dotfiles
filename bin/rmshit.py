@@ -33,6 +33,7 @@ shittyfiles = [
     '~/Calibre Library/',      # Calibre crap
     '~/.chirp/',               # CHIRP crap
     '~/.DS_Store',             # macOS crap
+    '~/.foxtrotgps/',          # FoxtrotGPS crap
     '~/.gconf/',               # Gnome-ish crap not using .{config,cache,local}
     '~/.gimp-2.8/',            # GIMP crap
     '~/.gitflow_export',       # Sourcetree crap
@@ -50,6 +51,7 @@ shittyfiles = [
     '~/.lesshsQ',              # Less crap
     '~/.lesshst',              # Less crap
     '~/.macromedia/',          # Macromedia Flash crap
+    '~/Maps/',                 # FoxtrotGPS crap
     '~/.oracle_jre_usage/',    # Java crap
     '~/.ovftool.ssldb',        # VMware crap
     '~/.packer.d/',            # Hashicorp crap
