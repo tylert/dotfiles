@@ -32,6 +32,7 @@ shittyfiles = [
     '~/.cache/',               # Gnome-ish crap
     '~/Calibre Library/',      # Calibre crap
     '~/.chirp/',               # CHIRP crap
+    '~/credstash.log',         # Credstash crap
     '~/.DS_Store',             # macOS crap
     '~/.foxtrotgps/',          # FoxtrotGPS crap
     '~/.gconf/',               # Gnome-ish crap not using .{config,cache,local}
@@ -71,6 +72,7 @@ shittyfiles = [
     '~/.vault-token',          # Hashicorp crap
     '~/.viminfo',              # Vim crap
     '~/.vim/',                 # Vim crap
+    '~/.vmware/',              # VMware crap
     '~/.vscode-oss/',          # VSCodium crap
     '~/.vscode/',              # VSCode crap
     '~/.wget-hsts',            # Wget crap
