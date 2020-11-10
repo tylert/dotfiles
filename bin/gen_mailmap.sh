@@ -26,9 +26,8 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
         awk -F '\t' '{sub(/@.*>/, '\"\@${domain}\>\"', $1); print $1 "\t" $2}' |\
         awk -F '\t' '{print toupper(substr($1, 1, 1)) substr($1, 2) "\t" $2}' |\
         awk -F '\t' '{split($1, a, " "); print a[1] " " toupper(substr(a[2], 1, 1)) substr(a[2], 2) " " a[3] "\t" $2}' |\
-        tr '\t' ' ' |\
-        sort | uniq
-    #     sort | uniq > "${top_level}/.mailmap"
+        LC_ALL=C tr '\t' ' ' |\
+        LC_ALL=C sort | uniq
 
     if [ ! -f "${top_level}/.gitattributes" ]; then
         echo '.mailmap export-ignore' > "${top_level}/.gitattributes"
@@ -37,7 +36,7 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
     if [ ! -f "${top_level}/.gitignore" ]; then
         echo '.DS_Store' > "${top_level}/.gitignore"  # macOS
         echo '.*.sw?' >> "${top_level}/.gitignore"  # Vi(m)
-        echo '*.py[co]' >> "${top_level}/.gitignore"  # Python
+        echo '*.py[coz]' >> "${top_level}/.gitignore"  # Python
         echo '__pycache__/' >> "${top_level}/.gitignore"  # Python
         echo '*.retry' >> "${top_level}/.gitignore"  # Ansible
         echo '.idea/' >> "${top_level}/.gitignore"  # PyCharm
