@@ -1,22 +1,17 @@
 #!/usr/bin/env python
 
-# Cull useless dotfiles in user's home directory
+# Cull useless and annoying dotfiles in a user's home directory for stuff that
+# does not honour the XDG Desktop specifications for where to leave their
+# droppings.
 
 # https://github.com/lahwaacz/Scripts/blob/master/rmshit.py
-
-from __future__ import print_function
 
 import os
 import sys
 import shutil
 
-try:
-    input = raw_input
-except NameError:
-    pass
 
-
-shittyfiles = [
+turdfiles = [
     '~/.adobe/',               # Macromedia Flash crap
     '~/.android/',             # Android crap
     '~/.ansible/',             # Ansible crap
@@ -58,6 +53,7 @@ shittyfiles = [
     '~/.packer.d/',            # Hashicorp crap
     '~/.pki/',                 # Firefox crap
     '~/.platformio/',          # Platformio crap
+    '~/.purple/',              # Pidgin crap
     '~/.putty/',               # Puttygen crap
     '~/__pycache__/',          # Python crap
     '~/.python_history',       # Python crap
@@ -104,7 +100,7 @@ def main():
     '''
 
     found = []
-    for f in shittyfiles:
+    for f in turdfiles:
         absf = os.path.expanduser(f)
         if os.path.exists(absf):
             found.append(absf)
