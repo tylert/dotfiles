@@ -6,7 +6,7 @@ eval "$(pyenv virtualenv-init -)"
 # Golang stuff
 export PATH="${PATH}:/usr/local/go/bin"
 
-# Hashicorp stuff
+# HashiCorp stuff
 export CHECKPOINT_DISABLE=1
 export VAGRANT_CHECKPOINT_DISABLE=1
 
