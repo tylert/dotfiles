@@ -68,6 +68,7 @@ turdfiles = [
     '~/.vault-token',          # Hashicorp crap
     '~/.viminfo',              # Vim crap
     '~/.vim/',                 # Vim crap
+    '~/.VisualIDs/',           # FoxtrotGPS crap
     '~/.vmware/',              # VMware crap
     '~/.vscode-oss/',          # VSCodium crap
     '~/.vscode/',              # VSCode crap
