@@ -48,6 +48,7 @@ turdfiles = [
     '~/.lesshst',              # Less crap
     '~/.macromedia/',          # Macromedia Flash crap
     '~/Maps/',                 # FoxtrotGPS crap
+    '~/.openMSX/',             # RetroPie crap
     '~/.oracle_jre_usage/',    # Java crap
     '~/.ovftool.ssldb',        # VMware crap
     '~/.packer.d/',            # Hashicorp crap
@@ -58,6 +59,7 @@ turdfiles = [
     '~/__pycache__/',          # Python crap
     '~/.python_history',       # Python crap
     '~/.python-version',       # Python crap
+    '~/.qjoypad3/',            # RetroPie crap
     '~/sketchbook/',           # Arduino crap
     '~/.sqlite_history',       # SQLite crap
     '~/.terraform.d/',         # Hashicorp crap
@@ -78,6 +80,8 @@ turdfiles = [
     '~/.xsession-errors',      # X crap
     '~/.zoom/',                # Zoom crap
 ]
+#   '~/.emulationstation',     # RetroPie crap (symlink)
+#   '~/.lr-atari800.cfg',      # RetroPie crap (symlink)
 
 
 def yesno(question, default='n'):
