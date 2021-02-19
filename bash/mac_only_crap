@@ -1,15 +1,3 @@
-# Python stuff
-export PATH="${HOME}/.pyenv/bin:${PATH}"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-# Golang stuff
-export PATH="${PATH}:/usr/local/go/bin"
-
-# HashiCorp stuff
-export CHECKPOINT_DISABLE=1
-export VAGRANT_CHECKPOINT_DISABLE=1
-
 # Enable standard 'ls' colourization on macOS
 alias ls='ls -G'
 
