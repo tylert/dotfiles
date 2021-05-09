@@ -21,6 +21,7 @@ esac
 if [ 0 ]; then
     export PATH="${HOME}/.pyenv/bin:${PATH}"
     eval "$(pyenv init -)"
+    eval "$(pyenv init --path)"
     eval "$(pyenv virtualenv-init -)"
 fi
 
