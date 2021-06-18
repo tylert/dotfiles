@@ -27,6 +27,7 @@ if $(git rev-parse --quiet --git-dir &> /dev/null); then
         awk -F '\t' '{print toupper(substr($1, 1, 1)) substr($1, 2) "\t" $2}' |\
         awk -F '\t' '{split($1, a, " "); print a[1] " " toupper(substr(a[2], 1, 1)) substr(a[2], 2) " " a[3] "\t" $2}' |\
         LC_ALL=C tr '\t' ' ' |\
+        LC_ALL=C tr -s ' ' |\
         LC_ALL=C sort | uniq
 
     if [ ! -f "${top_level}/.gitattributes" ]; then
