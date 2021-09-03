@@ -4,7 +4,7 @@ git_fetch = git fetch --all --tags --prune "$@"
 git_gc = git gc "$@"
 git_merge = git merge --ff-only "$@"
 git_reflog = git reflog --max-count=1 "$@"
-git_remote = git remote "$@"
+git_remote = git remote --verbose "$@"
 git_submodule = git submodule "$@"
 
 [git]
