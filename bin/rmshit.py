@@ -6,29 +6,27 @@
 
 # https://github.com/lahwaacz/Scripts/blob/master/rmshit.py
 
-import os
-import sys
-import shutil
+from os import path, remove
+from shutil import rmtree
 
 
 turdfiles = [
+    '~/.DS_Store',             # macOS crap
+    '~/.VisualIDs/',           # FoxtrotGPS crap
     '~/.adobe/',               # Macromedia Flash crap
     '~/.android/',             # Android crap
     '~/.ansible/',             # Ansible crap
     '~/.ansible_async/',       # Ansible crap
     '~/.ansible_galaxy',       # Ansible crap
-    '~/.arduino15/',           # Arduino crap
-    '~/Arduino/',              # Arduino crap
     '~/.arduino/',             # Arduino crap
+    '~/.arduino15/',           # Arduino crap
     '~/.atom/',                # Atom crap
     '~/.audacity-data/',       # Audacity crap
     '~/.bash_history',         # Bash crap
     '~/.bash_sessions/',       # iTerm2 crap
     '~/.cache/',               # Gnome-ish crap
-    '~/Calibre Library/',      # Calibre crap
     '~/.chirp/',               # CHIRP crap
-    '~/credstash.log',         # Credstash crap
-    '~/.DS_Store',             # macOS crap
+    '~/.docker/',              # Docker crap
     '~/.foxtrotgps/',          # FoxtrotGPS crap
     '~/.gconf/',               # Gnome-ish crap not using .{config,cache,local}
     '~/.gimp-2.8/',            # GIMP crap
@@ -47,38 +45,40 @@ turdfiles = [
     '~/.lesshsQ',              # Less crap
     '~/.lesshst',              # Less crap
     '~/.macromedia/',          # Macromedia Flash crap
-    '~/Maps/',                 # FoxtrotGPS crap
     '~/.openMSX/',             # RetroPie crap
     '~/.oracle_jre_usage/',    # Java crap
     '~/.ovftool.ssldb',        # VMware crap
-    '~/.packer.d/',            # Hashicorp crap
+    '~/.packer.d/',            # HashiCorp crap
     '~/.pki/',                 # Firefox crap
     '~/.platformio/',          # Platformio crap
     '~/.purple/',              # Pidgin crap
     '~/.putty/',               # Puttygen crap
-    '~/__pycache__/',          # Python crap
-    '~/.python_history',       # Python crap
     '~/.python-version',       # Python crap
+    '~/.python_history',       # Python crap
     '~/.qjoypad3/',            # RetroPie crap
-    '~/sketchbook/',           # Arduino crap
     '~/.sqlite_history',       # SQLite crap
-    '~/.terraform.d/',         # Hashicorp crap
+    '~/.terraform.d/',         # HashiCorp crap
     '~/.themes/',              # Gnome-ish crap not using .{config,cache,local}
     '~/.thumbnails/',          # Gnome-ish crap not using .{config,cache,local}
     '~/.tkremindrc',           # Remind crap
-    '~/.vagrant.d/',           # Hashicorp crap
-    '~/.vault-token',          # Hashicorp crap
-    '~/.viminfo',              # Vim crap
+    '~/.vagrant.d/',           # HashiCorp crap
+    '~/.vault-token',          # HashiCorp crap
     '~/.vim/',                 # Vim crap
-    '~/.VisualIDs/',           # FoxtrotGPS crap
+    '~/.viminfo',              # Vim crap
     '~/.vmware/',              # VMware crap
     '~/.vscode-oss/',          # VSCodium crap
     '~/.vscode/',              # VSCode crap
     '~/.wget-hsts',            # Wget crap
     '~/.xournal/',             # Xournal crap
-    '~/.xsession-errors.old',  # X crap
-    '~/.xsession-errors',      # X crap
+    '~/.xsession-errors',      # Xorg crap
+    '~/.xsession-errors.old',  # Xorg crap
     '~/.zoom/',                # Zoom crap
+    '~/Arduino/',              # Arduino crap
+    '~/Calibre Library/',      # Calibre crap
+    '~/Maps/',                 # FoxtrotGPS crap
+    '~/__pycache__/',          # Python crap
+    '~/credstash.log',         # Credstash crap
+    '~/sketchbook/',           # Arduino crap
 ]
 #   '~/.emulationstation',     # RetroPie crap (symlink)
 #   '~/.lr-atari800.cfg',      # RetroPie crap (symlink)
@@ -89,7 +89,7 @@ def yesno(question, default='n'):
         Returns True for YES and False for NO.
     '''
 
-    prompt = '{} (y/[n]) '.format(question)
+    prompt = f'{question} (y/[n]) '
     ans = input(prompt).strip().lower()
 
     if not ans:
@@ -106,8 +106,8 @@ def main():
 
     found = []
     for f in turdfiles:
-        absf = os.path.expanduser(f)
-        if os.path.exists(absf):
+        absf = path.expanduser(f)
+        if path.exists(absf):
             found.append(absf)
 
     if len(found) == 0:
@@ -116,14 +116,14 @@ def main():
     else:
         print('Found shitty files:')
         for f in found:
-            print('    {}'.format(f))
+            print(f'    {f}')
 
     if yesno('Remove all?', default='n'):
         for f in found:
-            if os.path.isfile(f):
-                os.remove(f)
+            if path.isfile(f):
+                remove(f)
             else:
-                shutil.rmtree(f)
+                rmtree(f)
         print('All cleaned')
     else:
         print('No file removed')
