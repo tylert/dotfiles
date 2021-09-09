@@ -10,7 +10,7 @@ else
 fi
 
 # Don't do anything if we're not inside an existing git repo
-if $(git rev-parse --quiet --git-dir &> /dev/null); then
+if $(git rev-parse --git-dir &> /dev/null); then
     top_level="$(git rev-parse --show-toplevel 2> /dev/null)"
 
     # XXX FIXME TODO Allow force option?
