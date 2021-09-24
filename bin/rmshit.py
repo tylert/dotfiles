@@ -26,7 +26,6 @@ turdfiles = [
     '~/.bash_sessions/',       # iTerm2 crap
     '~/.cache/',               # Gnome-ish crap
     '~/.chirp/',               # CHIRP crap
-    '~/.docker/',              # Docker crap
     '~/.foxtrotgps/',          # FoxtrotGPS crap
     '~/.gconf/',               # Gnome-ish crap not using .{config,cache,local}
     '~/.gimp-2.8/',            # GIMP crap
@@ -80,6 +79,7 @@ turdfiles = [
     '~/credstash.log',         # Credstash crap
     '~/sketchbook/',           # Arduino crap
 ]
+#   '~/.docker/',              # Docker crap
 #   '~/.emulationstation',     # RetroPie crap (symlink)
 #   '~/.lr-atari800.cfg',      # RetroPie crap (symlink)
 
