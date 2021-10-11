@@ -26,7 +26,7 @@ if [ 0 ]; then
 fi
 
 # Golang stuff
-export PATH="${PATH}:/usr/local/go/bin"
+export PATH="${HOME}/go/bin:${PATH}"
 
 # HashiCorp stuff
 export CHECKPOINT_DISABLE=1
