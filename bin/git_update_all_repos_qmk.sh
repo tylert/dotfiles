@@ -2,7 +2,7 @@
 
 for branch in develop master; do
     git checkout "${branch}"
-    git merge --ff-only "qmk/${branch}"
+    mr merge "qmk/${branch}"
     git push hub
     git push lab
 done
