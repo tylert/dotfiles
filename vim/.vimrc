@@ -24,3 +24,7 @@ set nosmartindent  "and certainly don't do it after { or } either
 "set nocindent
 
 "set noswapfile     "whoa, really?
+
+autocmd BufRead,BufNewFile *.hcl set filetype=tf
+autocmd BufRead,BufNewFile *.tfvars set filetype=tf
+autocmd BufRead,BufNewFile *.tfvars.example set filetype=tf
