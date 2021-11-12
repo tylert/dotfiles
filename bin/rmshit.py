@@ -63,7 +63,6 @@ turdfiles = [
     '~/.vim/',                 # Vim crap
     '~/.viminfo',              # Vim crap
     '~/.vmware/',              # VMware crap
-    '~/.vscode-oss/',          # VSCodium crap
     '~/.vscode/',              # VSCode crap
     '~/.wget-hsts',            # Wget crap
     '~/.xournal/',             # Xournal crap
@@ -78,6 +77,7 @@ turdfiles = [
     '~/sketchbook/',           # Arduino crap
 ]
 #   '~/.docker/',              # Docker crap
+#   '~/.vscode-oss/',          # VSCodium crap
 
 
 def yesno(question, default='n'):
