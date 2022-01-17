@@ -11,6 +11,7 @@ from shutil import rmtree
 
 
 turdfiles = [
+    '~/.CFUserTextEncoding',   # macOS crap
     '~/.DS_Store',             # macOS crap
     '~/.VisualIDs/',           # FoxtrotGPS crap
     '~/.adobe/',               # Macromedia Flash crap
