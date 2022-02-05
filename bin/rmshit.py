@@ -55,6 +55,7 @@ turdfiles = [
     '~/.python-version',       # Python crap
     '~/.python_history',       # Python crap
     '~/.sqlite_history',       # SQLite crap
+    '~/.stCommitMsg',          # Sourcetree crap
     '~/.terraform.d/',         # HashiCorp crap
     '~/.themes/',              # Gnome-ish crap not using .{config,cache,local}
     '~/.thumbnails/',          # Gnome-ish crap not using .{config,cache,local}
