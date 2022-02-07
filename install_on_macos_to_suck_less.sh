@@ -26,7 +26,7 @@ for package in ${brew_casks}; do
     brew install --casks ${package}
 done
 
-# Other things that are nice to have that aren't very install-y for $reasons:
+# Other things that are nice to have but aren't very install-y for $reasons:
 # amazon-chime vagrant virtualbox virtualbox-extension-pack
 # https://rancherdesktop.io
 # hashi-up --help && hashi-up boundary get --help
@@ -37,7 +37,7 @@ done
 # echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ${HOME}/.whatever_you_use_for_your_shell
 # eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# If you want to install brew things that haven't paid the macOS ransom:
+# If you want to run open-source things that haven't paid the Apple ransom yet:
 # sudo spctl --master-disable
 
 # If you experience unexplained crashy-crashy on a slightly-bloated M1:
