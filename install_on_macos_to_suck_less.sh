@@ -6,10 +6,10 @@
 # ... and then cull everything but the packages you actually want/need
 # to create the list below...
 brew_formulae='
-awscli bash consul curl ditaa fdupes figlet git git-filter-repo git-gui git-lfs
-git-subrepo gnu-sed go gomplate govc graphviz imagemagick jq k3sup macvim mr
-nomad packer pandoc putty pwgen pyenv pyenv-virtualenv rename ruby rust sshpass
-terraform tflint tree vault waypoint wget
+awscli bash consul curl ditaa fdupes ffmpeg figlet git git-filter-repo git-gui
+git-lfs git-subrepo gnu-sed go gomplate govc graphviz imagemagick jq k3sup
+macvim mr nomad packer pandoc putty pwgen pyenv pyenv-virtualenv rename ruby
+rust sshpass terraform tflint tree vault waypoint wget
 '
 
 # brew list --casks | tr ' ' '\n' | sort | tr '\n' ' '
