@@ -2,7 +2,7 @@
 alias ls='ls -G'
 
 # We don't need no stinkin' Docker Desktop!!!
-alias docker='nerdctl'
+alias nd='nerdctl'
 
 # Fix some more dumb macOS stuff
 export BASH_SILENCE_DEPRECATION_WARNING=1
