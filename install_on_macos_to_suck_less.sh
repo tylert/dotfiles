@@ -47,3 +47,12 @@ done
 # sudo dseditgroup -o edit -a $(whoami) -t user admin  # add me to 'admin' group
 # sudo dseditgroup -o edit -a $(whoami) -t user wheel  # add me to 'wheel' group
 # sudo chmod g+w /usr/local/bin  # give 'wheel' group write permissions
+
+# If your MacBook M1 goes :boom: and you need to get into "Safe Mode"...
+# Shut 'er off, wait 10 seconds, hold down power until it says "Loading :poop:"
+# then use "Shift" and select your drive to "Continue in Safe Mode".
+
+# Fix xcode after an OS upgrade hoses your entire machine:
+# sudo xcodebuild -license  # accept the nag-ware yet again
+# sudo xcode-select --reset  # give the patient electroshock treatment
+# xcode-select --install  # <-- use only as a last resort!!!
