@@ -2,7 +2,7 @@
 
 # After installing https://brew.sh
 
-# brew list --formulae | tr ' ' '\n' | sort | tr '\n' ' '
+# brew list --formulae | tr ' ' '\n' | sort | tr '\n' ' ' ; echo
 # ... and then cull everything but the packages you actually want/need
 # to create the list below...
 brew_formulae='
@@ -12,7 +12,7 @@ k3sup macvim mr nomad packer pandoc putty pwgen pyenv pyenv-virtualenv rename
 ruby rust sshpass terraform tflint tree vault waypoint wget wireguard-tools
 '
 
-# brew list --casks | tr ' ' '\n' | sort | tr '\n' ' '
+# brew list --casks | tr ' ' '\n' | sort | tr '\n' ' ' ; echo
 brew_casks='
 firefox gotomeeting iterm2 karabiner-elements keepassxc meld microsoft-office
 microsoft-remote-desktop microsoft-teams ringcentral sourcetree
