@@ -11,7 +11,7 @@ brew_formulae='
 awscli bash consul curl ditaa fdupes ffmpeg figlet git git-filter-repo git-gui
 git-lfs git-subrepo gnu-sed go gomplate govc graphviz imagemagick jhead jq
 k3sup macvim mr nomad packer pandoc putty pwgen pyenv pyenv-virtualenv rename
-ruby rust sshpass terraform tflint tree vault waypoint wget wireguard-tools
+ruby rust terraform tflint tree vault waypoint wget wireguard-tools
 '
 
 # brew list --casks | tr ' ' '\n' | sort | tr '\n' ' ' ; echo
