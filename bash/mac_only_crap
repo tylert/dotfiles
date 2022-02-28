@@ -1,9 +1,6 @@
 # Enable standard 'ls' colourization on macOS
 alias ls='ls -G'
 
-# We don't need no stinkin' Docker Desktop!!!
-alias nd='nerdctl'
-
 # Fix some more dumb macOS stuff
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export HOMEBREW_NO_ANALYTICS=1
