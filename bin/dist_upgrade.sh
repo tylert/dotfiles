@@ -9,6 +9,7 @@ apt-get clean
 # pacman --sync --refresh --noconfirm
 # pacman --sync --sysupgrade --noconfirm
 # pacman --sync --clean --noconfirm
+# rm -rf /var/cache/pacman/pkg  # pikvm???
 
 # import platform
 # if '2' == platform.python_version()[0]:
