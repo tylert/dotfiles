@@ -8,7 +8,8 @@ pacman_upgrade() {
     pacman --sync --refresh --noconfirm
     pacman --sync --sysupgrade --noconfirm
     pacman --sync --clean --noconfirm
-    # rm -rf /var/cache/pacman/pkg  # pikvm only or is it even needed???
+    # rm -rf /var/cache/pacman/pkg
+    # XXX FIXME TODO  Make sure we do the right thing on PiKVM too!!!
 }
 
 
@@ -19,11 +20,15 @@ apt_upgrade() {
     apt-get --yes autoremove
     apt-get autoclean
     apt-get clean
+    # XXX FIXME TODO  How much other cleanup should we do here???
 }
 
 
 brew_upgrade() {
-    # XXX FIXME TODO  Exit if somebody ran this with sudo!!!
+    if [ '0' == $(id -u) ]; then
+        echo 'Do not run this with sudo.'
+        exit 3
+    fi
     brew update
     brew upgrade --formulae
     brew upgrade --casks
