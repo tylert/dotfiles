@@ -38,7 +38,7 @@ brew_upgrade() {
 
 upgrade_everything() {
     # XXX FIXME TODO  Find a nice(r) way to determine your Linux distro!!!
-    case $(uname) in
+    case $(uname -s) in
         'Linux')
             case 'Debian' in
                 'Arch') pacman_upgrade ;;
