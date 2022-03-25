@@ -18,7 +18,7 @@ ruby rust terraform tflint tree vault waypoint wget wireguard-tools
 brew_casks='
 firefox gotomeeting iterm2 karabiner-elements keepassxc meld
 microsoft-auto-update microsoft-office microsoft-remote-desktop microsoft-teams
-ringcentral sourcetree vmware-horizon-client vscodium zoom
+qemu rancher ringcentral sourcetree vmware-horizon-client vscodium zoom
 '
 
 for package in ${brew_fomulae}; do
@@ -30,7 +30,6 @@ done
 
 # Other things that are nice to have but aren't very install-y for $reasons:
 # amazon-chime vagrant virtualbox virtualbox-extension-pack
-# https://rancherdesktop.io
 # hashi-up --help && hashi-up boundary get --help
 # hashi-up --help && hashi-up ${tool} get --help
 
