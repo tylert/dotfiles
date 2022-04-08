@@ -21,6 +21,7 @@ apt_upgrade() {
     apt-get autoclean
     apt-get clean
     # XXX FIXME TODO  How much other cleanup should we do here???
+    # sudo rpi-eeprom-update -a -d
 }
 
 
