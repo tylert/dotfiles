@@ -11,22 +11,25 @@ from shutil import rmtree
 
 
 turdfiles = [
-    '~/.CFUserTextEncoding',   # macOS crap
-    '~/.DS_Store',             # macOS crap
-    '~/.VisualIDs/',           # FoxtrotGPS crap
     '~/.adobe/',               # Macromedia Flash crap
     '~/.android/',             # Android crap
     '~/.ansible/',             # Ansible crap
     '~/.ansible_async/',       # Ansible crap
     '~/.ansible_galaxy',       # Ansible crap
-    '~/.arduino/',             # Arduino crap
     '~/.arduino15/',           # Arduino crap
+    '~/Arduino/',              # Arduino crap
+    '~/.arduino/',             # Arduino crap
     '~/.atom/',                # Atom crap
     '~/.audacity-data/',       # Audacity crap
     '~/.bash_history',         # Bash crap
     '~/.bash_sessions/',       # iTerm2 crap
     '~/.cache/',               # Gnome-ish crap
+    '~/Calibre Library/',      # Calibre crap
+    '~/.CFUserTextEncoding',   # macOS crap
     '~/.chirp/',               # CHIRP crap
+    '~/credstash.log',         # Credstash crap
+    '~/Downloads/',            # oh, for the love of Dog, why!?!
+    '~/.DS_Store',             # macOS crap
     '~/.foxtrotgps/',          # FoxtrotGPS crap
     '~/.gconf/',               # Gnome-ish crap not using .{config,cache,local}
     '~/.gimp-2.8/',            # GIMP crap
@@ -45,6 +48,7 @@ turdfiles = [
     '~/.lesshsQ',              # Less crap
     '~/.lesshst',              # Less crap
     '~/.macromedia/',          # Macromedia Flash crap
+    '~/Maps/',                 # FoxtrotGPS crap
     '~/.oracle_jre_usage/',    # Java crap
     '~/.ovftool.ssldb',        # VMware crap
     '~/.packer.d/',            # HashiCorp crap
@@ -52,8 +56,10 @@ turdfiles = [
     '~/.platformio/',          # Platformio crap
     '~/.purple/',              # Pidgin crap
     '~/.putty/',               # Puttygen crap
-    '~/.python-version',       # Python crap
+    '~/__pycache__/',          # Python crap
     '~/.python_history',       # Python crap
+    '~/.python-version',       # Python crap
+    '~/sketchbook/',           # Arduino crap
     '~/.sqlite_history',       # SQLite crap
     '~/.stCommitMsg',          # Sourcetree crap
     '~/.terraform.d/',         # HashiCorp crap
@@ -62,21 +68,16 @@ turdfiles = [
     '~/.tkremindrc',           # Remind crap
     '~/.vagrant.d/',           # HashiCorp crap
     '~/.vault-token',          # HashiCorp crap
-    '~/.vim/',                 # Vim crap
     '~/.viminfo',              # Vim crap
+    '~/.vim/',                 # Vim crap
+    '~/.VisualIDs/',           # FoxtrotGPS crap
     '~/.vmware/',              # VMware crap
     '~/.vscode/',              # VSCode crap
     '~/.wget-hsts',            # Wget crap
     '~/.xournal/',             # Xournal crap
-    '~/.xsession-errors',      # Xorg crap
     '~/.xsession-errors.old',  # Xorg crap
+    '~/.xsession-errors',      # Xorg crap
     '~/.zoom/',                # Zoom crap
-    '~/Arduino/',              # Arduino crap
-    '~/Calibre Library/',      # Calibre crap
-    '~/Maps/',                 # FoxtrotGPS crap
-    '~/__pycache__/',          # Python crap
-    '~/credstash.log',         # Credstash crap
-    '~/sketchbook/',           # Arduino crap
 ]
 #   '~/.docker/',              # Docker crap
 #   '~/.vscode-oss/',          # VSCodium crap
