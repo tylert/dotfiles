@@ -49,6 +49,8 @@ turdfiles = [
     '~/.lesshst',              # Less crap
     '~/.macromedia/',          # Macromedia Flash crap
     '~/Maps/',                 # FoxtrotGPS crap
+    '~/Movies/',               # oh, for the love of Dog, why!?!
+    '~/Music/',                # oh, for the love of Dog, why!?!
     '~/.oracle_jre_usage/',    # Java crap
     '~/.ovftool.ssldb',        # VMware crap
     '~/.packer.d/',            # HashiCorp crap
