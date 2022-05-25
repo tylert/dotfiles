@@ -59,3 +59,5 @@ done
 # sudo xcodebuild -license  # accept the nag-ware yet again
 # sudo xcode-select --reset  # give the patient electroshock treatment
 # xcode-select --install  # <-- use only as a last resort!!!
+
+# https://danmackinlay.name/notebook/macos_hacks.html
