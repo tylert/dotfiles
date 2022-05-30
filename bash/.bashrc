@@ -23,8 +23,11 @@ export VAGRANT_CHECKPOINT_DISABLE=1
 
 # Python stuff
 if [ 0 ]; then
-    export PATH="${HOME}/.pyenv/bin:${PATH}"
+    export PATH="${HOME}/.pyenv/shims:${PATH}"
     eval "$(pyenv init --path)"
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 fi
+
+# Go stuff
+export PATH="${HOME}/go/bin:${PATH}"
