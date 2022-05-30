@@ -17,6 +17,10 @@ xterm*|rxvt*)
     ;;
 esac
 
+# HashiCorp stuff
+export CHECKPOINT_DISABLE=1
+export VAGRANT_CHECKPOINT_DISABLE=1
+
 # Python stuff
 if [ 0 ]; then
     export PATH="${HOME}/.pyenv/bin:${PATH}"
@@ -24,10 +28,3 @@ if [ 0 ]; then
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 fi
-
-# Golang stuff
-export PATH="${HOME}/go/bin:${PATH}"
-
-# HashiCorp stuff
-export CHECKPOINT_DISABLE=1
-export VAGRANT_CHECKPOINT_DISABLE=1

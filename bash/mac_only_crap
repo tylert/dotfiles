@@ -9,3 +9,6 @@ export VAGRANT_OLD_ENV_OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # Ensure brew stuff is made available
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Rancher Desktop stuff
+export PATH="${HOME}/.rd/bin:${PATH}"
