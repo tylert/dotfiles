@@ -10,15 +10,16 @@
 brew_formulae='
 awscli bash consul curl ditaa fdupes ffmpeg figlet git git-filter-repo git-gui
 git-lfs git-subrepo gnu-sed go gomplate govc graphviz imagemagick jhead jq
-k3sup macvim mr nomad packer pandoc putty pwgen pyenv pyenv-virtualenv rename
-ruby rust terraform tflint tree vault waypoint wget wireguard-tools
+k3sup macvim mr nomad packer pandoc putty pwgen pyenv pyenv-virtualenv qemu
+rename ruby rust sqlite terraform terragrunt tree vault waypoint wget
+wireguard-go wireguard-tools
 '
 
 # brew list --casks | tr ' ' '\n' | sort | tr '\n' ' ' ; echo
 brew_casks='
 firefox gotomeeting iterm2 karabiner-elements keepassxc meld
 microsoft-auto-update microsoft-office microsoft-remote-desktop microsoft-teams
-qemu rancher ringcentral sourcetree vmware-horizon-client vscodium zoom
+rancher ringcentral sourcetree vmware-horizon-client vscodium zoom
 '
 
 for package in ${brew_fomulae}; do
