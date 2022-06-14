@@ -9,5 +9,5 @@
 	short = true
 [alias]
 	dt = diff-tree --name-only --no-commit-id -r
-	lol = log --oneline --decorate --graph
-	lola = log --oneline --decorate --graph --all
+	lg = log --decorate --graph --oneline
+	lga = log --all --decorate --graph --oneline
