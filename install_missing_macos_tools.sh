@@ -19,7 +19,7 @@ wireguard-go wireguard-tools
 brew_casks='
 firefox gotomeeting iterm2 karabiner-elements keepassxc meld
 microsoft-auto-update microsoft-office microsoft-remote-desktop microsoft-teams
-rancher ringcentral sourcetree vmware-horizon-client vscodium zoom
+rancher sourcetree vmware-horizon-client vscodium zoom
 '
 
 for package in ${brew_fomulae}; do
@@ -30,7 +30,8 @@ for package in ${brew_casks}; do
 done
 
 # Other things that are nice to have but aren't very install-y for $reasons:
-# amazon-chime vagrant virtualbox virtualbox-extension-pack
+# amazon-chime ringcentral vagrant virtualbox virtualbox-extension-pack
+# https://github.com/Homebrew/homebrew-cask/issues/88469
 # hashi-up --help && hashi-up boundary get --help
 # hashi-up --help && hashi-up ${tool} get --help
 
