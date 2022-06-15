@@ -44,7 +44,7 @@ upgrade_everything() {
             case 'Debian' in
                 'Arch') pacman_upgrade ;;
                 'Debian') apt_upgrade ;;
-                *) echo 'I do not recognize your distribution.' ; exit 1 ;;
+                *) echo 'I do not recognize your Linux distribution.' ; exit 1 ;;
             esac ;;
         'Darwin') brew_upgrade ;;
         *) echo 'I do not recognize your operating system.' ; exit 2 ;;
