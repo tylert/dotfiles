@@ -41,7 +41,7 @@ upgrade_everything() {
     # XXX FIXME TODO  Find a nice(r) way to determine your Linux distro!!!
     case $(uname -s) in
         'Linux')
-            case 'Debian' in
+            case 'Arch' in
                 'Arch') pacman_upgrade ;;
                 'Debian') apt_upgrade ;;
                 *) echo 'I do not recognize your Linux distribution.' ; exit 1 ;;
