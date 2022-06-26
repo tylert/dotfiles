@@ -19,7 +19,8 @@ esac
 
 # SSH agent stuff (procps-ng for pgrep)
 if [ -z "$(pgrep -u ${USER} ssh-agent)" ]; then
-    rm "${HOME}/.ssh/agent"
+    mkdir -m 0700 -p ${HOME}/.ssh
+    rm -f "${HOME}/.ssh/agent"
     eval ssh-agent -a "${HOME}/.ssh/agent" > /dev/null
 fi
 export SSH_AGENT_PID="$(pgrep -u ${USER} ssh-agent)"
