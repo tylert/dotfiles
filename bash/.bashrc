@@ -17,12 +17,16 @@ xterm*|rxvt*)
     ;;
 esac
 
-# HashiCorp stuff
-export CHECKPOINT_DISABLE=1
-export VAGRANT_CHECKPOINT_DISABLE=1
+# SSH agent stuff (procps-ng for pgrep)
+if [ -z "$(pgrep -u ${USER} ssh-agent)" ]; then
+    rm "${HOME}/.ssh/agent"
+    eval ssh-agent -a "${HOME}/.ssh/agent" > /dev/null
+fi
+export SSH_AGENT_PID="$(pgrep -u ${USER} ssh-agent)"
+export SSH_AUTH_SOCK="${HOME}/.ssh/agent"
 
 # Python stuff
-if [ 0 ]; then
+if false; then
     export PATH="${HOME}/.pyenv/bin:${HOME}/.pyenv/shims:${PATH}"
     eval "$(pyenv init --path)"
     eval "$(pyenv init -)"
@@ -31,3 +35,7 @@ fi
 
 # Go stuff
 export PATH="${HOME}/go/bin:${PATH}"
+
+# HashiCorp stuff
+export CHECKPOINT_DISABLE=1
+export VAGRANT_CHECKPOINT_DISABLE=1
