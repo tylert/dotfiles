@@ -18,13 +18,13 @@ xterm*|rxvt*)
 esac
 
 # SSH agent stuff (procps-ng for pgrep)
-if [ -z "$(pgrep -u ${USER} ssh-agent)" ]; then
+if ! pgrep -u ${USER} ssh-agent > /dev/null; then
     mkdir -m 0700 -p ${HOME}/.ssh
-    rm -f "${HOME}/.ssh/agent"
-    eval ssh-agent -a "${HOME}/.ssh/agent" > /dev/null
+    ssh-agent > "${HOME}/.ssh/agent"
 fi
-export SSH_AGENT_PID="$(pgrep -u ${USER} ssh-agent)"
-export SSH_AUTH_SOCK="${HOME}/.ssh/agent"
+if [[ ! "${SSH_AUTH_SOCK}" ]]; then
+    source "${HOME}/.ssh/agent" > /dev/null
+fi
 
 # Python stuff
 if false; then
