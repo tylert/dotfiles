@@ -54,12 +54,3 @@ upgrade_everything() {
 
 
 upgrade_everything
-
-
-# import platform
-# if '2' == platform.python_version()[0]:
-#     print(platform.dist()[0])
-# else:
-#     print(platform.freedesktop_os_release()['ID'])
-
-# python -c 'import platform ; print(platform.system())' -> Linux or Darwin
