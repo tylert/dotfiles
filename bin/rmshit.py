@@ -54,6 +54,7 @@ turdfiles = [
     '~/.oracle_jre_usage/',    # Java crap
     '~/.ovftool.ssldb',        # VMware crap
     '~/.packer.d/',            # HashiCorp crap
+    '~/Pictures/',             # oh, for the love of Dog, why!?!
     '~/.pki/',                 # Firefox crap
     '~/.platformio/',          # Platformio crap
     '~/.purple/',              # Pidgin crap
