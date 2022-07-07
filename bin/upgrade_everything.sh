@@ -4,7 +4,7 @@
 
 
 pacman_upgrade() {
-    # Should work on Arch Linux and PiKVM
+    # Should work on Arch Linux, EndeavourOS, PiKVM, etc.
     pacman --sync --refresh --noconfirm
     pacman --sync --sysupgrade --noconfirm
     pacman --sync --clean --noconfirm
@@ -14,7 +14,7 @@ pacman_upgrade() {
 
 
 apt_upgrade() {
-    # Should work on Debian, Ubuntu and Raspberry Pi OS (former Raspbian)
+    # Should work on Debian, Ubuntu, Raspberry Pi OS (former Raspbian), etc.
     apt-get update
     apt-get --yes dist-upgrade
     apt-get --yes autoremove
@@ -26,6 +26,7 @@ apt_upgrade() {
 
 
 brew_upgrade() {
+    # Should work with macOS (and apparently others too although not sure why)
     if [ '0' == $(id -u) ]; then
         echo 'Do not run this with sudo.'
         exit 3
