@@ -4,29 +4,27 @@
 
 
 pacman_upgrade() {
-    # Should work on Arch Linux, EndeavourOS, PiKVM, etc.
+    # Arch Linux, EndeavourOS, PiKVM, etc.
     pacman --sync --refresh --noconfirm
     pacman --sync --sysupgrade --noconfirm
     pacman --sync --clean --noconfirm
-    # rm -rf /var/cache/pacman/pkg
-    # XXX FIXME TODO  Make sure we do the right thing on PiKVM too!!!
+    # rm -rf /var/cache/pacman/pkg/*
 }
 
 
 apt_upgrade() {
-    # Should work on Debian, Ubuntu, Raspberry Pi OS (former Raspbian), etc.
+    # Debian, Ubuntu, Raspberry Pi OS (former Raspbian), etc.
     apt-get update
     apt-get --yes dist-upgrade
     apt-get --yes autoremove
     apt-get autoclean
     apt-get clean
-    # XXX FIXME TODO  How much other cleanup should we do here???
     # sudo rpi-eeprom-update -a -d
 }
 
 
 brew_upgrade() {
-    # Should work with macOS (and apparently others too although not sure why)
+    # macOS (and apparently others too although not sure why)
     if [ '0' == $(id -u) ]; then
         echo 'Do not run this with sudo.'
         exit 3
