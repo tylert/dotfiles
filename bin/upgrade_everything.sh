@@ -5,9 +5,11 @@
 
 pacman_upgrade() {
     # Arch Linux, EndeavourOS, PiKVM, etc.
-    pacman --sync --refresh --noconfirm
-    pacman --sync --sysupgrade --noconfirm
-    pacman --sync --clean --noconfirm
+    pacman --noconfirm --sync --refresh  # -Sy
+    pacman --noconfirm --sync --sysupgrade  # -Su
+    pacman --clean --noconfirm --sync  # -Sc
+    pacman --nosave --recursive --remove \  # -Rns
+        $(pacman --deps --query --quiet --unrequired)  # -Qtdq
     # rm -rf /var/cache/pacman/pkg/*
 }
 
