@@ -5,7 +5,7 @@
 
 pacman_upgrade() {
     # Arch Linux, EndeavourOS, PiKVM, etc.
-    pacman --noconfirm --sync --refresh  # -Sy
+    pacman --noconfirm --refresh --sync  # -Sy
     pacman --noconfirm --sync --sysupgrade  # -Su
     pacman --clean --noconfirm --sync  # -Sc
     pacman --nosave --recursive --remove \  # -Rns
