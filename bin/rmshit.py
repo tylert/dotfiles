@@ -31,18 +31,18 @@ turdfiles = [
     '~/Downloads/',            # oh, for the love of Dog, why!?!
     '~/.DS_Store',             # macOS crap
     '~/.foxtrotgps/',          # FoxtrotGPS crap
-    '~/.gconf/',               # Gnome-ish crap not using .{config,cache,local}
+    '~/.gconf/',               # Gnome-ish crap not using .{cache,config,local}
     '~/.gimp-2.8/',            # GIMP crap
     '~/.gitflow_export',       # Sourcetree crap
     '~/.gitignore_global',     # Sourcetree crap
-    '~/.gnome2/',              # Gnome-ish crap not using .{config,cache,local}
-    '~/.gnome2_private/',      # Gnome-ish crap not using .{config,cache,local}
+    '~/.gnome2/',              # Gnome-ish crap not using .{cache,config,local}
+    '~/.gnome2_private/',      # Gnome-ish crap not using .{cache,config,local}
     '~/.gnuradio/',            # GNURadio crap
     '~/.govmomi/',             # VMware crap
     '~/.gr_fftw_wisdom',       # GNURadio crap
     '~/.gr_fftw_wisdom.lock',  # GNURadio crap
     '~/.hgignore_global',      # Sourcetree crap
-    '~/.icons/',               # Gnome-ish crap not using .{config,cache,local}
+    '~/.icons/',               # Gnome-ish crap not using .{cache,config,local}
     '~/.java/',                # Java crap
     '~/.knownPackages',        # Android crap
     '~/.lesshsQ',              # Less crap
@@ -66,8 +66,8 @@ turdfiles = [
     '~/.sqlite_history',       # SQLite crap
     '~/.stCommitMsg',          # Sourcetree crap
     '~/.terraform.d/',         # HashiCorp crap
-    '~/.themes/',              # Gnome-ish crap not using .{config,cache,local}
-    '~/.thumbnails/',          # Gnome-ish crap not using .{config,cache,local}
+    '~/.themes/',              # Gnome-ish crap not using .{cache,config,local}
+    '~/.thumbnails/',          # Gnome-ish crap not using .{cache,config,local}
     '~/.tkremindrc',           # Remind crap
     '~/.vagrant.d/',           # HashiCorp crap
     '~/.vault-token',          # HashiCorp crap
@@ -83,6 +83,10 @@ turdfiles = [
     '~/.zoom/',                # Zoom crap
 ]
 #   '~/.docker/',              # Docker crap
+#   '~/Documents/',            # oh, for the love of Dog, why!?!
+#   '~/.kube/',                # Rancher Desktop crap
+#   '~/.kuberlr/',             # Rancher Desktop crap
+#   '~/.rd/',                  # Rancher Desktop crap
 #   '~/.vscode-oss/',          # VSCodium crap
 
 
