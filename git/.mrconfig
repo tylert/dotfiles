@@ -32,4 +32,5 @@ chain = true
 # checkout =
 #     git clone --origin foo ssh://git@someplace/project/another-awesome-repo.git another-awesome-repo
 #     git remote add bar ssh://git@otherplace/project/another-awesome-repo.git
+#     git config user.email 'something.else@whizbang.com'
 # ...
