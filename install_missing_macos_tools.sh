@@ -8,16 +8,16 @@
 # ... and then cull everything but the packages you actually want/need
 # to create the list below...
 brew_formulae='
-awscli az bash consul curl ditaa fdupes ffmpeg figlet git git-filter-repo
-git-gui git-lfs git-subrepo gnu-sed go gomplate govc graphviz imagemagick jhead
-jq k3sup macvim mr nomad packer pandoc putty pwgen pyenv pyenv-virtualenv qemu
-rename ruby rust sqlite terraform terragrunt tree vault vcluster waypoint wget
-wireguard-go wireguard-tools
+awscli azure-cli bash consul curl ditaa fdupes ffmpeg figlet git
+git-filter-repo git-gui git-lfs git-subrepo gnu-getopt gnu-sed go gomplate govc
+graphviz helm hugo imagemagick jhead jq k3sup kubernetes-cli macvim mr nomad
+packer pandoc putty pwgen pyenv pyenv-virtualenv qemu rename ruby rust skopeo
+sqlite terraform tree vault vcluster waypoint wget wireguard-go wireguard-tools
 '
 
 # brew list --casks | tr ' ' '\n' | sort | tr '\n' ' ' ; echo
 brew_casks='
-firefox gotomeeting iterm2 karabiner-elements keepassxc meld
+1password 1password-cli firefox iterm2 karabiner-elements keepassxc meld
 microsoft-auto-update microsoft-office microsoft-remote-desktop microsoft-teams
 rancher sourcetree vscodium zoom
 '
