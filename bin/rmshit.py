@@ -39,6 +39,7 @@ turdfiles = [
     '~/.gnome2_private/',      # Gnome-ish crap not using .{cache,config,local}
     '~/.gnuradio/',            # GNURadio crap
     '~/.govmomi/',             # VMware crap
+    '~/.gphoto/',              # Gnome photo crap
     '~/.gr_fftw_wisdom',       # GNURadio crap
     '~/.gr_fftw_wisdom.lock',  # GNURadio crap
     '~/.hgignore_global',      # Sourcetree crap
