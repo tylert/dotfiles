@@ -5,6 +5,8 @@
 
 pacman_upgrade() {
     # Arch Linux, EndeavourOS, PiKVM, etc.
+    pacman --noconfirm --refresh --sync archlinux-keyring  # -Sy
+    pacman --noconfirm --sync --sysupgrade  # -Su
     pacman --noconfirm --refresh --sync  # -Sy
     pacman --noconfirm --sync --sysupgrade  # -Su
     pacman --clean --noconfirm --sync  # -Sc
