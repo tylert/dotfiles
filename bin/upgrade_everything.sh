@@ -10,8 +10,8 @@ pacman_upgrade() {
     pacman --noconfirm --refresh --sync  # -Sy
     pacman --noconfirm --sync --sysupgrade  # -Su
     pacman --clean --noconfirm --sync  # -Sc
-    pacman --nosave --recursive --remove \  # -Rns
-        $(pacman --deps --query --quiet --unrequired)  # -Qtdq
+    # pacman --nosave --recursive --remove \  # -Rns
+    #     $(pacman --deps --query --quiet --unrequired)  # -Qtdq
     # rm -rf /var/cache/pacman/pkg/*
 }
 
