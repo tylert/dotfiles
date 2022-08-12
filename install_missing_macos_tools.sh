@@ -24,7 +24,7 @@ sqlite terraform tree vault vcluster waypoint wget wireguard-go wireguard-tools
 brew_casks='
 1password 1password-cli firefox iterm2 karabiner-elements keepassxc meld
 microsoft-auto-update microsoft-office microsoft-remote-desktop microsoft-teams
-rancher sourcetree vagrant vscodium zoom
+rancher sourcetree vscodium zoom
 '
 
 for package in ${brew_fomulae}; do
