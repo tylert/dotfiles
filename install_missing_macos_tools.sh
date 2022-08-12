@@ -4,6 +4,11 @@
 # whatever they tell you to do, no matter how weird it sounds.  Then run the
 # following script below.
 
+# If installing brew for the first time, let your shell know about it:
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# eval "$(/opt/homebrew/bin/brew shellenv)"
+# echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ${HOME}/.whatever_you_use_for_your_shell
+
 # brew list --formulae | tr ' ' '\n' | sort | tr '\n' ' ' ; echo
 # ... and then cull everything but the packages you actually want/need
 # to create the list below...
@@ -19,7 +24,7 @@ sqlite terraform tree vault vcluster waypoint wget wireguard-go wireguard-tools
 brew_casks='
 1password 1password-cli firefox iterm2 karabiner-elements keepassxc meld
 microsoft-auto-update microsoft-office microsoft-remote-desktop microsoft-teams
-rancher sourcetree vscodium zoom
+rancher sourcetree vagrant vscodium zoom
 '
 
 for package in ${brew_fomulae}; do
@@ -34,11 +39,6 @@ done
 # https://github.com/Homebrew/homebrew-cask/issues/88469
 # hashi-up --help && hashi-up boundary get --help
 # hashi-up --help && hashi-up ${tool} get --help
-
-# If installing brew for the first time, let your shell know about it:
-# bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# eval "$(/opt/homebrew/bin/brew shellenv)"
-# echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ${HOME}/.whatever_you_use_for_your_shell
 
 # If you want to run open-source things that haven't paid the Apple ransom yet:
 # sudo spctl --master-disable  # Oh for the love of Dog!!!
