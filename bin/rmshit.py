@@ -28,6 +28,7 @@ turdfiles = [
     '~/.CFUserTextEncoding',   # macOS crap
     '~/.chirp/',               # CHIRP crap
     '~/credstash.log',         # Credstash crap
+    '~/Downloads/',            # oh, for the love of Dog, why!?!
     '~/.DS_Store',             # macOS crap
     '~/.foxtrotgps/',          # FoxtrotGPS crap
     '~/.gconf/',               # Gnome-ish crap not using .{cache,config,local}
@@ -84,7 +85,6 @@ turdfiles = [
 ]
 #   '~/.docker/',              # Docker crap
 #   '~/Documents/',            # oh, for the love of Dog, why!?!
-#   '~/Downloads/',            # oh, for the love of Dog, why!?!
 #   '~/go/',                   # Go crap (use "go clean -modcache ; rm -rf ~/go/")
 #   '~/.kube/',                # Rancher Desktop crap
 #   '~/.kuberlr/',             # Rancher Desktop crap
