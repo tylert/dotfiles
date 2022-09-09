@@ -23,7 +23,7 @@ turdfiles = [
     '~/.audacity-data/',       # Audacity crap
     '~/.bash_history',         # Bash crap
     '~/.bash_sessions/',       # iTerm2 crap
-    '~/.cache/',               # Gnome-ish crap
+    '~/.cache/',               # GNOME-ish crap
     '~/Calibre Library/',      # Calibre crap
     '~/.CFUserTextEncoding',   # macOS crap
     '~/.chirp/',               # CHIRP crap
@@ -31,19 +31,19 @@ turdfiles = [
     '~/Downloads/',            # oh, for the love of Dog, why!?!
     '~/.DS_Store',             # macOS crap
     '~/.foxtrotgps/',          # FoxtrotGPS crap
-    '~/.gconf/',               # Gnome-ish crap not using .{cache,config,local}
+    '~/.gconf/',               # GNOME-ish crap not using .{cache,config,local}
     '~/.gimp-2.8/',            # GIMP crap
     '~/.gitflow_export',       # Sourcetree crap
     '~/.gitignore_global',     # Sourcetree crap
-    '~/.gnome2/',              # Gnome-ish crap not using .{cache,config,local}
-    '~/.gnome2_private/',      # Gnome-ish crap not using .{cache,config,local}
+    '~/.gnome2/',              # GNOME-ish crap not using .{cache,config,local}
+    '~/.gnome2_private/',      # GNOME-ish crap not using .{cache,config,local}
     '~/.gnuradio/',            # GNURadio crap
     '~/.govmomi/',             # VMware crap
-    '~/.gphoto/',              # Gnome photo crap
+    '~/.gphoto/',              # GNOME photo crap
     '~/.gr_fftw_wisdom',       # GNURadio crap
     '~/.gr_fftw_wisdom.lock',  # GNURadio crap
     '~/.hgignore_global',      # Sourcetree crap
-    '~/.icons/',               # Gnome-ish crap not using .{cache,config,local}
+    '~/.icons/',               # GNOME-ish crap not using .{cache,config,local}
     '~/.java/',                # Java crap
     '~/.knownPackages',        # Android crap
     '~/.lesshsQ',              # Less crap
@@ -67,8 +67,8 @@ turdfiles = [
     '~/.sqlite_history',       # SQLite crap
     '~/.stCommitMsg',          # Sourcetree crap
     '~/.terraform.d/',         # HashiCorp crap
-    '~/.themes/',              # Gnome-ish crap not using .{cache,config,local}
-    '~/.thumbnails/',          # Gnome-ish crap not using .{cache,config,local}
+    '~/.themes/',              # GNOME-ish crap not using .{cache,config,local}
+    '~/.thumbnails/',          # GNOME-ish crap not using .{cache,config,local}
     '~/.tkremindrc',           # Remind crap
     '~/.vagrant.d/',           # HashiCorp crap
     '~/.vault-token',          # HashiCorp crap
