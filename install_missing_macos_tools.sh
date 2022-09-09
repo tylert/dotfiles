@@ -13,7 +13,7 @@
 # ... and then cull everything but the packages you actually want/need
 # to create the list below...
 brew_formulae='
-awscli azure-cli bash consul curl ditaa fdupes ffmpeg figlet git
+aws-nuke awscli azure-cli bash consul curl ditaa fdupes ffmpeg figlet git
 git-filter-repo git-gui git-lfs git-subrepo gnu-getopt gnu-sed go gomplate govc
 graphviz helm hugo imagemagick jhead jq k3sup kubernetes-cli macvim mr nomad
 packer pandoc putty pwgen pyenv pyenv-virtualenv qemu rename ruby rust skopeo
