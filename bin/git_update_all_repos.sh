@@ -2,4 +2,4 @@
 
 mr fetch -f
 mr merge
-mr status 2>&1 | egrep -v '^mr ' | egrep -v '^$'
+mr status 2>&1 | grep -E -v '^mr ' | grep -E -v '^$'
