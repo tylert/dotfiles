@@ -61,5 +61,6 @@ done
 # sudo xcodebuild -license  # accept the nag-ware yet again
 # sudo xcode-select --reset  # give the patient electroshock treatment
 # xcode-select --install  # <-- use only as a last resort!!!
+# xcodebuild -runFirstLaunch  # <-- 12.6 borks things yet again!!!
 
 # https://danmackinlay.name/notebook/macos_hacks.html
