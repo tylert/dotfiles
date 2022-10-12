@@ -27,7 +27,7 @@ microsoft-auto-update microsoft-office microsoft-remote-desktop microsoft-teams
 rancher sourcetree vscodium
 '
 
-for package in ${brew_fomulae}; do
+for package in ${brew_formulae}; do
     brew install --formulae ${package}
 done
 for package in ${brew_casks}; do
