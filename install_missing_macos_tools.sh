@@ -14,10 +14,11 @@
 # to create the list below...
 brew_formulae='
 aws-nuke awscli azure-cli bash consul curl ditaa fdupes ffmpeg figlet git
-git-filter-repo git-gui git-lfs git-subrepo gnu-getopt gnu-sed go gomplate govc
-graphviz helm hugo imagemagick jhead jq k3sup kubernetes-cli macvim mr nomad
-packer pandoc putty pwgen pyenv pyenv-virtualenv qemu rename ruby rust skopeo
-sqlite terraform tree vault vcluster waypoint wget wireguard-go wireguard-tools
+git-filter-repo git-gui git-lfs git-subrepo gnu-getopt gnu-sed gnupg go
+gomplate govc graphviz helm hugo imagemagick jhead jq k3sup kubernetes-cli
+macvim mr nomad packer pandoc putty pwgen pyenv pyenv-virtualenv qemu rename
+ruby rust skopeo sqlite terraform tree vault vcluster waypoint wget
+wireguard-go wireguard-tools
 '
 
 # brew list --casks | tr ' ' '\n' | sort | tr '\n' ' ' ; echo
@@ -35,7 +36,7 @@ for package in ${brew_casks}; do
 done
 
 # Other things that are nice to have but aren't very install-y for $reasons:
-# amazon-chime ringcentral vagrant virtualbox virtualbox-extension-pack
+# amazon-chime vagrant virtualbox virtualbox-extension-pack
 # https://github.com/Homebrew/homebrew-cask/issues/88469
 # hashi-up --help && hashi-up boundary get --help
 # hashi-up --help && hashi-up ${tool} get --help
