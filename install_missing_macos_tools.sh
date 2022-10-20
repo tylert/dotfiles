@@ -37,7 +37,6 @@ done
 
 # Other things that are nice to have but aren't very install-y for $reasons:
 # amazon-chime vagrant virtualbox virtualbox-extension-pack
-# https://github.com/Homebrew/homebrew-cask/issues/88469
 # hashi-up --help && hashi-up boundary get --help
 # hashi-up --help && hashi-up ${tool} get --help
 
