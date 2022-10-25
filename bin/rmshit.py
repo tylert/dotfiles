@@ -66,6 +66,7 @@ turdfiles = [
     '~/sketchbook/',           # Arduino crap
     '~/.sqlite_history',       # SQLite crap
     '~/.stCommitMsg',          # Sourcetree crap
+    '~/.swiftpm/',             # macOS crap
     '~/.terraform.d/',         # HashiCorp crap
     '~/.themes/',              # GNOME-ish crap not using .{cache,config,local}
     '~/.thumbnails/',          # GNOME-ish crap not using .{cache,config,local}
