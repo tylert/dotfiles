@@ -6,6 +6,7 @@ Dotfiles
 * https://cheatsheets.stephane.plus/admin/avoid_dotfile_madness/
 * https://wiki.archlinux.org/title/XDG_user_directories
 * https://xdgbasedirectoryspecification.com/
+* https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
 
 
 macOS
