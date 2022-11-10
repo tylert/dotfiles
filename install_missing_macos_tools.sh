@@ -41,7 +41,8 @@ done
 # hashi-up --help && hashi-up ${tool} get --help
 
 # If you want to run open-source things that haven't paid the Apple ransom yet:
-# sudo spctl --master-disable  # Oh for the love of Dog!!!
+# sudo spctl --global-disable  # Oh for the love of Dog!!!
+# sudo spctl --master-disable  # This used to be the command pre 13.x.x
 
 # If you find Rancher Desktop (beta) not running nicely:
 # sudo dseditgroup -o edit -a $(whoami) -t user admin  # add me to 'admin' group
