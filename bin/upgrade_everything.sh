@@ -13,6 +13,9 @@ pacman_upgrade() {
     # pacman --nosave --recursive --remove \  # -Rns
     #     $(pacman --deps --query --quiet --unrequired)  # -Qtdq
     # rm -rf /var/cache/pacman/pkg/*
+
+    # Show foreign packages with --query --foreign / -Qm
+    # Search for new packages with --sync --search / -Ss
 }
 
 
