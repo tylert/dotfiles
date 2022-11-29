@@ -25,6 +25,7 @@ set nosmartindent  "and certainly don't do it after { or } either
 
 "set noswapfile     "whoa, really?
 
+"runtime syntax/tf.vim  "all HCL2 FFS
 autocmd BufRead,BufNewFile *.hcl set filetype=tf
+autocmd BufRead,BufNewFile *.tf set filetype=tf
 autocmd BufRead,BufNewFile *.tfvars set filetype=tf
-autocmd BufRead,BufNewFile *.tfvars.example set filetype=tf
