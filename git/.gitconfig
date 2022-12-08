@@ -11,6 +11,7 @@
 	dt = diff-tree --name-only --no-commit-id -r
 	lg = log --decorate --graph --oneline
 	lga = log --all --decorate --graph --oneline
+	root = rev-parse --show-toplevel
 #[commit]
 #	gpgsign = true
 #[url "ssh://git@github.com/"]
