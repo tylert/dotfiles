@@ -17,8 +17,8 @@ aws-nuke awscli azure-cli bash consul curl ditaa fdupes ffmpeg figlet git
 git-filter-repo git-gui git-lfs git-subrepo gnu-getopt gnu-sed gnupg go
 gomplate govc graphviz helm hugo imagemagick jhead jq k3sup kubernetes-cli
 macvim mr nomad packer pandoc putty pwgen pyenv pyenv-virtualenv qemu rename
-ruby rust skopeo sqlite terraform tree vault vcluster waypoint wget
-wireguard-go wireguard-tools
+ruby rust skopeo sqlite terraform tmux tree trzsz-go vault vcluster waypoint
+wget wireguard-go wireguard-tools
 '
 
 # brew list --casks | tr ' ' '\n' | sort | tr '\n' ' ' ; echo
