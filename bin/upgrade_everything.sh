@@ -8,12 +8,19 @@ pacman_upgrade() {
     pacman --noconfirm --refresh --sync archlinux-keyring  # -Sy
     pacman --noconfirm --refresh --sync --sysupgrade  # -Syu
     pacman --clean --noconfirm --sync  # -Sc
+
+    # XXX FIXME TODO  Do a better job of cleaning up orphaned packages
     # pacman --nosave --recursive --remove \  # -Rns
     #     $(pacman --deps --query --quiet --unrequired)  # -Qtdq
     # rm -rf /var/cache/pacman/pkg/*
 
+    # XXX FIXME TODO  Do a better job of managing foreign packages
     # Show foreign packages with --query --foreign / -Qm
     # Search for new packages with --sync --search / -Ss
+
+    # if Raspberry Pi hardware; then
+    #     rpi-eeprom-update -a -d
+    # fi
 }
 
 
@@ -24,7 +31,10 @@ apt_upgrade() {
     apt-get --yes autoremove
     apt-get autoclean
     apt-get clean
-    # sudo rpi-eeprom-update -a -d
+
+    # if Raspberry Pi hardware; then
+    #     rpi-eeprom-update -a -d
+    # fi
 }
 
 
