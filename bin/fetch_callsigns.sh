@@ -6,12 +6,12 @@
 #     echo -e "[diff \"gzip\"]\n\ttextconv = gzip -d -c" >> ${callsigns_dir}/.git/config
 #     echo -e "*.gz diff=gzip" >> ${callsigns_dir}/.git/info/attributes
 
-# See details at http://www.ic.gc.ca/eic/site/025.nsf/eng/h_00004.html
+# See details at https://www.ic.gc.ca/eic/site/025.nsf/eng/h_00004.html
 
 callsigns_dir="${HOME}/git/tylert/canadian-callsigns"
 date="$(date +%Y-%m-%d)"
 
-source_file='http://apc-cap.ic.gc.ca/datafiles/amateur.zip'
+source_file='https://apc-cap.ic.gc.ca/datafiles/amateur.zip'
 output_file='amateur.txt'
 
 if [ ! -d "${callsigns_dir}" ]; then
