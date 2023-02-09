@@ -30,6 +30,7 @@ turdfiles = [
     '~/credstash.log',         # Credstash crap
     '~/Downloads/',            # oh, for the love of Dog, why!?!
     '~/.DS_Store',             # macOS crap
+    '~/.dvdcss/',              # libdvdcss crap
     '~/.foxtrotgps/',          # FoxtrotGPS crap
     '~/.gconf/',               # GNOME-ish crap not using .{cache,config,local}
     '~/.gimp-2.8/',            # GIMP crap
