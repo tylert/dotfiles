@@ -23,9 +23,9 @@ vcluster waypoint wget wireguard-go wireguard-tools
 
 # brew list --casks | tr ' ' '\n' | sort | tr '\n' ' ' ; echo
 brew_casks='
-1password 1password-cli firefox iterm2 karabiner-elements keepassxc meld
-microsoft-auto-update microsoft-office microsoft-remote-desktop microsoft-teams
-rancher sourcetree vscodium
+1password 1password-cli firefox iterm2 keepassxc meld microsoft-auto-update
+microsoft-office microsoft-remote-desktop microsoft-teams rancher sourcetree
+vscodium
 '
 
 for package in ${brew_formulae}; do
