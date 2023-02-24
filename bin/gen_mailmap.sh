@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Create a new stub mailmap file for use in git repos.  Type 'man git-shortlog'
+# Create a new stub mailmap file for use in git repos.  Type 'man gitmailmap'
 # and look at the .mailmap section for details.
 
 if [ -z "${1}" ]; then

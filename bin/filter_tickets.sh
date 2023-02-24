@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# This script will try to find and extract only the JIRA ticket numbers from
+# This script will try to find and extract only the Jira ticket numbers from
 # input text.  Print any string with at least one letter, one hyphen and some
 # digits in it.
 
