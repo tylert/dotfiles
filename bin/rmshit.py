@@ -27,6 +27,7 @@ turdfiles = [
     '~/Calibre Library/',      # Calibre crap
     '~/.CFUserTextEncoding',   # macOS crap
     '~/.chirp/',               # CHIRP crap
+    '~/.cisco/',               # Cisco log crap
     '~/credstash.log',         # Credstash crap
     '~/Downloads/',            # oh, for the love of Dog, why!?!
     '~/.DS_Store',             # macOS crap
@@ -59,6 +60,7 @@ turdfiles = [
     '~/Pictures/',             # oh, for the love of Dog, why!?!
     '~/.pki/',                 # Firefox crap
     '~/.platformio/',          # Platformio crap
+    '~/Public/',               # oh, for the love of Dog, why!?!
     '~/.purple/',              # Pidgin crap
     '~/.putty/',               # Puttygen crap
     '~/__pycache__/',          # Python crap
@@ -68,12 +70,14 @@ turdfiles = [
     '~/.sqlite_history',       # SQLite crap
     '~/.stCommitMsg',          # Sourcetree crap
     '~/.swiftpm/',             # macOS crap
+    '~/Templates/',            # oh, for the love of Dog, why!?!
     '~/.terraform.d/',         # HashiCorp crap
     '~/.themes/',              # GNOME-ish crap not using .{cache,config,local}
     '~/.thumbnails/',          # GNOME-ish crap not using .{cache,config,local}
     '~/.tkremindrc',           # Remind crap
     '~/.vagrant.d/',           # HashiCorp crap
     '~/.vault-token',          # HashiCorp crap
+    '~/Videos/',               # oh, for the love of Dog, why!?!
     '~/.viminfo',              # Vim crap
     '~/.vim/',                 # Vim crap
     '~/.VisualIDs/',           # FoxtrotGPS crap
