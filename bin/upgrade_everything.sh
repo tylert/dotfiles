@@ -52,16 +52,16 @@ brew_upgrade() {
 
 
 upgrade_everything() {
-    # XXX FIXME TODO  Find a nice(r) way to determine your Linux distro!!!
     case $(uname -s) in
         'Linux')
+            # XXX FIXME TODO  Find a nice(r) way to determine your Linux distro!!!
             case 'Arch' in
                 'Arch') pacman_upgrade ;;
                 'Debian') apt_upgrade ;;
-                *) echo 'I do not recognize your Linux distribution.' ; exit 1 ;;
+                *) echo 'I do not recognize your Linux distribution.' ; exit 2 ;;
             esac ;;
         'Darwin') brew_upgrade ;;
-        *) echo 'I do not recognize your operating system.' ; exit 2 ;;
+        *) echo 'I do not recognize your operating system.' ; exit 1 ;;
     esac
 }
 
