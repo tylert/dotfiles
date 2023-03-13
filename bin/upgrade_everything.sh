@@ -44,6 +44,7 @@ brew_upgrade() {
         echo 'Do not run this with sudo.'
         exit 3
     fi
+
     brew update
     brew upgrade --formulae
     brew upgrade --casks

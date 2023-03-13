@@ -27,17 +27,17 @@ random_wallpaper() {
             # XXX FIXME TODO  Find a nicer way to determine your window manager on Linux!!!
             case 'cinnamon' in
                 'cinnamon') cinnamon_random_wallpaper ;;
-                *) echo 'I do not recognize your window manager.' ; exit 2 ;;
+                *) echo 'I do not recognize your window manager.' ; exit 3 ;;
             esac ;;
         'Darwin') osx_random_wallpaper ;;
-        *) echo 'I do not recognize your operating system.' ; exit 1 ;;
+        *) echo 'I do not recognize your operating system.' ; exit 2 ;;
     esac
 }
 
 
 if [ '0' == $(id -u) ]; then
     echo 'Do not run this with sudo.'
-    exit 3
+    exit 1
 fi
 
 random_wallpaper
