@@ -18,9 +18,9 @@ pacman_upgrade() {
     # Show foreign packages with --query --foreign / -Qm
     # Search for new packages with --sync --search / -Ss
 
-    # if Raspberry Pi hardware; then
-    #     rpi-eeprom-update -a -d
-    # fi
+    if [ -f /proc/device-tree/model ]; then
+        rpi-eeprom-update -a -d
+    fi
 }
 
 
@@ -32,9 +32,9 @@ apt_upgrade() {
     apt-get autoclean
     apt-get clean
 
-    # if Raspberry Pi hardware; then
-    #     rpi-eeprom-update -a -d
-    # fi
+    if [ -f /proc/device-tree/model ]; then
+        rpi-eeprom-update -a -d
+    fi
 }
 
 
