@@ -18,6 +18,7 @@ pacman_upgrade() {
     # Show foreign packages with --query --foreign / -Qm
     # Search for new packages with --sync --search / -Ss
 
+    # If there's Raspberry Pi hardware, try to upgrade the firmware to latest
     if [ -f /proc/device-tree/model ]; then
         rpi-eeprom-update -a -d
     fi
@@ -32,6 +33,7 @@ apt_upgrade() {
     apt-get autoclean
     apt-get clean
 
+    # If there's Raspberry Pi hardware, try to upgrade the firmware to latest
     if [ -f /proc/device-tree/model ]; then
         rpi-eeprom-update -a -d
     fi
