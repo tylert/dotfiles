@@ -6,7 +6,8 @@
 #     echo -e "[diff \"gzip\"]\n\ttextconv = gzip -d -c" >> ${callsigns_dir}/.git/config
 #     echo -e "*.gz diff=gzip" >> ${callsigns_dir}/.git/info/attributes
 
-# See details at https://www.ic.gc.ca/eic/site/025.nsf/eng/h_00004.html
+# See more details at https://www.ic.gc.ca/eic/site/025.nsf/eng/h_00004.html
+# or https://apc-cap.ic.gc.ca/pls/apc_anon/query_avail_cs$callsign.actionquery
 
 callsigns_dir="${HOME}/git/tylert/canadian-callsigns"
 date="$(date +%Y-%m-%d)"
@@ -26,4 +27,5 @@ pushd "${callsigns_dir}" > /dev/null 2>&1
     git commit -m "Snapshot for ${date}"
     git push hub
     git push lab
+    # git push bit
 popd > /dev/null 2>&1
