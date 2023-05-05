@@ -7,6 +7,10 @@ cinnamon_random_wallpaper() {
     # existing=$(gsettings get org.cinnamon.desktop.background picture-uri)
     gsettings set org.cinnamon.desktop.background picture-uri \
         "file://${wallpaper}"
+
+    # xprop -root -notype _NET_CURRENT_DESKTOP   # show current workspace index
+    # xprop -root -notype _NET_DESKTOP_GEOMETRY  # show desktop (X, Y) pixels
+    # xprop -root -notype _NET_DESKTOP_NAMES     # list names of workspaces
 }
 
 
