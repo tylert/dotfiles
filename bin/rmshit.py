@@ -74,7 +74,6 @@ turdfiles = [
     '~/.terraform.d/',         # HashiCorp crap
     '~/.themes/',              # GNOME-ish crap not using .{cache,config,local}
     '~/.thumbnails/',          # GNOME-ish crap not using .{cache,config,local}
-    '~/.tintin',               # Tintin++ crap
     '~/.tintin/',              # Tintin++ crap
     '~/.tkremindrc',           # Remind crap
     '~/.vagrant.d/',           # HashiCorp crap
