@@ -45,6 +45,7 @@ turdfiles = [
     '~/.gr_fftw_wisdom',       # GNURadio crap
     '~/.gr_fftw_wisdom.lock',  # GNURadio crap
     '~/.hgignore_global',      # Sourcetree crap
+    '~/.hplip/',               # HP Linux Imaging and Printing crap
     '~/.icons/',               # GNOME-ish crap not using .{cache,config,local}
     '~/.java/',                # Java crap
     '~/.knownPackages',        # Android crap
@@ -66,6 +67,7 @@ turdfiles = [
     '~/__pycache__/',          # Python crap
     '~/.python_history',       # Python crap
     '~/.python-version',       # Python crap
+    '~/.sane/',                # Scanner Access Now Easy crap
     '~/sketchbook/',           # Arduino crap
     '~/.sqlite_history',       # SQLite crap
     '~/.stCommitMsg',          # Sourcetree crap
@@ -91,7 +93,7 @@ turdfiles = [
     '~/.xsession-errors',      # Xorg crap
     '~/.zoom/',                # Zoom crap
 ]
-#   '~/.docker/',              # Docker crap
+#   '~/.docker/',              # Docker (Rancher) crap
 #   '~/Documents/',            # oh, for the love of Dog, why!?!
 #   '~/go/',                   # Go crap (use "go clean -modcache ; rm -rf ~/go/")
 #   '~/.kube/',                # Rancher Desktop crap
