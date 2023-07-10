@@ -22,6 +22,8 @@ pacman_upgrade() {
     if [ -f /proc/device-tree/model ]; then
         rpi-eeprom-update -a -d
     fi
+
+    # pacman -Q | column -t
 }
 
 
@@ -37,6 +39,8 @@ apt_upgrade() {
     if [ -f /proc/device-tree/model ]; then
         rpi-eeprom-update -a -d
     fi
+
+    # dpkg-query -W | column -t
 }
 
 
