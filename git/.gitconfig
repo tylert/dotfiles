@@ -1,10 +1,10 @@
 [user]
 	name = Tyler Tidman
 	email = tyler.tidman@draak.ca
-[core]
-	pager = less -FRX
 [pull]
 	rebase = true
+[core]
+	pager = less -FRX
 [status]
 	short = true
 [alias]
