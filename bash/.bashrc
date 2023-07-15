@@ -26,14 +26,6 @@ esac
 #     source "${HOME}/.ssh/agent" > /dev/null
 # fi
 
-# Python stuff
-if false; then
-    export PATH="${HOME}/.pyenv/bin:${HOME}/.pyenv/shims:${PATH}"
-    eval "$(pyenv init --path)"
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
-fi
-
 # Go stuff
 export PATH="${HOME}/go/bin:${PATH}"
 
