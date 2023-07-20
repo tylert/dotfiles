@@ -34,3 +34,6 @@ chain = true
 #     git remote add bar ssh://git@otherplace/project/another-awesome-repo.git
 #     git config user.email 'something.else@whizbang.com'
 # ...
+
+# Backup your .mrconfig files:
+# pushd ~ ; tar cvf myrepos.tar -T <(\find git -name .mrconfig) && tar rvfL myrepos.tar .mrconfig .mrtrust ; gzip myrepos.tar ; popd
