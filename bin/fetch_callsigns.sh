@@ -2,10 +2,6 @@
 
 # Yank down a local copy of the Canadian HAM callsign database
 
-# Execute the following in your git repo to enable inline gzip unified diffs:
-#     echo -e "[diff \"gzip\"]\n\ttextconv = gzip -d -c" >> ${callsigns_dir}/.git/config
-#     echo -e "*.gz diff=gzip" >> ${callsigns_dir}/.git/info/attributes
-
 # See more details at https://www.ic.gc.ca/eic/site/025.nsf/eng/h_00004.html
 # or https://apc-cap.ic.gc.ca/pls/apc_anon/query_avail_cs$callsign.actionquery
 
