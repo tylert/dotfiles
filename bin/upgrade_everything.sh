@@ -55,6 +55,8 @@ brew_upgrade() {
     brew upgrade --formulae
     brew upgrade --casks
     brew cleanup
+
+    # brew list --versions | column -t
 }
 
 
