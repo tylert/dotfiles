@@ -34,6 +34,7 @@ turdfiles = [
     '~/.dvdcss/',              # libdvdcss crap
     '~/.foxtrotgps/',          # FoxtrotGPS crap
     '~/.gconf/',               # GNOME-ish crap not using .{cache,config,local}
+    '~/.ghoto/',               # gPhoto crap
     '~/.gimp-2.8/',            # GIMP crap
     '~/.gitflow_export',       # Sourcetree crap
     '~/.gitignore_global',     # Sourcetree crap
