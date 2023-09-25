@@ -1,14 +1,6 @@
 # Enable standard 'ls' colourization on macOS
 alias ls='ls -G'
 
-# Python stuff
-if false; then
-    export PATH="${HOME}/.pyenv/bin:${HOME}/.pyenv/shims:${PATH}"
-    eval "$(pyenv init --path)"
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
-fi
-
 # Fix some more dumb macOS stuff
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export HOMEBREW_NO_ANALYTICS=1
@@ -20,3 +12,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Rancher Desktop stuff
 export PATH="${HOME}/.rd/bin:${PATH}"
+
+# Python stuff
+if true; then
+    export PATH="${HOME}/.pyenv/bin:${HOME}/.pyenv/shims:${PATH}"
+    eval "$(pyenv init --path)"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
