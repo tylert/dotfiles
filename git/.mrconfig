@@ -1,7 +1,7 @@
 # https://myrepos.branchable.com/
 [DEFAULT]
 git_branch = git branch "$@"
-git_fetch = git fetch --all --tags --prune "$@"
+git_fetch = git fetch --all --prune --tags "$@"
 git_gc = git gc "$@"
 git_merge = git merge --ff-only "$@"
 git_reflog = git reflog --max-count=1 "$@"
