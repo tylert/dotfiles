@@ -3,13 +3,16 @@
 # Process all committed files to apply the desired fixes
 git ls-files -z |\
     while IFS= read -rd '' f; do
-        # Ensure all lines have the appropriate line endings
+        # Ensure text files have the appropriate line endings
         # XXX FIXME TODO
 
-        # Ensure all lines don't have useless trailing whitespace
-        sed -i '' -E 's/[ '$'\t'']+$//' "${f}"
+        # Ensure text files don't have useless trailing whitespace on lines
+        if file --mime-encoding "${f}" | grep -qv binary; then
+            sed -i '' -E 's/[ '$'\t'']+$//' "${f}"
+            # XXX FIXME TODO  Make this work on both Linux/Unix and macOS
+        fi
 
-        # Ensure all files have an EOF delimiter at the end
+        # Ensure text files have an EOF delimiter at the end
         if file --mime-encoding "${f}" | grep -qv binary; then
             tail -c1 < "${f}" | read -r _ || echo >> "${f}"
         fi
