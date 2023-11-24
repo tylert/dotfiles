@@ -12,18 +12,20 @@ pacman_upgrade() {
     # XXX FIXME TODO  Do a better job of cleaning up orphaned packages
     # pacman --nosave --recursive --remove \  # -Rns
     #     $(pacman --deps --query --quiet --unrequired)  # -Qtdq
-    # rm -rf /var/cache/pacman/pkg/*
 
     # XXX FIXME TODO  Do a better job of managing foreign packages
     # Show foreign packages with --query --foreign / -Qm
     # Search for new packages with --sync --search / -Ss
+
+    # XXX FIXME TODO  Actually clean up old packages cached locally
+    # rm -rf /var/cache/pacman/pkg/*
 
     # If there's Raspberry Pi hardware, try to upgrade the firmware to latest
     if [ -f /proc/device-tree/model ]; then
         rpi-eeprom-update -a -d
     fi
 
-    # pacman -Q | column -t
+    # pacman -Q
 }
 
 
@@ -40,7 +42,7 @@ apt_upgrade() {
         rpi-eeprom-update -a -d
     fi
 
-    # dpkg-query -W | column -t
+    # dpkg-query -W
 }
 
 
@@ -56,7 +58,7 @@ brew_upgrade() {
     brew upgrade --casks
     brew cleanup
 
-    # brew list --versions | column -t
+    # brew list --versions
 }
 
 
