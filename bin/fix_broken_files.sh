@@ -9,6 +9,7 @@ git ls-files -z |\
         # Ensure text files don't have useless trailing whitespace on lines
         if file --mime-encoding "${f}" | grep -qv binary; then
             sed -i '' -E 's/[ '$'\t'']+$//' "${f}"
+            # sed -iE 's/[ \t]+$//' "${f}"
             # XXX FIXME TODO  Make this work on both Linux/Unix and macOS
         fi
 
