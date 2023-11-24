@@ -6,11 +6,11 @@ git ls-files -z |\
         # Ensure all lines have the appropriate line endings
         # XXX FIXME TODO
 
+        # Ensure all lines don't have useless trailing whitespace
+        sed -i '' -E 's/[ '$'\t'']+$//' "${f}"
+
         # Ensure all files have an EOF delimiter at the end
         if file --mime-encoding "${f}" | grep -qv binary; then
             tail -c1 < "${f}" | read -r _ || echo >> "${f}"
         fi
-
-        # Ensure all lines don't have useless space characters at the ends
-        # sed -i 's/[ \t][ \t]*$//' "${f}"
     done
