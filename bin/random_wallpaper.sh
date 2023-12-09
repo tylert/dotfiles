@@ -7,10 +7,13 @@ cinnamon_random_wallpaper() {
     # existing=$(gsettings get org.cinnamon.desktop.background picture-uri)
     gsettings set org.cinnamon.desktop.background picture-uri \
         "file://${wallpaper}"
+    # gsettings set org.cinnamon.desktop.background picture-options "spanned"
 
     # xprop -root -notype _NET_CURRENT_DESKTOP   # show current workspace index
     # xprop -root -notype _NET_DESKTOP_GEOMETRY  # show desktop (X, Y) pixels
     # xprop -root -notype _NET_DESKTOP_NAMES     # list names of workspaces
+
+    # https://github.com/rarsamx/Scripts/blob/master/bash/wmSetMultimonitorBkgrnd.sh
 }
 
 
