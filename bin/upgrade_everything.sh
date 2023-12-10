@@ -9,9 +9,11 @@ pacman_upgrade() {
     pacman --noconfirm --refresh --sync --sysupgrade  # -Syu
     pacman --clean --noconfirm --sync  # -Sc
 
-    # XXX FIXME TODO  Do a better job of cleaning up orphaned packages
-    # pacman --nosave --recursive --remove \  # -Rns
-    #     $(pacman --deps --query --quiet --unrequired)  # -Qtdq
+    # Try to get rid of packages which are not actually needed anymore
+    excess="$(pacman --deps --query --quiet --unrequired | tr '\n' ' ')"  # -Qtdq
+    if [ ! -z "${excess}" ]; then
+        pacman --nosave --recursive --remove "${excess}"  # -Rns
+    fi
 
     # XXX FIXME TODO  Do a better job of managing foreign packages
     # Show foreign packages with --query --foreign / -Qm
@@ -25,7 +27,7 @@ pacman_upgrade() {
         rpi-eeprom-update -a -d
     fi
 
-    # pacman -Q
+    # pacman --query
 }
 
 
