@@ -2,7 +2,7 @@
 
 
 cinnamon_random_wallpaper() {
-    wallpaper="$(find ~/.wallpapers -type f | sort -R | head -1)"
+    wallpaper="$(find ~/.wallpapers -maxdepth 1 -type f | sort -R | head -1)"
 
     # existing=$(gsettings get org.cinnamon.desktop.background picture-uri)
     gsettings set org.cinnamon.desktop.background picture-uri \
@@ -18,7 +18,7 @@ cinnamon_random_wallpaper() {
 
 
 osx_random_wallpaper() {
-    wallpaper="$(find ~/.wallpapers -type f | sort -R | head -1)"
+    wallpaper="$(find ~/.wallpapers -maxdepth 1 -type f | sort -R | head -1)"
 
     osascript -e 'tell application "Finder" to set desktop picture to POSIX file "'${wallpaper}'"'
 
