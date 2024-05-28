@@ -23,3 +23,6 @@ export PATH="${HOME}/go/bin:${PATH}"
 # HashiCorp stuff
 export CHECKPOINT_DISABLE=1
 export VAGRANT_CHECKPOINT_DISABLE=1
+
+alias pbcopy='xsel --primary --input'
+alias pbpaste='xsel --primary --output'
