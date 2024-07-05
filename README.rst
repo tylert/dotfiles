@@ -17,8 +17,8 @@ macOS
 -----
 
 Occasionally, you will run into a file in your home directory that you aren't
-allowed to "rm".  This is caused by macOS trying to be "helpful".  You can fix
-this on a case-by-case basis by typing::
+allowed to execute or delete.  This is caused by macOS trying to be "helpful".
+You can fix this on a case-by-case basis by typing::
 
     xattr -d com.apple.quarantine /path/to/file
     xattr -d com.apple.macl /path/to/file  # might not be needed
@@ -36,3 +36,4 @@ You can also fix this behaviour permanently for all files using::
 * https://superuser.com/questions/28384/what-should-i-do-about-com-apple-quarantine
 * https://apple.stackexchange.com/questions/373176/disable-the-use-of-the-com-apple-quarantine-extended-attribute-on-mojave
 * https://www.brunerd.com/blog/2020/01/07/track-and-tackle-com-apple-macl
+* https://www.arno.org/on-the-origins-of-ds-store
