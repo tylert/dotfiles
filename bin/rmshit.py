@@ -11,96 +11,97 @@ from shutil import rmtree
 
 
 turdfiles = [
-    '~/.adobe/',               # Macromedia Flash crap
-    '~/.android/',             # Android crap
-    '~/.ansible/',             # Ansible crap
-    '~/.ansible_async/',       # Ansible crap
-    '~/.ansible_galaxy',       # Ansible crap
-    '~/.arduino15/',           # Arduino crap
-    '~/Arduino/',              # Arduino crap
-    '~/.arduino/',             # Arduino crap
-    '~/.atom/',                # Atom crap
-    '~/.audacity-data/',       # Audacity crap
-    '~/.bash_history',         # Bash crap
-    '~/.bash_sessions/',       # iTerm2 crap
-    '~/.cache/',               # GNOME-ish crap
-    '~/Calibre Library/',      # Calibre crap
-    '~/.cargo/',               # Rust crap
-    '~/.CFUserTextEncoding',   # macOS crap
-    '~/.chirp/',               # CHIRP crap
-    '~/.cisco/',               # Cisco log crap
-    '~/credstash.log',         # Credstash crap
-    '~/Downloads/',            # oh, for the love of Dog, why!?!
-    '~/.DS_Store',             # macOS crap
-    '~/.dvdcss/',              # libdvdcss crap
-    '~/.foxtrotgps/',          # FoxtrotGPS crap
-    '~/.gconf/',               # GNOME-ish crap not using .{cache,config,local}
-    '~/.ghoto/',               # gPhoto crap
-    '~/.gimp-2.8/',            # GIMP crap
-    '~/.gitflow_export',       # Sourcetree crap
-    '~/.gitignore_global',     # Sourcetree crap
-    '~/.gnome2/',              # GNOME-ish crap not using .{cache,config,local}
-    '~/.gnome2_private/',      # GNOME-ish crap not using .{cache,config,local}
-    '~/.gnuradio/',            # GNURadio crap
-    '~/.govmomi/',             # VMware crap
-    '~/.gphoto/',              # GNOME photo crap
-    '~/.gr_fftw_wisdom',       # GNURadio crap
-    '~/.gr_fftw_wisdom.lock',  # GNURadio crap
-    '~/.hgignore_global',      # Sourcetree crap
-    '~/.hplip/',               # HP Linux Imaging and Printing crap
-    '~/.icons/',               # GNOME-ish crap not using .{cache,config,local}
-    '~/.java/',                # Java crap
-    '~/.knownPackages',        # Android crap
-    '~/.lesshsQ',              # Less crap
-    '~/.lesshst',              # Less crap
-    '~/.macromedia/',          # Macromedia Flash crap
-    '~/Maps/',                 # FoxtrotGPS crap
-    '~/Movies/',               # oh, for the love of Dog, why!?!
-    '~/Music/',                # oh, for the love of Dog, why!?!
-    '~/.oracle_jre_usage/',    # Java crap
-    '~/.ovftool.ssldb',        # VMware crap
-    '~/.packer.d/',            # HashiCorp crap
-    '~/Pictures/',             # oh, for the love of Dog, why!?!
-    '~/.pki/',                 # Firefox crap
-    '~/.platformio/',          # Platformio crap
-    '~/Public/',               # oh, for the love of Dog, why!?!
-    '~/.purple/',              # Pidgin crap
-    '~/.putty/',               # Puttygen crap
-    '~/__pycache__/',          # Python crap
-    '~/.python_history',       # Python crap
-    '~/.python-version',       # Python crap
-    '~/.sane/',                # Scanner Access Now Easy crap
-    '~/sketchbook/',           # Arduino crap
-    '~/.sqlite_history',       # SQLite crap
-    '~/.stCommitMsg',          # Sourcetree crap
-    '~/.swiftpm/',             # macOS crap
-    '~/Templates/',            # oh, for the love of Dog, why!?!
-    '~/.terraform.d/',         # HashiCorp crap
-    '~/.themes/',              # GNOME-ish crap not using .{cache,config,local}
-    '~/.thumbnails/',          # GNOME-ish crap not using .{cache,config,local}
-    '~/.tintin/',              # Tintin++ crap
-    '~/.tkremindrc',           # Remind crap
-    '~/.vagrant.d/',           # HashiCorp crap
-    '~/.vault-token',          # HashiCorp crap
-    '~/Videos/',               # oh, for the love of Dog, why!?!
-    '~/.viminfo',              # Vim crap
-    '~/.vim/',                 # Vim crap
-    '~/.VisualIDs/',           # FoxtrotGPS crap
-    '~/.vmware/',              # VMware crap
-    '~/.vscode-oss/',          # VSCodium crap
-    '~/.vscode/',              # VSCode crap
-    '~/.wget-hsts',            # Wget crap
-    '~/.xournal/',             # Xournal crap
-    '~/.xsession-errors.old',  # Xorg crap
-    '~/.xsession-errors',      # Xorg crap
-    '~/.zoom/',                # Zoom crap
+    '~/.adobe/',                                   # Macromedia Flash crap
+    '~/.android/',                                 # Android crap
+    '~/.ansible/',                                 # Ansible crap
+    '~/.ansible_async/',                           # Ansible crap
+    '~/.ansible_galaxy',                           # Ansible crap
+    '~/.arduino15/',                               # Arduino crap
+    '~/Arduino/',                                  # Arduino crap
+    '~/.arduino/',                                 # Arduino crap
+    '~/.atom/',                                    # Atom crap
+    '~/.audacity-data/',                           # Audacity crap
+    '~/.bash_history',                             # Bash crap
+    '~/.bash_sessions/',                           # iTerm2 crap
+    '~/.cache/',                                   # GNOME-ish crap
+    '~/Calibre Library/',                          # Calibre crap
+    '~/.cargo/',                                   # Rust crap
+    '~/.CFUserTextEncoding',                       # macOS crap
+    '~/.chirp/',                                   # CHIRP crap
+    '~/.cisco/',                                   # Cisco log crap
+    '~/credstash.log',                             # Credstash crap
+    '~/Downloads/',                                # oh, for the love of Dog, why!?!
+    '~/.DS_Store',                                 # macOS crap
+    '~/.dvdcss/',                                  # libdvdcss crap
+    '~/.eos-wallpaper-set.history-of-wallpapers',  # EndeavourOS crap
+    '~/.foxtrotgps/',                              # FoxtrotGPS crap
+    '~/.gconf/',                                   # GNOME-ish crap not using .{cache,config,local}
+    '~/.ghoto/',                                   # gPhoto crap
+    '~/.gimp-2.8/',                                # GIMP crap
+    '~/.gitflow_export',                           # Sourcetree crap
+    '~/.gitignore_global',                         # Sourcetree crap
+    '~/.gnome2/',                                  # GNOME-ish crap not using .{cache,config,local}
+    '~/.gnome2_private/',                          # GNOME-ish crap not using .{cache,config,local}
+    '~/.gnuradio/',                                # GNURadio crap
+    '~/.govmomi/',                                 # VMware crap
+    '~/.gphoto/',                                  # GNOME photo crap
+    '~/.gr_fftw_wisdom',                           # GNURadio crap
+    '~/.gr_fftw_wisdom.lock',                      # GNURadio crap
+    '~/.hgignore_global',                          # Sourcetree crap
+    '~/.hplip/',                                   # HP Linux Imaging and Printing crap
+    '~/.icons/',                                   # GNOME-ish crap not using .{cache,config,local}
+    '~/.java/',                                    # Java crap
+    '~/.knownPackages',                            # Android crap
+    '~/.lesshsQ',                                  # Less crap
+    '~/.lesshst',                                  # Less crap
+    '~/.macromedia/',                              # Macromedia Flash crap
+    '~/Maps/',                                     # FoxtrotGPS crap
+    '~/Movies/',                                   # oh, for the love of Dog, why!?!
+    '~/Music/',                                    # oh, for the love of Dog, why!?!
+    '~/.oracle_jre_usage/',                        # Java crap
+    '~/.ovftool.ssldb',                            # VMware crap
+    '~/.packer.d/',                                # HashiCorp crap
+    '~/Pictures/',                                 # oh, for the love of Dog, why!?!
+    '~/.pki/',                                     # Firefox crap
+    '~/.platformio/',                              # Platformio crap
+    '~/Public/',                                   # oh, for the love of Dog, why!?!
+    '~/.purple/',                                  # Pidgin crap
+    '~/.putty/',                                   # Puttygen crap
+    '~/__pycache__/',                              # Python crap
+    '~/.python_history',                           # Python crap
+    '~/.python-version',                           # Python crap
+    '~/.sane/',                                    # Scanner Access Now Easy crap
+    '~/sketchbook/',                               # Arduino crap
+    '~/.sqlite_history',                           # SQLite crap
+    '~/.stCommitMsg',                              # Sourcetree crap
+    '~/.swiftpm/',                                 # macOS crap
+    '~/Templates/',                                # oh, for the love of Dog, why!?!
+    '~/.terraform.d/',                             # HashiCorp crap
+    '~/.themes/',                                  # GNOME-ish crap not using .{cache,config,local}
+    '~/.thumbnails/',                              # GNOME-ish crap not using .{cache,config,local}
+    '~/.tintin/',                                  # Tintin++ crap
+    '~/.tkremindrc',                               # Remind crap
+    '~/.vagrant.d/',                               # HashiCorp crap
+    '~/.vault-token',                              # HashiCorp crap
+    '~/Videos/',                                   # oh, for the love of Dog, why!?!
+    '~/.viminfo',                                  # Vim crap
+    '~/.vim/',                                     # Vim crap
+    '~/.VisualIDs/',                               # FoxtrotGPS crap
+    '~/.vmware/',                                  # VMware crap
+    '~/.vscode-oss/',                              # VSCodium crap
+    '~/.vscode/',                                  # VSCode crap
+    '~/.wget-hsts',                                # Wget crap
+    '~/.xournal/',                                 # Xournal crap
+    '~/.xsession-errors.old',                      # Xorg crap
+    '~/.xsession-errors',                          # Xorg crap
+    '~/.zoom/',                                    # Zoom crap
 ]
-#   '~/.docker/',              # Docker (Rancher) crap
-#   '~/Documents/',            # oh, for the love of Dog, why!?!
-#   '~/go/',                   # Go crap (use "go clean -modcache ; rm -rf ~/go/")
-#   '~/.kube/',                # Rancher Desktop crap
-#   '~/.kuberlr/',             # Rancher Desktop crap
-#   '~/.rd/',                  # Rancher Desktop crap
+#   '~/.docker/',                                  # Docker (Rancher) crap
+#   '~/Documents/',                                # oh, for the love of Dog, why!?!
+#   '~/go/',                                       # Go crap (use "go clean -modcache ; rm -rf ~/go/")
+#   '~/.kube/',                                    # Rancher Desktop crap
+#   '~/.kuberlr/',                                 # Rancher Desktop crap
+#   '~/.rd/',                                      # Rancher Desktop crap
 
 
 def yesno(question, default='n'):
