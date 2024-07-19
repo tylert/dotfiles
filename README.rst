@@ -37,3 +37,4 @@ You can also fix this behaviour permanently for all files using::
 * https://apple.stackexchange.com/questions/373176/disable-the-use-of-the-com-apple-quarantine-extended-attribute-on-mojave
 * https://www.brunerd.com/blog/2020/01/07/track-and-tackle-com-apple-macl
 * https://www.arno.org/on-the-origins-of-ds-store
+* https://danmackinlay.name/notebook/macos_hacks.html
