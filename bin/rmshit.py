@@ -26,6 +26,7 @@ turdfiles = [
     '~/.cache/',                                   # GNOME-ish crap
     '~/Calibre Library/',                          # Calibre crap
     '~/.cargo/',                                   # Rust crap
+    '~/.cargo/',                                   # Rust crap
     '~/.CFUserTextEncoding',                       # macOS crap
     '~/.chirp/',                                   # CHIRP crap
     '~/.cisco/',                                   # Cisco log crap
