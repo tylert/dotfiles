@@ -56,8 +56,7 @@ brew_upgrade() {
     fi
 
     brew update
-    brew upgrade --formulae --greedy
-    brew upgrade --casks --greedy
+    brew upgrade --greedy
     brew cleanup
 
     # brew list --versions
