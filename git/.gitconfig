@@ -1,6 +1,8 @@
 [user]
 	name = Tyler Tidman
 	email = tyler.tidman@draak.ca
+[gpg]
+	format = ssh
 [pull]
 	rebase = true
 [core]
@@ -9,10 +11,7 @@
 	short = true
 [alias]
 	dt = diff-tree --name-only --no-commit-id -r
+	first = rev-list --max-parents=0 HEAD
 	lg = log --decorate --graph --oneline
 	lga = log --all --decorate --graph --oneline
 	root = rev-parse --show-toplevel
-#[commit]
-#	gpgsign = true
-#[url "ssh://git@github.com/"]
-#	insteadOf = https://github.com/
