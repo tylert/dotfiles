@@ -1,8 +1,11 @@
 [user]
 	name = Tyler Tidman
 	email = tyler.tidman@draak.ca
-[gpg]
-	format = ssh
+#	signingkey = ~/.ssh/id_ed25519
+#[commit]
+#	gpgsign = true
+#[gpg]
+#	format = ssh
 [pull]
 	rebase = true
 [core]
