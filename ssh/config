@@ -1,5 +1,5 @@
 HashKnownHosts no
-ForwardAgent yes
+ForwardAgent no
 # ForwardX11 yes
 # ForwardX11Trusted yes
 
