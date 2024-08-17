@@ -98,6 +98,7 @@ turdfiles = [
 ]
 #   '~/.bash_history-01920.tmp',                   # Bash crap
 #   '~/.bash_history-28714.tmp',                   # Bash crap
+#   '~/.bash_history-40564.tmp',                   # Bash crap
 #   '~/.docker/',                                  # Docker (Rancher) crap
 #   '~/Documents/',                                # oh, for the love of Dog, why!?!
 #   '~/go/',                                       # Go crap (use "go clean -modcache ; rm -rf ~/go/")
