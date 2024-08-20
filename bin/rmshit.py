@@ -34,6 +34,8 @@ turdfiles = [
     '~/.DS_Store',                                 # macOS crap
     '~/.dvdcss/',                                  # libdvdcss crap
     '~/.eos-wallpaper-set.history-of-wallpapers',  # EndeavourOS crap
+    '~/.face',                                     # Debian crap
+    '~/.face.icon',                                # Debian crap
     '~/.foxtrotgps/',                              # FoxtrotGPS crap
     '~/.gconf/',                                   # GNOME-ish crap not using .{cache,config,local}
     '~/.ghoto/',                                   # gPhoto crap
