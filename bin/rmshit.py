@@ -34,8 +34,6 @@ turdfiles = [
     '~/.DS_Store',                                 # macOS crap
     '~/.dvdcss/',                                  # libdvdcss crap
     '~/.eos-wallpaper-set.history-of-wallpapers',  # EndeavourOS crap
-    '~/.face',                                     # Debian crap
-    '~/.face.icon',                                # Debian crap
     '~/.foxtrotgps/',                              # FoxtrotGPS crap
     '~/.gconf/',                                   # GNOME-ish crap not using .{cache,config,local}
     '~/.ghoto/',                                   # gPhoto crap
@@ -103,6 +101,8 @@ turdfiles = [
 #   '~/.bash_history-40564.tmp',                   # Bash crap
 #   '~/.docker/',                                  # Docker (Rancher) crap
 #   '~/Documents/',                                # oh, for the love of Dog, why!?!
+#   '~/.face',                                     # Debian crap
+#   '~/.face.icon',                                # Debian crap
 #   '~/go/',                                       # Go crap (use "go clean -modcache ; rm -rf ~/go/")
 #   '~/.kube/',                                    # Rancher Desktop crap
 #   '~/.kuberlr/',                                 # Rancher Desktop crap

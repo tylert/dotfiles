@@ -13,6 +13,33 @@ Dotfiles
 * https://rednafi.com/misc/pesky_little_scripts
 
 
+Bugs
+----
+
+::
+
+    $ touch ~/.face
+    $ ln -sf ~/.face ~/.face.icon
+    $ ~/bin/rmshit.py
+    Found shitty files:
+        /home/meh/.face
+        /home/meh/.face.icon
+    Remove all? (y/[n]) y
+    Traceback (most recent call last):
+      File "/home/meh/bin/rmshit.py", line 158, in <module>
+        main()
+      File "/home/meh/bin/rmshit.py", line 151, in main
+        rmtree(f)
+      File "/usr/lib/python3.12/shutil.py", line 759, in rmtree
+        _rmtree_safe_fd(stack, onexc)
+      File "/usr/lib/python3.12/shutil.py", line 703, in _rmtree_safe_fd
+        onexc(func, path, err)
+      File "/usr/lib/python3.12/shutil.py", line 674, in _rmtree_safe_fd
+        topfd = os.open(name, os.O_RDONLY | os.O_NONBLOCK, dir_fd=dirfd)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/meh/.face.icon'
+
+
 macOS
 -----
 
