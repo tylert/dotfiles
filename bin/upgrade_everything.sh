@@ -44,7 +44,7 @@ apt_upgrade() {
         rpi-eeprom-update -a -d
     fi
 
-    # dpkg-query --show
+    # dpkg-query --show | tr '\t' ' '
 }
 
 
