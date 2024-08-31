@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Required tools:  find, head, sort
+
 
 cinnamon_random_wallpaper() {
     wallpaper="$(find ~/.wallpapers -maxdepth 1 -type f | sort -R | head -1)"

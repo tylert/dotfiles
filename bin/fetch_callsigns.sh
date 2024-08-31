@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# Yank down a local copy of the Canadian HAM callsign database
+# Yank down a local copy of the Canadian HAM callsign database.
+# Required tools:  date, git, unzip, wget
 
 # See more details at https://www.ic.gc.ca/eic/site/025.nsf/eng/h_00004.html
 # or https://apc-cap.ic.gc.ca/pls/apc_anon/query_avail_cs$callsign.actionquery

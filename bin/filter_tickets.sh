@@ -4,6 +4,8 @@
 # input text.  Print any string with at least one letter, one hyphen and some
 # digits in it.
 
+# Required tools:  sed, sort, tr, uniq
+
 # Invocation examples:
 #     git log oldtag...HEAD | ${0}
 #     git log oldcommit...newcommit | ${0}

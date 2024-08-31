@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# Print out a list of branches along with the last committer on each
+# Print out a list of branches along with the last committer on each.
+# Required tools:  git, grep, head, sort
 
 # Don't do anything if we're not inside an existing git repo
 if $(git rev-parse --quiet --git-dir &> /dev/null); then

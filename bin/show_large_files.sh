@@ -3,11 +3,8 @@
 #set -x
 
 # Shows you the largest objects in your repo's pack file.
-# Written for osx.
-#
-# @see http://stubbisms.wordpress.com/2009/07/10/git-script-to-show-largest-pack-objects-and-trim-your-waist-line/
+# See http://stubbisms.wordpress.com/2009/07/10/git-script-to-show-largest-pack-objects-and-trim-your-waist-line
 # @author Antony Stubbs
-
 # echo 'All sizes are in kB's. The pack column is the size of the object, compressed, inside the pack file.'
 
 if [ ! -z "${1}" ]; then
