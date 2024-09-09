@@ -2,12 +2,13 @@ Dotfiles
 ========
 
 * http://dotfiles.github.io
+* https://iamdan.me/better-dotfiles
+* https://github.com/queer/boxxy
 * https://0x46.net/thoughts/2019/02/01/dotfile-madness
 * https://cheatsheets.stephane.plus/admin/avoid_dotfile_madness
 * https://wiki.archlinux.org/title/XDG_user_directories
 * https://xdgbasedirectoryspecification.com
 * https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
-* https://github.com/queer/boxxy
 * https://dev.to/spacerockmedia/how-i-manage-my-dotfiles-using-gnu-stow-4l59
 * https://www.gnu.org/software/stow/manual/stow.html
 * https://rednafi.com/misc/pesky_little_scripts
