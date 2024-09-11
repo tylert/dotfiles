@@ -8,7 +8,7 @@ suffix="$(date +%Y-%m-%d)"
 ffmpeg \
     -i http://fr.ah.fm:8000/192k \
     -map_metadata 0:s:0 \
-    "~/Desktop/ah_fm_${suffix}.mp3"
+    "${HOME}/Desktop/ah_fm_${suffix}.mp3"
 # XXX FIXME TODO disown/nohup/setsid + log to file + keep quiet about it (current pty)
 
 # Build up the buffer a bit
