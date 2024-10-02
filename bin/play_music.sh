@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Required tools:  date, ffmpeg, nohup/setsid, xdg-open
+# Required tools:  coreutils, ffmpeg, nohup/setsid, xdg-open
 
 suffix="$(date +%Y-%m-%d)"
 
@@ -15,4 +15,4 @@ ffmpeg \
 # sleep 30
 
 # Start playing stuff
-# xdg-open "~/Desktop/ah_fm_${suffix}.mp3"
+# xdg-open "${HOME}/Desktop/ah_fm_${suffix}.mp3"
