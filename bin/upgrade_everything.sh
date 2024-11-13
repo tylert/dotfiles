@@ -16,12 +16,13 @@ pacman_upgrade() {
     fi
 
     # XXX FIXME TODO  Do a better job of managing foreign packages
-    # Show foreign packages with --query --foreign / -Qm
-    # Search for new packages with --sync --search / -Ss
+    # Show foreign packages with --foreign --query / -Qm
+    # Search for new packages with --search --sync / -Ss
 
     # XXX FIXME TODO  Actually clean up old packages cached locally
     # rm -rf /var/cache/pacman/pkg/*
 
+    # XXX FIXME TODO  Find a better way to check if this is a Raspberry Pi
     # If there's Raspberry Pi hardware, try to upgrade the firmware to latest
     if [ -f /proc/device-tree/model ]; then
         rpi-eeprom-update -a -d
@@ -39,6 +40,7 @@ apt_upgrade() {
     apt-get autoclean
     apt-get clean
 
+    # XXX FIXME TODO  Find a better way to check if this is a Raspberry Pi
     # If there's Raspberry Pi hardware, try to upgrade the firmware to latest
     if [ -f /proc/device-tree/model ]; then
         rpi-eeprom-update -a -d
