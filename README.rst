@@ -14,6 +14,12 @@ Dotfiles
 * https://rednafi.com/misc/pesky_little_scripts
 
 
+Git
+---
+
+* https://stackoverflow.com/questions/46524192/how-to-reduce-the-git-output-when-checking-out-a-tag
+
+
 Bugs
 ----
 
@@ -44,6 +50,10 @@ Bugs
 macOS
 -----
 
+If you encounter silly DNS problems in macOS, you may need the following command::
+
+    sudo dscacheutil -flushcache ; sudo killall -HUP mDNSResponder
+
 Occasionally, you will run into a file in your home directory that you aren't
 allowed to execute or delete.  This is caused by macOS trying to be "helpful".
 You can fix this on a case-by-case basis by typing::
@@ -66,3 +76,4 @@ You can also fix this behaviour permanently for all files using::
 * https://www.brunerd.com/blog/2020/01/07/track-and-tackle-com-apple-macl
 * https://www.arno.org/on-the-origins-of-ds-store
 * https://danmackinlay.name/notebook/macos_hacks.html
+* https://www.freecodecamp.org/news/how-to-flush-dns-on-mac-macos-clear-dns-cache
