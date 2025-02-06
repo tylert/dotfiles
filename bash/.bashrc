@@ -9,9 +9,6 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-# Prevent stupid empty ~/.bash_history-?????.tmp turd files
-HISTSIZE=10000
-
 # If this is an xterm set the titlebar to user@host:dir
 case "${TERM}" in
 xterm*|rxvt*)
@@ -20,6 +17,12 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+# Prevent stupid empty ~/.bash_history-?????.tmp turd files
+export HISTSIZE=10000
+
+# Git stuff
+export GIT_EDITOR=vim
 
 # Go stuff
 export PATH="${HOME}/go/bin:${PATH}"
