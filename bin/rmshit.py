@@ -58,6 +58,7 @@ turdfiles = [
     '~/Maps/',                                     # FoxtrotGPS crap
     '~/Movies/',                                   # oh, for the love of Dog, why!?!
     '~/Music/',                                    # oh, for the love of Dog, why!?!
+    '~/.nomadnetwork/',                            # Reticulum crap not using .{cache,config,local}
     '~/.oracle_jre_usage/',                        # Java crap
     '~/.ovftool.ssldb',                            # VMware crap
     '~/.packer.d/',                                # HashiCorp crap
@@ -70,6 +71,7 @@ turdfiles = [
     '~/__pycache__/',                              # Python crap
     '~/.python_history',                           # Python crap
     '~/.python-version',                           # Python crap
+    '~/.reticulum/',                               # Reticulum crap not using .{cache,config,local}
     '~/.sane/',                                    # Scanner Access Now Easy crap
     '~/sketchbook/',                               # Arduino crap
     '~/.sqlite_history',                           # SQLite crap
