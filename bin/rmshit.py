@@ -30,6 +30,7 @@ turdfiles = [
     '~/.chirp/',                                   # CHIRP crap
     '~/.cisco/',                                   # Cisco log crap
     '~/credstash.log',                             # Credstash crap
+    '~/.docker/',                                  # Docker (Rancher) crap
     '~/Downloads/',                                # oh, for the love of Dog, why!?!
     '~/.DS_Store',                                 # macOS crap
     '~/.dvdcss/',                                  # libdvdcss crap
@@ -99,7 +100,6 @@ turdfiles = [
     '~/.zoom/',                                    # Zoom crap
 ]
 #   '~/.bash_history-?????.tmp',                   # Bash crap
-#   '~/.docker/',                                  # Docker (Rancher) crap
 #   '~/Documents/',                                # oh, for the love of Dog, why!?!
 #   '~/.face',                                     # Debian crap
 #   '~/.face.icon',                                # Debian crap
