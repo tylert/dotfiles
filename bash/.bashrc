@@ -27,6 +27,9 @@ export GIT_EDITOR=vim
 # Go stuff
 export PATH="${HOME}/go/bin:${PATH}"
 
+# Python stuff
+export PATH="${HOME}/.local/bin:${PATH}"
+
 # HashiCorp stuff
 export CHECKPOINT_DISABLE=1
 export VAGRANT_CHECKPOINT_DISABLE=1
