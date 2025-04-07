@@ -12,16 +12,14 @@ Dotfiles
 * https://dev.to/spacerockmedia/how-i-manage-my-dotfiles-using-gnu-stow-4l59
 * https://www.gnu.org/software/stow/manual/stow.html
 * https://rednafi.com/misc/pesky_little_scripts
+* https://medium.com/@todariasova/managing-your-dotfiles-59e13e8ab2d6  git work-tree manipulation?
 
 
-Git
----
+Annoyances
+----------
 
-* https://stackoverflow.com/questions/46524192/how-to-reduce-the-git-output-when-checking-out-a-tag
-
-
-Bugs
-----
+* https://issues.apache.org/jira/browse/SVN-4599  name of ~/.subversion/ directory is hard-coded;  open since 2015
+* https://github.com/markqvist/Reticulum/discussions/732  hard-coded paths to Reticulum/LXMF config files
 
 ::
 
