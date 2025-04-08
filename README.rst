@@ -18,6 +18,8 @@ Dotfiles
 Annoyances
 ----------
 
+* https://bugzilla.mozilla.org/show_bug.cgi?id=259356  Firefox support for XDG base directories;  open since 2004
+* https://bugzilla.mozilla.org/show_bug.cgi?id=735285  Thunderbird support for XDG base directories;  open since 2012
 * https://issues.apache.org/jira/browse/SVN-4599  name of ~/.subversion/ directory is hard-coded;  open since 2015
 * https://github.com/markqvist/Reticulum/discussions/732  hard-coded paths to Reticulum/LXMF config files
 
