@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Yank down a local copy of the Canadian HAM callsign database.
-# Required tools:  date, git, unzip, wget
+# Yank down a local copy of the Canadian amateur radio callsign database.
+# Required tools:  bash, date, git, unzip, wget
 
 # See more details at
 # https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/en/downloads
