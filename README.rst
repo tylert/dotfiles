@@ -10,9 +10,10 @@ Dotfiles
 * https://xdgbasedirectoryspecification.com
 * https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
 * https://dev.to/spacerockmedia/how-i-manage-my-dotfiles-using-gnu-stow-4l59
-* https://www.gnu.org/software/stow/manual/stow.html
+* https://gnu.org/software/stow/manual/stow.html
 * https://rednafi.com/misc/pesky_little_scripts
 * https://medium.com/@todariasova/managing-your-dotfiles-59e13e8ab2d6  git work-tree manipulation?
+* https://blog.larah.me/mess-directory  automation tricks
 
 
 Annoyances
