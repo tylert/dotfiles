@@ -14,6 +14,7 @@ Dotfiles
 * https://rednafi.com/misc/pesky_little_scripts
 * https://medium.com/@todariasova/managing-your-dotfiles-59e13e8ab2d6  git work-tree manipulation?
 * https://blog.larah.me/mess-directory  automation tricks
+* https://github.com/samyk/samytools  way more cool tools
 
 
 Annoyances
