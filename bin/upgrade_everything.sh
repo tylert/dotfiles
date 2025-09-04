@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# https://xkcd.com/1654/
+# https://xkcd.com/1654
 
 
 pacman_upgrade() {
@@ -50,6 +50,27 @@ apt_upgrade() {
 }
 
 
+apk_upgrade() {
+    # Alpine
+    #   https://wiki.alpinelinux.org/wiki/Upgrading_Alpine_Linux_to_a_new_release_branch
+    apk update
+    apk add --upgrade apk-tools
+    apk upgrade --available
+
+    # XXX FIXME TODO  Just list all the installed package versions
+}
+
+
+opkg_upgrade() {
+    # OpenWRT
+    #   https://openwrt.org/docs/guide-user/additional-software/opkg#upgrading_packages
+    opkg update
+    opkg list-upgradable | cut -f 1 -d ' ' | xargs -r opkg upgrade
+
+    # XXX FIXME TODO  Just list all the installed package versions
+}
+
+
 brew_upgrade() {
     # macOS (and apparently others too although not sure why)
     if [ '0' == $(id -u) ]; then
@@ -70,8 +91,10 @@ upgrade_everything() {
         'Linux')
             # XXX FIXME TODO  Find a nice(r) way to determine your Linux distro!!!
             case 'Arch' in
+                'Alpine') apk_upgrade ;;
                 'Arch') pacman_upgrade ;;
                 'Debian') apt_upgrade ;;
+                'OpenWRT') opkg_upgrade ;;
                 *) echo 'I do not recognize your Linux distribution.' ; exit 2 ;;
             esac ;;
         'Darwin') brew_upgrade ;;
