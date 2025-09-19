@@ -8,7 +8,7 @@ Dotfiles
 * https://cheatsheets.stephane.plus/admin/avoid_dotfile_madness
 * https://wiki.archlinux.org/title/XDG_user_directories
 * https://xdgbasedirectoryspecification.com
-* https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
+* https://anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
 * https://dev.to/spacerockmedia/how-i-manage-my-dotfiles-using-gnu-stow-4l59
 * https://gnu.org/software/stow/manual/stow.html
 * https://rednafi.com/misc/pesky_little_scripts
@@ -20,10 +20,12 @@ Dotfiles
 Annoyances
 ----------
 
+* https://wiki.archlinux.org/title/XDG_user_directories
 * https://bugzilla.mozilla.org/show_bug.cgi?id=259356  Firefox support for XDG base directories;  open since 2004
 * https://bugzilla.mozilla.org/show_bug.cgi?id=735285  Thunderbird support for XDG base directories;  open since 2012
 * https://issues.apache.org/jira/browse/SVN-4599  name of ~/.subversion/ directory is hard-coded;  open since 2015
 * https://github.com/markqvist/Reticulum/discussions/732  hard-coded paths to Reticulum/LXMF config files
+* https://bubelov.com/blog/2020/10/gnome-screenshots  GNOME screenshot tool has zero customization
 
 ::
 
@@ -75,7 +77,7 @@ You can also fix this behaviour permanently for all files using::
 
 * https://superuser.com/questions/28384/what-should-i-do-about-com-apple-quarantine
 * https://apple.stackexchange.com/questions/373176/disable-the-use-of-the-com-apple-quarantine-extended-attribute-on-mojave
-* https://www.brunerd.com/blog/2020/01/07/track-and-tackle-com-apple-macl
-* https://www.arno.org/on-the-origins-of-ds-store
+* https://brunerd.com/blog/2020/01/07/track-and-tackle-com-apple-macl
+* https://arno.org/on-the-origins-of-ds-store
 * https://danmackinlay.name/notebook/macos_hacks.html
-* https://www.freecodecamp.org/news/how-to-flush-dns-on-mac-macos-clear-dns-cache
+* https://freecodecamp.org/news/how-to-flush-dns-on-mac-macos-clear-dns-cache
