@@ -21,8 +21,8 @@ Dotfiles
     rm -fv ~/.vimrc
     rm -fv ~/.gvimrc
     mkdir -pv ~/.config/vim
-    ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/vim/vimrc
-    ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/vim/gvimrc
+    ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/config/vim/vimrc
+    ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/config/vim/gvimrc
 
     rm -rfv ~/.config/go
     mkdir -pv ~/.config/go
