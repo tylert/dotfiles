@@ -17,7 +17,7 @@ if [ ! -d "${callsigns_dir}" ]; then
 fi
 
 pushd "${callsigns_dir}" > /dev/null 2>&1
-    wget "${source_file}"
+    wget --hsts-file=/dev/null "${source_file}"
     unzip -o "$(basename ${source_file})" "${output_file}"
     rm -fv "$(basename ${source_file})"
     git add "${output_file}"
