@@ -24,9 +24,9 @@ pacman_upgrade() {
 
     # XXX FIXME TODO  Find a better way to check if this is a Raspberry Pi
     # If there's Raspberry Pi hardware, try to upgrade the firmware to latest
-    if [ -f /proc/device-tree/model ]; then
-        rpi-eeprom-update -a -d
-    fi
+    # if [ -f /proc/device-tree/model ]; then
+    #     rpi-eeprom-update -a -d
+    # fi
 
     # pacman --query
 }
@@ -42,9 +42,9 @@ apt_upgrade() {
 
     # XXX FIXME TODO  Find a better way to check if this is a Raspberry Pi
     # If there's Raspberry Pi hardware, try to upgrade the firmware to latest
-    if [ -f /proc/device-tree/model ]; then
-        rpi-eeprom-update -a -d
-    fi
+    # if [ -f /proc/device-tree/model ]; then
+    #     rpi-eeprom-update -a -d
+    # fi
 
     # dpkg-query --show | tr '\t' ' '
 }
