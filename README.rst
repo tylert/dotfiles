@@ -1,7 +1,7 @@
 Dotfiles
 ========
 
-* http://dotfiles.github.io
+* https://dotfiles.github.io
 * https://iamdan.me/better-dotfiles
 * https://github.com/queer/boxxy
 * https://0x46.net/thoughts/2019/02/01/dotfile-madness
@@ -15,6 +15,18 @@ Dotfiles
 * https://medium.com/@todariasova/managing-your-dotfiles-59e13e8ab2d6  git work-tree manipulation?
 * https://blog.larah.me/mess-directory  automation tricks
 * https://github.com/samyk/samytools  way more cool tools
+
+::
+
+    rm -fv ~/.vimrc
+    rm -fv ~/.gvimrc
+    mkdir -pv ~/.config/vim
+    ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/vim/vimrc
+    ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/vim/gvimrc
+
+    rm -rfv ~/.config/go
+    mkdir -pv ~/.config/go
+    touch ~/.config/go/telemetry
 
 
 Annoyances
