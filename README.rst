@@ -15,6 +15,7 @@ Dotfiles
 * https://medium.com/@todariasova/managing-your-dotfiles-59e13e8ab2d6  git work-tree manipulation?
 * https://blog.larah.me/mess-directory  automation tricks
 * https://github.com/samyk/samytools  way more cool tools
+* https://evanhahn.com/scripts-i-wrote-that-i-use-all-the-time  more cool tools
 
 ::
 
