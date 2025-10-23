@@ -19,6 +19,10 @@ Dotfiles
 
 ::
 
+    rm -fv ~/.tmux.conf
+    mkdir -pv ~/.config/tmux
+    ln -t ~/.config/tmux -sfv ${GIT_ROOT}/dotfiles/config/tmux/tmux.conf
+
     rm -fv ~/.vimrc
     rm -fv ~/.gvimrc
     mkdir -pv ~/.config/vim
