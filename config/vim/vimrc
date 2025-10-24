@@ -23,6 +23,7 @@ set noautoindent   "don't do that annoying thing when pasting text with mouse
 set nosmartindent  "and certainly don't do it after { or } either
 "set nocindent
 
+set viminfofile=NONE
 "set noswapfile     "whoa, really?
 
 "runtime syntax/tf.vim  "all HCL2 FFS

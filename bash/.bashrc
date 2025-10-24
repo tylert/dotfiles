@@ -21,8 +21,7 @@ esac
 # Prevent stupid empty ~/.bash_history-?????.tmp turd files
 export HISTSIZE=10000
 
-# My text editor stuff
-alias vim='vim -i NONE'  # Make fewer vim turd files
+# Git stuff
 export GIT_EDITOR=vim
 
 # Go stuff
