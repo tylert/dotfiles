@@ -29,6 +29,10 @@ Dotfiles
     ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/config/vim/vimrc
     ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/config/vim/gvimrc
 
+    rm -fv ~/.gitconfig
+    mkdir -pv ~/.config/git
+    ln -t ~/.config/git -sfv ${GIT_ROOT}/dotfiles/config/git/config
+
     rm -rfv ~/.config/go
     mkdir -pv ~/.config/go
     touch ~/.config/go/telemetry
