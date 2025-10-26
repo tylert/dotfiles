@@ -11,11 +11,10 @@ Dotfiles
 * https://anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
 * https://dev.to/spacerockmedia/how-i-manage-my-dotfiles-using-gnu-stow-4l59
 * https://gnu.org/software/stow/manual/stow.html
-* https://rednafi.com/misc/pesky_little_scripts
 * https://medium.com/@todariasova/managing-your-dotfiles-59e13e8ab2d6  git work-tree manipulation?
 * https://blog.larah.me/mess-directory  automation tricks
-* https://github.com/samyk/samytools  way more cool tools
-* https://evanhahn.com/scripts-i-wrote-that-i-use-all-the-time  more cool tools
+* https://yadm.io  Yet Another Dotfiles Manager
+* https://github.com/Bad3r/antidot-home
 
 ::
 
@@ -70,6 +69,13 @@ Annoyances
         topfd = os.open(name, os.O_RDONLY | os.O_NONBLOCK, dir_fd=dirfd)
                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     FileNotFoundError: [Errno 2] No such file or directory: '/home/meh/.face.icon'
+
+
+Other
+-----
+
+* https://github.com/samyk/samytools  way more cool tools
+* https://evanhahn.com/scripts-i-wrote-that-i-use-all-the-time  more cool tools
 
 
 macOS
