@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
-# Required tools:  grep, myrepos
+# Update a whole bunch of git repos recursively.
+# Required tools:  find, git
 
-mr fetch -f
-mr merge
-mr status 2>&1 | grep -E -v '^mr ' | grep -E -v '^$'
+find . -name '.git' -type d \
+    -exec git -C '{}/..' rev-parse --show-toplevel \; \
+    -exec git -C '{}/..' fetch --all --prune --tags \; \
+    -exec git -C '{}/..' merge --ff-only \; \
+    -exec git -C '{}/..' status --ignored \;
