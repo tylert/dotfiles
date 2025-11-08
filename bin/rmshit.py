@@ -12,6 +12,7 @@ from shutil import rmtree
 
 turdfiles = [
     '~/.adobe/',                                   # Macromedia Flash crap
+    '~/.algernon_history',                         # Algernon crap
     '~/.android/',                                 # Android crap
     '~/.ansible/',                                 # Ansible crap
     '~/.ansible_async/',                           # Ansible crap
@@ -31,6 +32,7 @@ turdfiles = [
     '~/.cisco/',                                   # Cisco log crap
     '~/credstash.log',                             # Credstash crap
     '~/.docker/',                                  # Docker (Rancher) crap
+    '~/Documents/',                                # oh, for the love of Dog, why!?!
     '~/Downloads/',                                # oh, for the love of Dog, why!?!
     '~/.DS_Store',                                 # macOS crap
     '~/.dvdcss/',                                  # libdvdcss crap
@@ -100,7 +102,6 @@ turdfiles = [
     '~/.zoom/',                                    # Zoom crap
 ]
 #   '~/.bash_history-?????.tmp',                   # Bash crap
-#   '~/Documents/',                                # oh, for the love of Dog, why!?!
 #   '~/.face',                                     # Debian crap
 #   '~/.face.icon',                                # Debian crap
 #   '~/go/',                                       # Go crap (use "go clean -modcache ; rm -rf ~/go/")
