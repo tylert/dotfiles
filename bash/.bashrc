@@ -18,19 +18,18 @@ xterm*|rxvt*)
     ;;
 esac
 
-# Prevent stupid empty ~/.bash_history-?????.tmp turd files
+# Prevent turd files
 export HISTSIZE=10000
+export LESSHISTFILE=-
 
-# Git stuff
+# Specify tool preferences
 export GIT_EDITOR=vim
 
-# Go stuff
+# Configure paths to more binaries
 export PATH="${HOME}/go/bin:${PATH}"
-
-# Python stuff
 export PATH="${HOME}/.local/bin:${PATH}"
 
-# HashiCorp stuff
+# Block silly telemetry
 export CHECKPOINT_DISABLE=1
 export VAGRANT_CHECKPOINT_DISABLE=1
 
