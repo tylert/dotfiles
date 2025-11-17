@@ -41,6 +41,7 @@
 * <https://issues.apache.org/jira/browse/SVN-4599> name of subversion directory is hard-coded; open since 2015
 * <https://github.com/markqvist/Reticulum/discussions/732> hard-coded paths to Reticulum/LXMF config files
 * <https://bubelov.com/blog/2020/10/gnome-screenshots> GNOME screenshot tool has zero customization
+* <https://wiki.archlinux.org/title/XDG_Base_Directory#Hardcoded>
 
     $ touch ~/.face
     $ ln -sf ~/.face ~/.face.icon

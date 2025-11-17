@@ -76,6 +76,7 @@ turdfiles = [
     '~/.python-version',                           # Python crap
     '~/.reticulum/',                               # Reticulum crap not using .{cache,config,local}
     '~/.sane/',                                    # Scanner Access Now Easy crap
+    '~/.selected_editor',                          # Debian select-editor/sensible-editor crap
     '~/sketchbook/',                               # Arduino crap
     '~/.sqlite_history',                           # SQLite crap
     '~/.stCommitMsg',                              # Sourcetree crap

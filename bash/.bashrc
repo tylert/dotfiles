@@ -24,6 +24,8 @@ export LESSHISTFILE=-
 
 # Specify tool preferences
 export GIT_EDITOR=vim
+export EDITOR=vim
+export VISUAL=vim
 
 # Configure paths to more binaries
 export PATH="${HOME}/go/bin:${PATH}"
@@ -33,5 +35,5 @@ export PATH="${HOME}/.local/bin:${PATH}"
 export CHECKPOINT_DISABLE=1
 export VAGRANT_CHECKPOINT_DISABLE=1
 
-alias pbcopy='xsel --primary --input'
-alias pbpaste='xsel --primary --output'
+# alias pbcopy='xsel --primary --input'
+# alias pbpaste='xsel --primary --output'
