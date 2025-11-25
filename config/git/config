@@ -13,9 +13,7 @@
 [status]
 	short = true
 [alias]
-	dt = diff-tree --name-only --no-commit-id -r
+	files = diff-tree --name-only --no-commit-id -r
 	first = rev-list --abbrev-commit --max-parents=0 HEAD
 	last = rev-parse --short=7 HEAD
-	lg = log --decorate --graph --oneline
-	lga = log --all --decorate --graph --oneline
 	root = rev-parse --show-toplevel
