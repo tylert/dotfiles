@@ -108,6 +108,7 @@ turdfiles = [
 #   '~/go/',                                       # Go crap (use "go clean -modcache ; rm -rf ~/go/")
 #   '~/.kube/',                                    # Rancher Desktop crap
 #   '~/.kuberlr/',                                 # Rancher Desktop crap
+#   '~/.parallel/',                                # ??? crap
 #   '~/.rd/',                                      # Rancher Desktop crap
 
 
