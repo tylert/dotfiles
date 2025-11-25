@@ -21,6 +21,7 @@ esac
 # Prevent turd files
 export HISTSIZE=10000
 export LESSHISTFILE=-
+export PYTHON_HISTORY=/dev/null
 
 # Specify tool preferences
 export GIT_EDITOR=vim
