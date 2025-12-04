@@ -28,6 +28,7 @@ turdfiles = [
     '~/Calibre Library/',                          # Calibre crap
     '~/.cargo/',                                   # Rust crap
     '~/.CFUserTextEncoding',                       # macOS crap
+    '~/.chdkptp/',                                 # CHDK PTP crap
     '~/.chirp/',                                   # CHIRP crap
     '~/.cisco/',                                   # Cisco log crap
     '~/credstash.log',                             # Credstash crap
