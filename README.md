@@ -14,6 +14,7 @@
 * <https://blog.larah.me/mess-directory> automation tricks
 * <https://yadm.io> Yet Another Dotfiles Manager
 * <https://github.com/Bad3r/antidot-home>
+* <https://ianthehenry.com/posts/a-cozy-nest-for-your-scripts> nested HOME/bin directory
 
     rm -fv ~/.tmux.conf
     mkdir -pv ~/.config/tmux
