@@ -18,6 +18,8 @@ xterm*|rxvt*)
     ;;
 esac
 
+eval $(dircolors --bourne-shell)
+
 # Prevent turd files
 export HISTSIZE=10000
 export LESSHISTFILE=-

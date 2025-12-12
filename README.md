@@ -16,23 +16,20 @@
 * <https://github.com/Bad3r/antidot-home>
 * <https://ianthehenry.com/posts/a-cozy-nest-for-your-scripts> nested HOME/bin directory
 
-    rm -fv ~/.tmux.conf
-    mkdir -pv ~/.config/tmux
-    ln -t ~/.config/tmux -sfv ${GIT_ROOT}/dotfiles/config/tmux/tmux.conf
+    $ rm -fv ~/.tmux.conf
+    $ ln -t ~/.config/tmux -sfv ${GIT_ROOT}/dotfiles/config/tmux/tmux.conf
 
-    rm -fv ~/.vimrc
-    rm -fv ~/.gvimrc
-    mkdir -pv ~/.config/vim
-    ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/config/vim/vimrc
-    ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/config/vim/gvimrc
+    $ rm -fv ~/.vimrc
+    $ rm -fv ~/.gvimrc
+    $ ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/config/vim/vimrc
+    $ ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/config/vim/gvimrc
 
-    rm -fv ~/.gitconfig
-    mkdir -pv ~/.config/git
-    ln -t ~/.config/git -sfv ${GIT_ROOT}/dotfiles/config/git/config
+    $ rm -fv ~/.gitconfig
+    $ ln -t ~/.config/git -sfv ${GIT_ROOT}/dotfiles/config/git/config
 
-    rm -rfv ~/.config/go
-    mkdir -pv ~/.config/go
-    touch ~/.config/go/telemetry
+    $ rm -rfv ~/.config/go
+    $ touch ~/.config/go/telemetry
+
 
 ## Annoyances
 
@@ -65,34 +62,36 @@
                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     FileNotFoundError: [Errno 2] No such file or directory: '/home/meh/.face.icon'
 
-## Other
 
-* <https://github.com/samyk/samytools> way more cool tools
-* <https://evanhahn.com/scripts-i-wrote-that-i-use-all-the-time> more cool tools
+## Debian
+
+    # Why isn't this the default everywhere, by now?!?!
+    $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+
 
 ## macOS
 
 If you encounter silly DNS problems in macOS, you may need the following
 command:
 
-    sudo dscacheutil -flushcache ; sudo killall -HUP mDNSResponder
+    $ sudo dscacheutil -flushcache ; sudo killall -HUP mDNSResponder
 
 Occasionally, you will run into a file in your home directory that you
 aren\'t allowed to execute or delete. This is caused by macOS trying to
 be \"helpful\". You can fix this on a case-by-case basis by typing:
 
-    xattr -d com.apple.quarantine /path/to/file
-    xattr -d com.apple.macl /path/to/file  # might not be needed
+    $ xattr -d com.apple.quarantine /path/to/file
+    $ xattr -d com.apple.macl /path/to/file  # might not be needed
 
 Fix a bunch of them in bulk perhaps using:
 
-    find /path/to/directory -exec xattr -d com.apple.quarantine {} \;
-    find /path/to/directory -exec xattr -d com.apple.macl {} \;  # might not be needed
+    $ find /path/to/directory -exec xattr -d com.apple.quarantine {} \;
+    $ find /path/to/directory -exec xattr -d com.apple.macl {} \;  # might not be needed
 
 You can also fix this behaviour permanently for all files using:
 
-    sudo defaults write com.apple.LaunchServices LSQuarantine -bool NO
-    sudo reboot
+    $ sudo defaults write com.apple.LaunchServices LSQuarantine -bool NO
+    $ sudo reboot
 
 * <https://superuser.com/questions/28384/what-should-i-do-about-com-apple-quarantine>
 * <https://apple.stackexchange.com/questions/373176/disable-the-use-of-the-com-apple-quarantine-extended-attribute-on-mojave>
@@ -100,3 +99,9 @@ You can also fix this behaviour permanently for all files using:
 * <https://arno.org/on-the-origins-of-ds-store>
 * <https://danmackinlay.name/notebook/macos_hacks.html>
 * <https://freecodecamp.org/news/how-to-flush-dns-on-mac-macos-clear-dns-cache>
+
+
+## Other
+
+* <https://github.com/samyk/samytools> way more cool tools
+* <https://evanhahn.com/scripts-i-wrote-that-i-use-all-the-time> more cool tools
