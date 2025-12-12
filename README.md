@@ -16,14 +16,6 @@
 * <https://github.com/Bad3r/antidot-home>
 * <https://ianthehenry.com/posts/a-cozy-nest-for-your-scripts> nested HOME/bin directory
 
-    $ rm -fv ~/.tmux.conf
-    $ ln -t ~/.config/tmux -sfv ${GIT_ROOT}/dotfiles/config/tmux/tmux.conf
-
-    $ rm -fv ~/.vimrc
-    $ rm -fv ~/.gvimrc
-    $ ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/config/vim/vimrc
-    $ ln -t ~/.config/vim -sfv ${GIT_ROOT}/dotfiles/config/vim/gvimrc
-
     $ rm -fv ~/.gitconfig
     $ ln -t ~/.config/git -sfv ${GIT_ROOT}/dotfiles/config/git/config
 
@@ -65,7 +57,7 @@
 
 ## Debian
 
-    # Why isn't this the default everywhere, by now?!?!
+    # Why is this not the default everywhere by now?!?!
     $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
 
