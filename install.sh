@@ -14,33 +14,33 @@ self="$(readlink --canonicalize ${BASH_SOURCE[0]})"
 # | (_| (_) | | | |  _| | (_| |
 #  \___\___/|_| |_|_| |_|\__, |
 #                        |___/ 
-if [ ! -d "~/.config" ]; then
-    mkdir --mode=0700 --parents --verbose "~/.config"
+if [ ! -d "${HOME}/.config" ]; then
+    mkdir --mode=0700 --parents --verbose "${HOME}/.config"
 else
-    chmod --changes 0700 "~/.config"
+    chmod --changes 0700 "${HOME}/.config"
 fi
-ln -sfv -t "~/.config" "$(dirname ${self})/config/user-dirs.dirs"
+ln -sfv -t "${HOME}/.config" "$(dirname ${self})/config/user-dirs.dirs"
 
 #  _               _     
 # | |__   __ _ ___| |__  
 # | '_ \ / _` / __| '_ \ 
 # | |_) | (_| \__ \ | | |
 # |_.__/ \__,_|___/_| |_|
-ln -sfv -t "~" "$(dirname ${self})/bash/.bash_profile"
-ln -sfv -t "~" "$(dirname ${self})/bash/.bash_logout"
+ln -sfv -t "${HOME}" "$(dirname ${self})/bash/.bash_profile"
+ln -sfv -t "${HOME}" "$(dirname ${self})/bash/.bash_logout"
 
 #  _
 # | |_ _ __ ___  _   ___  __
 # | __| '_ ` _ \| | | \ \/ /
 # | |_| | | | | | |_| |>  <
 #  \__|_| |_| |_|\__,_/_/\_\
-rm -fv "~/.tmux.conf"
-if [ ! -d "~/.config/tmux" ]; then
-    mkdir --mode=0755 --verbose "~/.config/tmux"
+rm -fv "${HOME}/.tmux.conf"
+if [ ! -d "${HOME}/.config/tmux" ]; then
+    mkdir --mode=0755 --verbose "${HOME}/.config/tmux"
 else
-    chmod --changes 0755 "~/.config/tmux"
+    chmod --changes 0755 "${HOME}/.config/tmux"
 fi
-ln -sfv -t "~/.config/tmux" "$(dirname ${self})/config/tmux/tmux.conf"
+ln -sfv -t "${HOME}/.config/tmux" "$(dirname ${self})/config/tmux/tmux.conf"
 
 #        _                           _
 # __   _(_)_ __ ___       __ ___   _(_)_ __ ___
@@ -48,23 +48,23 @@ ln -sfv -t "~/.config/tmux" "$(dirname ${self})/config/tmux/tmux.conf"
 #  \ V /| | | | | | |_  | (_| |\ V /| | | | | | |
 #   \_/ |_|_| |_| |_( )  \__, | \_/ |_|_| |_| |_|
 #                   |/   |___/
-rm -fv "~/.vimrc" "~/.gvimrc"
-if [ ! -d "~/.config/vim" ]; then
-    mkdir --mode=0755 --verbose "~/.config/vim"
+rm -fv "${HOME}/.vimrc" "${HOME}/.gvimrc"
+if [ ! -d "${HOME}/.config/vim" ]; then
+    mkdir --mode=0755 --verbose "${HOME}/.config/vim"
 else
-    chmod --changes 0755 "~/.config/vim"
+    chmod --changes 0755 "${HOME}/.config/vim"
 fi
-ln -sfv -t "~/.config/vim" "$(dirname ${self})/config/vim/vimrc"
-ln -sfv -t "~/.config/vim" "$(dirname ${self})/config/vim/gvimrc"
+ln -sfv -t "${HOME}/.config/vim" "$(dirname ${self})/config/vim/vimrc"
+ln -sfv -t "${HOME}/.config/vim" "$(dirname ${self})/config/vim/gvimrc"
 
 #          _
 #  ___ ___| |__
 # / __/ __| '_ \
 # \__ \__ \ | | |
 # |___/___/_| |_|
-if [ ! -d "~/.ssh" ]; then
-    mkdir --mode=0700 --parents --verbose "~/.ssh"
+if [ ! -d "${HOME}/.ssh" ]; then
+    mkdir --mode=0700 --parents --verbose "${HOME}/.ssh"
 else
-    chmod --changes 0700 "~/.ssh"
+    chmod --changes 0700 "${HOME}/.ssh"
 fi
-ln -sfv -t "~/.ssh" "$(dirname ${self})/ssh/config"
+ln -sfv -t "${HOME}/.ssh" "$(dirname ${self})/ssh/config"
