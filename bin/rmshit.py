@@ -81,6 +81,7 @@ turdfiles = [
     '~/sketchbook/',                               # Arduino crap
     '~/.sqlite_history',                           # SQLite crap
     '~/.stCommitMsg',                              # Sourcetree crap
+    '~/.sudo_as_admin_successful',                 # Debian crap
     '~/.swiftpm/',                                 # macOS crap
     '~/Templates/',                                # oh, for the love of Dog, why!?!
     '~/.terraform.d/',                             # HashiCorp crap
