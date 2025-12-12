@@ -4,30 +4,30 @@
 
 here="$(readlink --canonicalize ${BASH_SOURCE[0]})"
 
-# Short optons vs. long options (for when they're way too long)
+# Short optons vs. long options (for when they're way too long):
 #   'ln -sfv -t' = 'ln --symbolic --force --verbose --target-directory'
 #   'rm -fv' = 'rm --force --verbose'
 
-#                   __ _       
-#   ___ ___  _ __  / _(_) __ _ 
+#  _               _
+# | |__   __ _ ___| |__
+# | '_ \ / _` / __| '_ \
+# | |_) | (_| \__ \ | | |
+# |_.__/ \__,_|___/_| |_|
+ln -sfv -t "${HOME}" "$(dirname ${here})/bash/.bash_profile"
+ln -sfv -t "${HOME}" "$(dirname ${here})/bash/.bash_logout"
+
+#                   __ _
+#   ___ ___  _ __  / _(_) __ _
 #  / __/ _ \| '_ \| |_| |/ _` |
 # | (_| (_) | | | |  _| | (_| |
 #  \___\___/|_| |_|_| |_|\__, |
-#                        |___/ 
+#                        |___/
 if [ ! -d "${HOME}/.config" ]; then
     mkdir --mode=0700 --parents --verbose "${HOME}/.config"
 else
     chmod --changes 0700 "${HOME}/.config"
 fi
 ln -sfv -t "${HOME}/.config" "$(dirname ${here})/config/user-dirs.dirs"
-
-#  _               _     
-# | |__   __ _ ___| |__  
-# | '_ \ / _` / __| '_ \ 
-# | |_) | (_| \__ \ | | |
-# |_.__/ \__,_|___/_| |_|
-ln -sfv -t "${HOME}" "$(dirname ${here})/bash/.bash_profile"
-ln -sfv -t "${HOME}" "$(dirname ${here})/bash/.bash_logout"
 
 #  _
 # | |_ _ __ ___  _   ___  __

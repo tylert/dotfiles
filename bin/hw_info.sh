@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Tools required:  bash, inxi
+
 if $(inxi --version &> /dev/null); then
     inxi -c0 -Mxxx  # machine/motherboard/model info
     inxi -c0 -Cxxx  # cpu info

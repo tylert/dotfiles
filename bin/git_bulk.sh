@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Do stuff in a whole bunch of git repos recursively.
-# Required tools:  find, git
+
+# Tools required:  bash, findutils (find), git
 
 # Invocation examples:
 #   $0 clean -dfnx

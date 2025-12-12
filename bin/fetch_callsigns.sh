@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Yank down a local copy of the Canadian amateur radio callsign database.
-# Required tools:  bash, date, git, unzip, wget
+
+# Tools required:  bash, coreutils (basename, date, mkdir, rm), git, unzip, wget
 
 # See more details at
 # https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/en/downloads

@@ -2,9 +2,12 @@
 
 # https://xkcd.com/1654
 
+# Tools required:  bash, coreutils (cut, echo, id, tr), findutils (xargs)
+
 
 pacman_upgrade() {
     # Arch Linux, EndeavourOS, PiKVM, etc.
+
     pacman --noconfirm --refresh --sync archlinux-keyring  # -Sy
     pacman --noconfirm --refresh --sync --sysupgrade  # -Syu
     pacman --clean --noconfirm --sync  # -Sc
@@ -28,12 +31,15 @@ pacman_upgrade() {
     #     rpi-eeprom-update -a -d
     # fi
 
-    # pacman --query
+    # With and without version numbers:
+    # pacman --query          # -Q
+    # pacman --query --quiet  # -Qq
 }
 
 
 apt_upgrade() {
     # Debian, Ubuntu, Raspberry Pi OS (former Raspbian), etc.
+
     apt-get update
     apt-get --yes dist-upgrade
     apt-get --yes autoremove
@@ -46,13 +52,16 @@ apt_upgrade() {
     #     rpi-eeprom-update -a -d
     # fi
 
-    # dpkg-query --show | tr '\t' ' '
+    # With and without version numbers:
+    # dpkg-query --show --showformat '${binary:Package} ${Version}\n'  # -Wf
+    # dpkg-query --show --showformat '${binary:Package}\n'             # -Wf
 }
 
 
 apk_upgrade() {
     # Alpine
     #   https://wiki.alpinelinux.org/wiki/Upgrading_Alpine_Linux_to_a_new_release_branch
+
     apk update
     apk add --upgrade apk-tools
     apk upgrade --available
@@ -64,6 +73,7 @@ apk_upgrade() {
 opkg_upgrade() {
     # OpenWRT
     #   https://openwrt.org/docs/guide-user/additional-software/opkg#upgrading_packages
+
     opkg update
     opkg list-upgradable | cut -f 1 -d ' ' | xargs -r opkg upgrade
 
@@ -73,6 +83,7 @@ opkg_upgrade() {
 
 brew_upgrade() {
     # macOS (and apparently others too although not sure why)
+
     if [ '0' == $(id -u) ]; then
         echo 'Do not run this with sudo.'
         exit 3

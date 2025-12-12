@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Correct weird file/line endings in text files.
-# Required tools:  file, git, grep, perl, tail
+
+# Tools required:  bash, coreutils (echo, tail), file, git, grep, perl
 
 # Process all committed files to apply the desired fixes
 if $(git rev-parse --git-dir &> /dev/null); then

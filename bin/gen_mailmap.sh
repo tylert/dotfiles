@@ -3,7 +3,7 @@
 # Create a new stub mailmap file for use in git repos.  Type 'man gitmailmap'
 # and look at the .mailmap section for details.
 
-# Required tools:  awk, git, sort, tr, uniq
+# Tools required:  awk, bash, coreutils (echo, sort, tr, uniq), git
 
 if [ -z "${1}" ]; then
     domain="example.com"

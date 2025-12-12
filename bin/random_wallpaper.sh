@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Required tools:  find, head, sort
+# Tools required:  bash, coreutils (echo, head, id, sort), findutils (find)
 
 
 cinnamon_random_wallpaper() {
