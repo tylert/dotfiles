@@ -5,35 +5,28 @@
 # Tools required:  bash, coreutils (cut, echo, id, tr), findutils (xargs)
 
 
-pacman_upgrade() {
-    # Arch Linux, EndeavourOS, PiKVM, etc.
+rpi_eeprom_upgrade() {
 
-    pacman --noconfirm --refresh --sync archlinux-keyring  # -Sy
-    pacman --noconfirm --refresh --sync --sysupgrade  # -Syu
-    pacman --clean --noconfirm --sync  # -Sc
-
-    # Try to get rid of packages which are not actually needed anymore
-    excess="$(pacman --deps --query --quiet --unrequired | tr '\n' ' ')"  # -Qtdq
-    if [ ! -z "${excess}" ]; then
-        pacman --nosave --recursive --remove "${excess}"  # -Rns
-    fi
-
-    # XXX FIXME TODO  Do a better job of managing foreign packages
-    # Show foreign packages with --foreign --query / -Qm
-    # Search for new packages with --search --sync / -Ss
-
-    # XXX FIXME TODO  Actually clean up old packages cached locally
-    # rm -rf /var/cache/pacman/pkg/*
-
+    :
     # XXX FIXME TODO  Find a better way to check if this is a Raspberry Pi
     # If there's Raspberry Pi hardware, try to upgrade the firmware to latest
     # if [ -f /proc/device-tree/model ]; then
     #     rpi-eeprom-update -a -d
     # fi
+}
 
-    # With and without version numbers:
-    # pacman --query          # -Q
-    # pacman --query --quiet  # -Qq
+
+apk_upgrade() {
+    # Alpine
+    #   https://wiki.alpinelinux.org/wiki/Upgrading_Alpine_Linux_to_a_new_release_branch
+
+    apk update
+    apk add --upgrade apk-tools
+    apk upgrade --available
+
+    rpi_eeprom_upgrade
+
+    # XXX FIXME TODO  Just list all the installed package versions
 }
 
 
@@ -46,38 +39,11 @@ apt_upgrade() {
     apt-get autoclean
     apt-get clean
 
-    # XXX FIXME TODO  Find a better way to check if this is a Raspberry Pi
-    # If there's Raspberry Pi hardware, try to upgrade the firmware to latest
-    # if [ -f /proc/device-tree/model ]; then
-    #     rpi-eeprom-update -a -d
-    # fi
+    rpi_eeprom_upgrade
 
-    # With and without version numbers:
+    # List packages with or without version numbers:
     # dpkg-query --show --showformat '${binary:Package} ${Version}\n'  # -Wf
     # dpkg-query --show --showformat '${binary:Package}\n'             # -Wf
-}
-
-
-apk_upgrade() {
-    # Alpine
-    #   https://wiki.alpinelinux.org/wiki/Upgrading_Alpine_Linux_to_a_new_release_branch
-
-    apk update
-    apk add --upgrade apk-tools
-    apk upgrade --available
-
-    # XXX FIXME TODO  Just list all the installed package versions
-}
-
-
-opkg_upgrade() {
-    # OpenWRT
-    #   https://openwrt.org/docs/guide-user/additional-software/opkg#upgrading_packages
-
-    opkg update
-    opkg list-upgradable | cut -f 1 -d ' ' | xargs -r opkg upgrade
-
-    # XXX FIXME TODO  Just list all the installed package versions
 }
 
 
@@ -94,6 +60,46 @@ brew_upgrade() {
     brew cleanup
 
     # brew list --versions
+}
+
+
+pacman_upgrade() {
+    # Arch, EndeavourOS, PiKVM, etc.
+
+    pacman --noconfirm --refresh --sync archlinux-keyring  # -Sy
+    pacman --noconfirm --refresh --sync --sysupgrade  # -Syu
+    pacman --clean --noconfirm --sync  # -Sc
+
+    # Try to get rid of packages which are not actually needed anymore
+    excess="$(pacman --deps --query --quiet --unrequired | tr '\n' ' ')"  # -Qtdq
+    if [ ! -z "${excess}" ]; then
+        pacman --nosave --recursive --remove "${excess}"  # -Rns
+    fi
+
+    # XXX FIXME TODO  Do a better job of managing foreign packages
+    # foreign="$(pacman --foreign --query --quiet)"  # -Qm
+
+    # XXX FIXME TODO  Actually clean up old packages cached locally
+    rm -rf /var/cache/pacman/pkg/*
+
+    rpi_eeprom_upgrade
+
+    # List packages with or without version numbers:
+    # pacman --query          # -Q
+    # pacman --query --quiet  # -Qq
+}
+
+
+opkg_upgrade() {
+    # OpenWRT
+    #   https://openwrt.org/docs/guide-user/additional-software/opkg#upgrading_packages
+
+    opkg update
+    opkg list-upgradable | cut -d ' ' -f 1 | xargs -r opkg upgrade
+
+    rpi_eeprom_upgrade
+
+    # XXX FIXME TODO  Just list all the installed package versions
 }
 
 
