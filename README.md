@@ -60,6 +60,9 @@
     # Why is this not the default everywhere by now?!?!
     $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
+    # Prevent ridiculous ~/.sudo_as_admin_successful file generation
+    $ echo 'Defaults !admin_flag' | sudo tee /etc/sudoers.d/20-stop-the-stupid
+
 
 ## macOS
 
