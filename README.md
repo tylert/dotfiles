@@ -13,6 +13,7 @@
 * <https://yadm.io> Yet Another Dotfiles Manager
 * <https://github.com/Bad3r/antidot-home>
 * <https://ianthehenry.com/posts/a-cozy-nest-for-your-scripts> nested HOME/bin directory
+* <https://github.com/FOBshippingpoint/shittp> blast dotfiles over SSH to remote servers
 
     $ rm -fv ~/.gitconfig
     $ ln -t ~/.config/git -sfv ${GIT_ROOT}/dotfiles/config/git/config
