@@ -1,17 +1,14 @@
-HashKnownHosts no
 ForwardAgent no
-# ForwardX11 yes
-# ForwardX11Trusted yes
+HashKnownHosts no
 
 # Keep existing connections open
-ServerAliveInterval 60
 ServerAliveCountMax 3
+ServerAliveInterval 60
 TCPKeepAlive yes
 
 # Try to reuse connections
 ControlMaster auto
 ControlPath ~/.ssh/%C
-ControlPersist 600
+ControlPersist 300
 
-# Host *+*
-#   ProxyCommand ssh $(echo %h | sed 's/+[^+]*$//;s/\([^+%%]*\)%%\([^+]*\)$/\2 -l \1/;s/:/ -p /') nc -w 6000 $(echo %h | sed 's/^.*+//;/:/!s/$/ %p/;s/:/ /')
+Include ~/.ssh/config.d/*
