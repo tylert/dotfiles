@@ -1,19 +1,26 @@
+# Default identity
 [user]
 	name = Tyler Tidman
 	email = tyler.tidman@draak.ca
 #	signingkey = ~/.ssh/id_ed25519
-#[commit]
-#	gpgsign = true
 #[gpg]
 #	format = ssh
+#[commit]
+#	gpgsign = true
+
+# Turn off some anti-features
 [pull]
 	rebase = true
-[core]
-	pager = less -FRX
+[advice]
+	defaultBranchName = false
 [status]
 	short = true
+[core]
+	pager = less -FRX
+
+# Handy tricks
 [alias]
-	files = diff-tree --name-only --no-commit-id -r
+	files = diff-tree --name-only --no-commit-id -r  # git files ${COMMIT_ID}
 	first = rev-list --abbrev-commit --max-parents=0 HEAD
 	last = rev-parse --short=7 HEAD
 	root = rev-parse --show-toplevel
