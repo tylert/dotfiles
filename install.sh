@@ -6,7 +6,7 @@ this="$(readlink --canonicalize ${BASH_SOURCE[0]})"
 
 # Short optons vs. long options (for when they're way too long):
 #   'ln -sfv -t' = 'ln --symbolic --force --verbose --target-directory'
-#   'rm -fv' = 'rm --force --verbose'
+#   'rm -rfv' = 'rm --recursive --force --verbose'
 
 #  _               _
 # | |__   __ _ ___| |__
@@ -28,6 +28,28 @@ else
     chmod --changes 0700 "${HOME}/.config"
 fi
 ln -sfv -t "${HOME}/.config" "$(dirname ${this})/config/user-dirs.dirs"
+
+#   __ _  ___
+#  / _` |/ _ \
+# | (_| | (_) |
+#  \__, |\___/
+#  |___/
+if [ -d "${HOME}/.config/go/telemetry" ]; then
+    rm -rfv "${HOME}/.config/go/telemetry"
+    touch "${HOME}/.config/go/telemetry"
+fi
+
+#          _
+#  ___ ___| |__
+# / __/ __| '_ \
+# \__ \__ \ | | |
+# |___/___/_| |_|
+if [ ! -d "${HOME}/.ssh" ]; then
+    mkdir --mode=0700 --parents --verbose "${HOME}/.ssh"
+else
+    chmod --changes 0700 "${HOME}/.ssh"
+fi
+ln -sfv -t "${HOME}/.ssh" "$(dirname ${this})/ssh/config"
 
 #  _
 # | |_ _ __ ___  _   ___  __
@@ -56,15 +78,3 @@ else
 fi
 ln -sfv -t "${HOME}/.config/vim" "$(dirname ${this})/config/vim/vimrc"
 ln -sfv -t "${HOME}/.config/vim" "$(dirname ${this})/config/vim/gvimrc"
-
-#          _
-#  ___ ___| |__
-# / __/ __| '_ \
-# \__ \__ \ | | |
-# |___/___/_| |_|
-if [ ! -d "${HOME}/.ssh" ]; then
-    mkdir --mode=0700 --parents --verbose "${HOME}/.ssh"
-else
-    chmod --changes 0700 "${HOME}/.ssh"
-fi
-ln -sfv -t "${HOME}/.ssh" "$(dirname ${this})/ssh/config"
