@@ -66,6 +66,7 @@ turdfiles = [
     '~/.oracle_jre_usage/',                        # Java crap
     '~/.ovftool.ssldb',                            # VMware crap
     '~/.packer.d/',                                # HashiCorp crap
+    '~/.parallel/',                                # GNU Parallel crap
     '~/Pictures/',                                 # oh, for the love of Dog, why!?!
     '~/.pki/',                                     # Firefox crap
     '~/.platformio/',                              # Platformio crap
@@ -110,7 +111,6 @@ turdfiles = [
 #   '~/go/',                                       # Go crap (use "go clean -modcache ; rm -rf ~/go/")
 #   '~/.kube/',                                    # Rancher Desktop crap
 #   '~/.kuberlr/',                                 # Rancher Desktop crap
-#   '~/.parallel/',                                # ??? crap
 #   '~/.rd/',                                      # Rancher Desktop crap
 
 
