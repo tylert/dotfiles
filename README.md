@@ -15,11 +15,10 @@
 * <https://ianthehenry.com/posts/a-cozy-nest-for-your-scripts> nested HOME/bin directory
 * <https://github.com/FOBshippingpoint/shittp> blast dotfiles over SSH to remote servers
 
+```
     $ rm -fv ~/.gitconfig
     $ ln -t ~/.config/git -sfv ${GIT_ROOT}/dotfiles/config/git/config
-
-    $ rm -rfv ~/.config/go
-    $ touch ~/.config/go/telemetry
+```
 
 
 ## Annoyances
@@ -27,12 +26,14 @@
 * <https://wiki.archlinux.org/title/XDG_Base_Directory#Hardcoded>
 * <https://wiki.archlinux.org/title/XDG_user_directories>
 * <https://xdgbasedirectoryspecification.com>
-* <https://bugzilla.mozilla.org/show_bug.cgi?id=259356> Firefox support for XDG base directories; open since 2004
+* <https://bugzilla.mozilla.org/show_bug.cgi?id=2007074> Thunderbird blorps out new directories
 * <https://bugzilla.mozilla.org/show_bug.cgi?id=735285> Thunderbird support for XDG base directories; open since 2012
+* <https://bugzilla.mozilla.org/show_bug.cgi?id=259356> Firefox support for XDG base directories; open since 2004
 * <https://issues.apache.org/jira/browse/SVN-4599> name of subversion directory is hard-coded; open since 2015
 * <https://github.com/markqvist/Reticulum/discussions/732> hard-coded paths to Reticulum/LXMF config files
 * <https://bubelov.com/blog/2020/10/gnome-screenshots> GNOME screenshot tool has zero customization
 
+```
     $ touch ~/.face
     $ ln -sf ~/.face ~/.face.icon
     $ ~/bin/rmshit.py
@@ -53,15 +54,20 @@
         topfd = os.open(name, os.O_RDONLY | os.O_NONBLOCK, dir_fd=dirfd)
                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     FileNotFoundError: [Errno 2] No such file or directory: '/home/meh/.face.icon'
+```
 
 
 ## Debian
 
+* <https://packages.debian.org/stable/python-is-python3> ridiculous package
+
+```
     # Why is this not the default everywhere by now?!?!
     $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
     # Prevent ridiculous ~/.sudo_as_admin_successful file generation
     $ echo 'Defaults !admin_flag' | sudo tee /etc/sudoers.d/20-stop-the-stupid
+```
 
 
 ## macOS
@@ -69,24 +75,32 @@
 If you encounter silly DNS problems in macOS, you may need the following
 command:
 
+```
     $ sudo dscacheutil -flushcache ; sudo killall -HUP mDNSResponder
+```
 
-Occasionally, you will run into a file in your home directory that you
-aren\'t allowed to execute or delete. This is caused by macOS trying to
-be \"helpful\". You can fix this on a case-by-case basis by typing:
+Occasionally, you will run into a file in your home directory that you aren't
+allowed to execute or delete. This is caused by macOS trying to be 'helpful'.
+You can fix this on a case-by-case basis by typing:
 
+```
     $ xattr -d com.apple.quarantine /path/to/file
     $ xattr -d com.apple.macl /path/to/file  # might not be needed
+```
 
 Fix a bunch of them in bulk perhaps using:
 
+```
     $ find /path/to/directory -exec xattr -d com.apple.quarantine {} \;
     $ find /path/to/directory -exec xattr -d com.apple.macl {} \;  # might not be needed
+```
 
 You can also fix this behaviour permanently for all files using:
 
+```
     $ sudo defaults write com.apple.LaunchServices LSQuarantine -bool NO
     $ sudo reboot
+```
 
 * <https://superuser.com/questions/28384/what-should-i-do-about-com-apple-quarantine>
 * <https://apple.stackexchange.com/questions/373176/disable-the-use-of-the-com-apple-quarantine-extended-attribute-on-mojave>
