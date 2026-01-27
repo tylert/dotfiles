@@ -1,19 +1,19 @@
 # Dotfiles
 
-* <https://dotfiles.github.io>
-* <https://iamdan.me/better-dotfiles>
-* <https://github.com/queer/boxxy>
-* <https://cheatsheets.stephane.plus/admin/avoid_dotfile_madness> great resource for cleaning up your home directory
-* <https://0x46.net/thoughts/2019/02/01/dotfile-madness>
-* <https://anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html>
-* <https://dev.to/spacerockmedia/how-i-manage-my-dotfiles-using-gnu-stow-4l59>
-* <https://gnu.org/software/stow/manual/stow.html>
-* <https://medium.com/@todariasova/managing-your-dotfiles-59e13e8ab2d6> git work-tree manipulation?
-* <https://blog.larah.me/mess-directory> automation tricks
-* <https://yadm.io> Yet Another Dotfiles Manager
-* <https://github.com/Bad3r/antidot-home>
-* <https://ianthehenry.com/posts/a-cozy-nest-for-your-scripts> nested HOME/bin directory
-* <https://github.com/FOBshippingpoint/shittp> blast dotfiles over SSH to remote servers
+- <https://dotfiles.github.io>
+- <https://iamdan.me/better-dotfiles>
+- <https://github.com/queer/boxxy>
+- <https://cheatsheets.stephane.plus/admin/avoid_dotfile_madness> great resource for cleaning up your home directory
+- <https://0x46.net/thoughts/2019/02/01/dotfile-madness>
+- <https://anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html>
+- <https://dev.to/spacerockmedia/how-i-manage-my-dotfiles-using-gnu-stow-4l59>
+- <https://gnu.org/software/stow/manual/stow.html>
+- <https://medium.com/@todariasova/managing-your-dotfiles-59e13e8ab2d6> git work-tree manipulation?
+- <https://blog.larah.me/mess-directory> automation tricks
+- <https://yadm.io> Yet Another Dotfiles Manager
+- <https://github.com/Bad3r/antidot-home>
+- <https://ianthehenry.com/posts/a-cozy-nest-for-your-scripts> nested HOME/bin directory
+- <https://github.com/FOBshippingpoint/shittp> blast dotfiles over SSH to remote servers
 
 ```
     $ rm -fv ~/.gitconfig
@@ -23,15 +23,15 @@
 
 ## Annoyances
 
-* <https://wiki.archlinux.org/title/XDG_Base_Directory#Hardcoded>
-* <https://wiki.archlinux.org/title/XDG_user_directories>
-* <https://xdgbasedirectoryspecification.com>
-* <https://bugzilla.mozilla.org/show_bug.cgi?id=2007074> Thunderbird blorps out new directories
-* <https://bugzilla.mozilla.org/show_bug.cgi?id=735285> Thunderbird support for XDG base directories; open since 2012
-* <https://bugzilla.mozilla.org/show_bug.cgi?id=259356> Firefox support for XDG base directories; open since 2004
-* <https://issues.apache.org/jira/browse/SVN-4599> name of subversion directory is hard-coded; open since 2015
-* <https://github.com/markqvist/Reticulum/discussions/732> hard-coded paths to Reticulum/LXMF config files
-* <https://bubelov.com/blog/2020/10/gnome-screenshots> GNOME screenshot tool has zero customization
+- <https://wiki.archlinux.org/title/XDG_Base_Directory#Hardcoded>
+- <https://wiki.archlinux.org/title/XDG_user_directories>
+- <https://xdgbasedirectoryspecification.com>
+- <https://bugzilla.mozilla.org/show_bug.cgi?id=2007074> Thunderbird blorps out new directories
+- <https://bugzilla.mozilla.org/show_bug.cgi?id=735285> Thunderbird support for XDG base directories; open since 2012
+- <https://bugzilla.mozilla.org/show_bug.cgi?id=259356> Firefox support for XDG base directories; open since 2004
+- <https://issues.apache.org/jira/browse/SVN-4599> name of subversion directory is hard-coded; open since 2015
+- <https://github.com/markqvist/Reticulum/discussions/732> hard-coded paths to Reticulum/LXMF config files
+- <https://bubelov.com/blog/2020/10/gnome-screenshots> GNOME screenshot tool has zero customization
 
 ```
     $ touch ~/.face
@@ -59,7 +59,7 @@
 
 ## Debian
 
-* <https://packages.debian.org/stable/python-is-python3> ridiculous package
+- <https://packages.debian.org/stable/python-is-python3> ridiculous package
 
 ```
     # Why is this not the default everywhere by now?!?!
@@ -102,15 +102,16 @@ You can also fix this behaviour permanently for all files using:
     $ sudo reboot
 ```
 
-* <https://superuser.com/questions/28384/what-should-i-do-about-com-apple-quarantine>
-* <https://apple.stackexchange.com/questions/373176/disable-the-use-of-the-com-apple-quarantine-extended-attribute-on-mojave>
-* <https://brunerd.com/blog/2020/01/07/track-and-tackle-com-apple-macl>
-* <https://arno.org/on-the-origins-of-ds-store>
-* <https://danmackinlay.name/notebook/macos_hacks.html>
-* <https://freecodecamp.org/news/how-to-flush-dns-on-mac-macos-clear-dns-cache>
+- <https://superuser.com/questions/28384/what-should-i-do-about-com-apple-quarantine>
+- <https://apple.stackexchange.com/questions/373176/disable-the-use-of-the-com-apple-quarantine-extended-attribute-on-mojave>
+- <https://brunerd.com/blog/2020/01/07/track-and-tackle-com-apple-macl>
+- <https://arno.org/on-the-origins-of-ds-store>
+- <https://aashvik.com/posts/ds_store> stop macOS pooping `.DS_Store` files all over the place
+- <https://danmackinlay.name/notebook/macos_hacks.html>
+- <https://freecodecamp.org/news/how-to-flush-dns-on-mac-macos-clear-dns-cache>
 
 
 ## Other
 
-* <https://github.com/samyk/samytools> way more cool tools
-* <https://evanhahn.com/scripts-i-wrote-that-i-use-all-the-time> more cool tools
+- <https://github.com/samyk/samytools> way more cool tools
+- <https://evanhahn.com/scripts-i-wrote-that-i-use-all-the-time> more cool tools
