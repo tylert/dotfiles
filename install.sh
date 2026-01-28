@@ -37,6 +37,11 @@ ln -sfv -t "${HOME}/.config" "$(dirname ${this})/config/user-dirs.dirs"
 if [ -d "${HOME}/.config/go/telemetry" ]; then
     rm -rfv "${HOME}/.config/go/telemetry"
     touch "${HOME}/.config/go/telemetry"
+else
+    if [ ! -d "${HOME}/.config/go" ]; then
+        mkdir --mode=0755 --parents --verbose "${HOME}/.config/go"
+        touch "${HOME}/.config/go/telemetry"
+    fi
 fi
 
 #          _
