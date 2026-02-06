@@ -20,6 +20,7 @@ turdfiles = [
     '~/.arduino15/',                               # Arduino crap
     '~/Arduino/',                                  # Arduino crap
     '~/.arduino/',                                 # Arduino crap
+    '~/.ash_history'                               # Alpine Busybox shell crap
     '~/.atom/',                                    # Atom crap
     '~/.audacity-data/',                           # Audacity crap
     '~/.bash_history',                             # Bash crap
