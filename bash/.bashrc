@@ -15,7 +15,9 @@ xterm*|rxvt*)
 esac
 
 eval $(dircolors --bourne-shell)
-# export NO_AT_BRIDGE=1
+
+# Remove dumb warning messages from the terminal when launching things
+export NO_AT_BRIDGE=1
 
 # Prevent turd files
 export HISTSIZE=10000
