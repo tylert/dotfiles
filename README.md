@@ -29,6 +29,7 @@
 - <https://bugzilla.mozilla.org/show_bug.cgi?id=2007074> Thunderbird blorps out new directories
 - <https://bugzilla.mozilla.org/show_bug.cgi?id=735285> Thunderbird support for XDG base directories; open since 2012
 - <https://bugzilla.mozilla.org/show_bug.cgi?id=259356> Firefox support for XDG base directories; open since 2004
+- <https://bugzilla.mozilla.org/buglist.cgi?quicksearch=recently+closed+tabs> Firefox making it easier to find recently closed tabs
 - <https://issues.apache.org/jira/browse/SVN-4599> name of subversion directory is hard-coded; open since 2015
 - <https://github.com/markqvist/Reticulum/discussions/732> hard-coded paths to Reticulum/LXMF config files
 - <https://bubelov.com/blog/2020/10/gnome-screenshots> GNOME screenshot tool has zero customization
