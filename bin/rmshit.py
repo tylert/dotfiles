@@ -39,6 +39,7 @@ turdfiles = [
     '~/.DS_Store',                                 # macOS crap
     '~/.dvdcss/',                                  # libdvdcss crap
     '~/.eos-wallpaper-set.history-of-wallpapers',  # EndeavourOS crap
+    '~/.face',                                     # EndeavourOS, Debian crap
     '~/.foxtrotgps/',                              # FoxtrotGPS crap
     '~/.gconf/',                                   # GNOME-ish crap not using .{cache,config,local}
     '~/.ghoto/',                                   # gPhoto crap
@@ -89,6 +90,7 @@ turdfiles = [
     '~/.terraform.d/',                             # HashiCorp crap
     '~/.themes/',                                  # GNOME-ish crap not using .{cache,config,local}
     '~/.thumbnails/',                              # GNOME-ish crap not using .{cache,config,local}
+    '~/Thunderbird/',                              # https://bugzilla.mozilla.org/show_bug.cgi?id=2007074
     '~/.tintin/',                                  # Tintin++ crap
     '~/.tkremindrc',                               # Remind crap
     '~/.vagrant.d/',                               # HashiCorp crap
@@ -107,7 +109,6 @@ turdfiles = [
     '~/.zoom/',                                    # Zoom crap
 ]
 #   '~/.bash_history-?????.tmp',                   # Bash crap
-#   '~/.face',                                     # Debian crap
 #   '~/.face.icon',                                # Debian crap
 #   '~/go/',                                       # Go crap (use "go clean -modcache ; rm -rf ~/go/")
 #   '~/.kube/',                                    # Rancher Desktop crap
