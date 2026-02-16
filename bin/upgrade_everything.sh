@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Universal upgrade script
 # https://xkcd.com/1654
 
 # Tools required:  bash, coreutils (cut, echo, id, tr), findutils (xargs)
@@ -18,7 +19,6 @@ rpi_eeprom_upgrade() {
 
 apk_upgrade() {
     # Alpine
-    #   https://wiki.alpinelinux.org/wiki/Upgrading_Alpine_Linux_to_a_new_release_branch
 
     apk update
     apk add --upgrade apk-tools
@@ -26,12 +26,14 @@ apk_upgrade() {
 
     rpi_eeprom_upgrade
 
-    # XXX FIXME TODO  Just list all the installed package versions
+    # List packages:
+    # apk list --installed          # -I   with version numbers
+    # apk list --installed --quiet  # -Iq  without version numbers
 }
 
 
 apt_upgrade() {
-    # Debian, Ubuntu, Raspberry Pi OS (former Raspbian), etc.
+    # Debian, Devuan, Raspberry Pi OS (former Raspbian), etc.
 
     apt-get update
     apt-get --yes dist-upgrade
@@ -41,14 +43,14 @@ apt_upgrade() {
 
     rpi_eeprom_upgrade
 
-    # List packages with or without version numbers:
-    # dpkg-query --show --showformat '${binary:Package} ${Version}\n'  # -Wf
-    # dpkg-query --show --showformat '${binary:Package}\n'             # -Wf
+    # List packages:
+    # dpkg-query --show --showformat '${binary:Package} ${Version}\n'  # -Wf '...'  with version numbers
+    # dpkg-query --show --showformat '${binary:Package}\n'             # -Wf '...'  without version numbers
 }
 
 
 brew_upgrade() {
-    # macOS (and apparently others too although not sure why)
+    # macOS
 
     if [ '0' == $(id -u) ]; then
         echo 'Do not run this with sudo.'
@@ -59,12 +61,14 @@ brew_upgrade() {
     brew upgrade --greedy
     brew cleanup
 
-    # brew list --versions
+    # List packages:
+    # brew list --versions  # with version numbers
+    # brew list             # without version numbers
 }
 
 
 pacman_upgrade() {
-    # Arch, EndeavourOS, PiKVM, etc.
+    # Arch, Artix, EndeavourOS, PiKVM, etc.
 
     pacman --noconfirm --refresh --sync archlinux-keyring  # -Sy
     pacman --noconfirm --refresh --sync --sysupgrade  # -Syu
@@ -77,22 +81,21 @@ pacman_upgrade() {
     fi
 
     # XXX FIXME TODO  Do a better job of managing foreign packages
-    # foreign="$(pacman --foreign --query --quiet)"  # -Qm
+    # foreign="$(pacman --foreign --query --quiet)"  # -Qmq
 
-    # XXX FIXME TODO  Actually clean up old packages cached locally
+    # Clean out local package cache
     rm -rf /var/cache/pacman/pkg/*
 
     rpi_eeprom_upgrade
 
-    # List packages with or without version numbers:
-    # pacman --query          # -Q
-    # pacman --query --quiet  # -Qq
+    # List packages:
+    # pacman --query          # -Q   with version numbers
+    # pacman --query --quiet  # -Qq  without version numbers
 }
 
 
 opkg_upgrade() {
     # OpenWRT
-    #   https://openwrt.org/docs/guide-user/additional-software/opkg#upgrading_packages
 
     opkg update
     opkg list-upgradable | cut -d ' ' -f 1 | xargs -r opkg upgrade
