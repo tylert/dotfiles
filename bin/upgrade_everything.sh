@@ -82,6 +82,7 @@ pacman_upgrade() {
 
     # XXX FIXME TODO  Do a better job of managing foreign packages
     # foreign="$(pacman --foreign --query --quiet)"  # -Qmq
+    # yay --aur --refresh --sudo su --sync --sysupgrade
 
     # Clean out local package cache
     rm -rf /var/cache/pacman/pkg/*
