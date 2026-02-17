@@ -5,15 +5,6 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-# If this is an xterm set the titlebar to user@host:dir
-case "${TERM}" in
-xterm*|rxvt*)
-    PS1="\[\e]0;\u@\h:\w\a\]${PS1}"
-    ;;
-*)
-    ;;
-esac
-
 eval $(dircolors --bourne-shell)
 
 # Remove dumb warning messages from the terminal when launching things
