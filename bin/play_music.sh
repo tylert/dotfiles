@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Tools required:  bash, coreutils (date), ffmpeg, nohup/setsid, xdg-open
+# Tools required:  bash, GNU coreutils (date), ffmpeg, nohup/setsid, xdg-open
 
 suffix="$(date +%Y-%m-%d)"
 

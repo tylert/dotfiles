@@ -2,7 +2,7 @@
 
 # Correct weird file/line endings in text files.
 
-# Tools required:  bash, coreutils (echo, tail), file, git, grep, perl
+# Tools required:  bash, GNU coreutils (echo, tail), file, git, GNU grep, perl
 
 # Process all committed files to apply the desired fixes
 if $(git rev-parse --git-dir &> /dev/null); then

@@ -3,7 +3,7 @@
 # Universal upgrade script
 # https://xkcd.com/1654
 
-# Tools required:  bash, coreutils (cut, echo, id, tr), findutils (xargs)
+# Tools required:  bash, GNU coreutils (cut, echo, id, tr), GNU findutils (xargs)
 
 
 rpi_eeprom_upgrade() {

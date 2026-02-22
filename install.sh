@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Tools required:  bash, coreutils (chmod, dirname, ln, mkdir, readlink, rm)
+# Tools required:  bash, GNU coreutils (chmod, dirname, ln, mkdir, readlink, rm)
 
 this="$(readlink --canonicalize ${BASH_SOURCE[0]})"
 

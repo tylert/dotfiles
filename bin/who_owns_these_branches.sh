@@ -2,7 +2,7 @@
 
 # Print out a list of branches along with the last committer on each.
 
-# Tools required:  bash, coreutils (echo, head, sort), git, grep
+# Tools required:  bash, GNU coreutils (echo, head, sort), git, GNU grep
 
 # Don't do anything if we're not inside an existing git repo
 if $(git rev-parse --quiet --git-dir &> /dev/null); then

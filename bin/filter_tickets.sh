@@ -4,7 +4,7 @@
 # input text.  Print any string with at least one letter, one hyphen and some
 # digits in it.
 
-# Tools required:  bash, coreutils (sort, tr, uniq), sed
+# Tools required:  bash, GNU coreutils (sort, tr, uniq), GNU sed
 
 # Invocation examples:
 #     git log oldtag...HEAD | ${0}

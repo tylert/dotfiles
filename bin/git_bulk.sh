@@ -2,7 +2,7 @@
 
 # Do stuff in a whole bunch of git repos recursively.
 
-# Tools required:  bash, findutils (find), git
+# Tools required:  bash, GNU findutils (find), git
 
 # Invocation examples:
 #   $0 clean -dfnx
