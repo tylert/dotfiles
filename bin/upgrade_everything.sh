@@ -70,6 +70,9 @@ brew_upgrade() {
 pacman_upgrade() {
     # Arch, Artix, EndeavourOS, PiKVM, etc.
 
+    # cp -i /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.old
+    # reflector -c CA --protocol https,http --sort score --latest 10 --save /etc/pacman.d/mirrorlist
+
     pacman --noconfirm --refresh --sync archlinux-keyring  # -Sy
     pacman --noconfirm --refresh --sync --sysupgrade  # -Syu
     pacman --clean --noconfirm --sync  # -Sc
